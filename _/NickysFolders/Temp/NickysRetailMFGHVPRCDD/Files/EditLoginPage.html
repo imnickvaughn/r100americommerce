@@ -1,0 +1,33 @@
+<ac:pagelayout id="EditLoginPage">
+  <ac:widgetarea id="Top">
+</ac:widgetarea>
+  
+  $$MYACCOUNTMENU$$
+  
+  <div class="MyAccountPage">
+    <div style="float:left;width:100%">
+      <h1>My Personal Information</h1>
+      <div class="MyAccountSection">
+        <div class="MyAccountSectionInner">
+          <h3 class="MyAccountSectionHeader">Edit Account Information</h3>
+          <div>$$ERRORTEXT$$</div>
+          <table>
+            $$NAMEFIELD$$
+            $$COMPANYFIELD$$
+            $$EMAILFIELD$$
+            $$MAILINGLISTFIELD$$
+            $$PAYMENTMETHODFIELD$$
+          </table>
+        </div>
+      </div>
+      <div class="MyAccountSection">
+        <div class="MyAccountSectionInner">
+          $$PASSWORDFIELD$$
+          $$CONTINUEBUTTON$$
+        </div>
+      </div>
+    </div>
+  </div>
+  <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+</ac:pagelayout>

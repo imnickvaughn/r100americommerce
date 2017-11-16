@@ -1,0 +1,160 @@
+<ac:pagelayout id="OrderHistoryPage">
+  <ac:widgetarea id="Top">
+</ac:widgetarea>
+  
+    
+  <div class="row">
+    <div class="col-sm-3">
+      <ac:layoutarea id="Menu">
+        <div class="well">
+          <ul class="nav nav-stacked nav-pills">
+            <li class="nav-header"><strong>$$CUSTOMERNAME$$ Account</strong></li>
+            <li>$$DASHBOARD$$</li>
+            <li>$$EDITLOGIN$$</li>
+            <li>$$CHANGEPASSWORD$$</li>
+            <li>$$PROFILE$$</li>
+            <li>$$PROFILEEDIT$$</li>
+            <ac:visibilityarea id="dvPaymentInfo">
+              <li>$$PAYMENTMETHODS$$</li>
+            </ac:visibilityarea>
+            <ac:visibilityarea id="dvAddressArea">
+              <li>$$BILLINGADDRESS$$</li>
+              <li>$$SHIPPINGADDRESS$$</li>
+            </ac:visibilityarea>
+            <ac:visibilityarea id="lnkEditDetails">
+              <li>$$EDITDETAILS$$</li>
+            </ac:visibilityarea>
+            <ac:visibilityarea id="lnkStatement">
+              <li>$$STATEMENT$$</li>
+            </ac:visibilityarea>
+            <ac:visibilityarea id="lnkorderhistory">
+              <li>$$ORDERHISTORY$$</li>
+            </ac:visibilityarea>
+            <ac:visibilityarea id="lnkOrderPaymentHistory">
+              <li>$$PAYMENTS$$</li>
+            </ac:visibilityarea>
+            <li>$$ORDERS$$</li>
+            <ac:visibilityarea id="lnkSubscriptions">
+              <li>$$SUBSCRIPTIONS$$</li>
+            </ac:visibilityarea>
+            <ac:visibilityarea id="lnkReviews">
+              <li>$$REVIEWS$$</li>
+            </ac:visibilityarea>
+            <ac:visibilityarea id="lnkSavedCarts">
+              <li>$$SAVEDCARTS$$</li>
+            </ac:visibilityarea>
+            <ac:visibilityarea id="lnkDownloads">
+              <li>$$DOWNLOADS$$</li>
+            </ac:visibilityarea>
+            <li>$$LOGOUT$$</li>
+          </ul>
+        </div>
+      </ac:layoutarea>
+    </div>
+    <div class="col-sm-9">
+  
+  <div class="MyAccountPage">
+    <div style="float:left;width:100%;">    
+      <h1>My Order History</h1>
+      
+      <ac:visibilityarea id="OrderHistoryTools">
+        <div class="MyAccountSection">
+          <div class="MyAccountSectionInner">
+            <h3 class="MyAccountSectionHeader">Download</h3>
+            $$DOWNLOADORDERHISTORY$$ $$DOWNLOADORDERHISTORYWITHITEMS$$
+          </div>
+        </div>
+        
+        <div class="MyAccountSection">
+          <div class="MyAccountSectionInner">
+            <h3 class="MyAccountSectionHeader">Filters</h3>
+            $$ORDERHISTORYLISTSTATUSFILTERS$$
+            $$ORDERHISTORYLISTDATEFILTERS$$
+            $$ORDERHISTORYLISTPAIDFILTERS$$
+            $$ORDERHISTORYLISTFILTERSAPPLYBUTTON$$
+          </div>
+        </div>
+      </ac:visibilityarea>
+      
+      <div class="MyAccountSection">
+        <h3 class="MyAccountSectionHeader">Orders</h3>
+        <div class="MyAccountSectionInner">
+          $$NORECORDS$$
+          <table class="OrderHistoryTable MyAccountTable" width="100%" border="0" cellpadding="3" cellspacing="0">
+            <ac:layoutarea id="ItemHeader">
+              <tr class="OrderHistoryHeader">
+                <th class="StatmentHeader" align="left">
+                  $$ORDERNUMBERHEADER$$
+                </th>
+                <th class="OrderHistoryHeader" align="left">
+                  $$ORDERSTATUSHEADER$$
+                </th>
+                <th class="OrderHistoryHeader" align="center">
+                  $$ORDERDATEHEADER$$
+                </th>
+                <th class="OrderHistoryHeader" align="center">
+                  $$ORDERTOTALHEADER$$
+                </th>
+                <th class="OrderHistoryHeader" align="center">
+                  $$LASTPAYMENTNOTEHEADER$$
+                </th>
+                <th class="OrderHistoryHeader" align="center">
+                  $$LASTPAYMENTAPPROVEDDATEHEADER$$
+                </th>
+                <th class="OrderHistoryHeader" align="right">
+                  $$LASTPAYMENTAMOUNTHEADER$$
+                </th>
+              </tr>
+            </ac:layoutarea>
+            <ac:layoutarea id="ItemDetail">
+              <tr class="OrderHistoryItem">
+                <td>
+                  <div class="OrderHistoryOrderNumber">$$ORDERNUMBER$$</div>
+                </td>
+                <td>
+                  <span class="OrderHistoryOrderStatus">$$ORDERSTATUS$$</span>
+                </td>
+                <td align="center">
+                  <span class="OrderHistoryPaymentDate">$$ORDERDATE$$</span>
+                </td>
+                <td align="right">
+                  <div class="OrderHistoryTotal">$$ORDERTOTAL$$</div></td>
+                <td align="left"><div class="OrderHistoryPaymentType">$$LASTPAYMENTNOTE$$</div></td>
+                <td align="center">
+                  <div class="OrderHistoryApproveDate">$$LASTPAYMENTAPPROVEDDATE$$</div>
+                </td>
+                <td align="right"><div class="OrderHistoryPaymentAmount">$$LASTPAYMENTAMOUNT$$</div></td>
+              </tr>
+            </ac:layoutarea>
+            <ac:layoutarea id="ItemDetailAlt">
+              <tr class="OrderHistoryItem">
+                <td>
+                  <div class="OrderHistoryOrderNumber">$$ORDERNUMBER$$</div>
+                </td>
+                <td>
+                  <span class="OrderHistoryOrderStatus">$$ORDERSTATUS$$</span>
+                </td>
+                <td align="center">
+                  <span class="OrderHistoryPaymentDate">$$ORDERDATE$$</span>
+                </td>
+                <td align="right">
+                  <div class="OrderHistoryTotal">$$ORDERTOTAL$$</div></td>
+                <td align="left"><div class="OrderHistoryPaymentType">$$LASTPAYMENTNOTE$$</div></td>
+                <td align="center">
+                  <div class="OrderHistoryApproveDate">$$LASTPAYMENTAPPROVEDDATE$$</div>
+                </td>
+                <td align="right"><div class="OrderHistoryPaymentAmount">$$LASTPAYMENTAMOUNT$$</div></td>
+              </tr>
+            </ac:layoutarea>
+            <ac:layoutarea id="ItemFooter">
+            </ac:layoutarea>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<ac:widgetarea id="Bottom">
+</ac:widgetarea>
+</ac:pagelayout>

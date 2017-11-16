@@ -1,0 +1,56 @@
+<ac:pagelayout id="CatalogPage">
+  <ac:widgetarea id="Top"></ac:widgetarea>
+  
+  <div class="CatalogAddToCartButton">
+    $$TOPPAGEADDTOCARTBUTTON$$
+  </div>
+  <ac:visibilityarea id="TopNavigationArea">
+    <div id="dvNavTop">
+      <div class="CategoryPageNavigation">
+        <div style="float:right;">$$PRODUCTLISTPAGENAVIGATIONTOP$$</div>
+        $$PRODUCTCOUNTTOP$$
+        <div style="clear:both"></div>
+      </div>      
+    </div>    
+  </ac:visibilityarea>
+  
+  
+  <ac:layoutarea id="ProductList">
+    <ac:visibilityarea id="CategoryTrailArea">
+      <div class="CatalogCategoryTrail" id="dvCategoryTrail">
+        $$CATEGORYTRAIL$$
+      </div>
+    </ac:visibilityarea>
+    <div>
+      <div class="CatalogItemQuantityBox">
+        $$QUANTITYBOX$$
+      </div>
+      <div class="CatalogItemPriceArea">
+        $$PRICE$$
+      </div>
+      
+      <span class="CatalogProductMfgName">
+        $$MANUFACTURERLINK$$
+      </span>
+      <span class="CatalogProductName">
+        $$PRODUCTLINK$$
+      </span>
+    </div>
+  </ac:layoutarea>
+  
+  <ac:visibilityarea id="BottomNavigationArea">
+    <div id="dvNavBottom">
+      <div class="CategoryPageNavigation">
+        <div style="float:right;">$$PRODUCTLISTPAGENAVIGATIONBOTTOM$$</div>
+        $$PRODUCTCOUNTBOTTOM$$
+        <div style="clear:both"></div>
+      </div>
+    </div>
+  </ac:visibilityarea>
+  
+  <div class="CatalogAddToCartButton">
+    $$BOTTOMPAGEADDTOCARTBUTTON$$
+  </div>
+  
+  <ac:widgetarea id="Bottom"></ac:widgetarea>
+</ac:pagelayout>

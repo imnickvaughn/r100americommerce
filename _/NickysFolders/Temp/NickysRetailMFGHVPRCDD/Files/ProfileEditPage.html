@@ -1,0 +1,68 @@
+<ac:pagelayout id="ProfileEditPage">
+  <ac:widgetarea id="Top">
+</ac:widgetarea>$$ERRORTEXT$$
+  
+  $$MYACCOUNTMENU$$
+  
+  <div class="MyAccountPage">
+    <div style="float:left;width:100%">
+      <h1>My Public Profile</h1>
+      
+      <div class="MyAccountSection">
+        <h3 class="MyAccountSectionHeader">Edit Information</h3>
+        <div class="MyAccountSectionInner">
+          <table class="MyAccountTable" width="100%" border="0">
+            <tr>
+              <td>Display Name: </td>
+              <td>$$DISPLAYNAME$$</td>
+            </tr>
+            <tr>
+              <td>Real Name:</td>
+              <td>$$REALNAME$$</td>
+            </tr>
+            <tr>
+              <td>Company:</td>
+              <td>$$COMPANY$$</td>
+            </tr>
+            <tr>
+              <td>Title:</td>
+              <td>$$TITLE$$</td>
+            </tr>
+        <tr>
+          <td>Profile Image</td>
+          <td>
+            <div>$$IMAGE$$</div>
+            <div>$$DELETEIMAGE$$</div>
+            <div>$$IMAGEAPPROVALSTATUS$$</div>
+            <div>$$IMAGEUPLOAD$$</div>
+            <div>$$SUPPORTEDIMAGETYPES$$</div>
+          </td>
+        </tr>
+            <tr>
+              <td colspan="2">Message / Bio:<br>$$ABOUT$$</td>
+            </tr>
+            <tr>
+              <td colspan="2">$$SAVEBUTTON$$</td>
+            </tr>
+          </table>
+          
+        </div>
+      </div>
+      
+      
+      <div class="MyAccountSection">
+        <h3 class="MyAccountSectionHeader">Contact Information</h3>
+        <div class="MyAccountSectionInner">
+          <p>
+            The contact information listed here will display on your public profile. Do not enter anything that you do not want to be public.
+          </p>
+          <table class="MyAccountTable" id="tblContactTypes">
+            $$CONTACTINFOLIST$$
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+</ac:pagelayout>
