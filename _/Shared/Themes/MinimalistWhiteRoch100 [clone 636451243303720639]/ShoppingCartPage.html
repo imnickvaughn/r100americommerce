@@ -1,0 +1,286 @@
+<ac:pagelayout id="ShoppingCartPage" showshippingcalculation="True">
+
+	<ac:widgetarea id="Top"><ac:widget id="LARGESHOPPINGCART3286" type="LargeShoppingCart"><div align="center">
+	$$SAVEDCARTNOTIFICATION$$
+	<table id="tblCart" class="ShoppingCart">
+		<tr>
+			<td class="ShoppingCartHeader">Item</td>
+			<ac:visibilityarea id="ShippingCodeHeaderArea">
+				<td class="ShoppingCartHeader">Shipping Code</td> 
+			</ac:visibilityarea>
+			<td class="ShoppingCartHeader">
+				$$QUANTITYHEADER$$
+			</td>
+			<ac:visibilityarea id="PurchasedQtyHeaderArea">
+				<td class="ShoppingCartHeader">Purchased</td>
+			</ac:visibilityarea>
+			<td class="ShoppingCartHeader">Each</td>
+			<td class="ShoppingCartHeader">
+				$$PRICEHEADER$$
+			</td>
+		</tr>
+		<ac:visibilityarea id="SelectAllArea">
+			<tr id="trSelectAll">
+				<td class="ShoppingCart" colspan="4">
+					<script type="text/javascript">
+		            	$(function () {
+		            		$('#chkSelectAll').click(function () {
+		            			var chkval = $(this).attr('checked');
+		            			$('.dvChkSelect input:checkbox').attr('checked', chkval);
+		            		});
+		            	});
+					</script>
+					<div class="ShoppingCartClear"><input type="checkbox" id="chkSelectAll"><a>Select/Deselect All</a></div>
+				</td>
+			</tr>
+		</ac:visibilityarea>
+
+		<ac:layoutarea id="ShopCartItem">
+			<tr>
+				<td class="ShoppingCart">
+					<div class="ShoppingCartChildBranch">
+						$$CHILDBRANCHIMAGE$$
+					</div>
+					<div class="dvChkSelect">
+						$$SELECTCHECKBOX$$
+					</div>
+					$$THUMBNAIL$$
+					$$ITEMNAME$$
+					$$CALLFORSHIPPING$$
+					$$ITEMNR$$
+					$$MFGNAME$$
+					$$VARIANTS$$
+					$$PERSONALIZE$$
+					<div style="clear:both">
+						$$MOVETOWISHLISTBUTTON$$
+						$$MOVETOCARTBUTTON$$
+					</div>
+				</td>
+				<ac:visibilityarea id="ShippingCodeArea">
+					<td align="center" class="ShoppingCart">
+						$$SHIPPINGCODE$$
+					</td>
+				</ac:visibilityarea>
+				<td align="center" class="ShoppingCart" nowrap="">
+					$$QUANTITYTEXTBOX$$
+					<!--<asp:Button CommandName="Update" runat="server" Width="0" style="display:none" />-->
+					$$REMOVEFROMCARTBUTTON$$
+					$$UPDATEBUTTON$$
+				</td>
+				<ac:visibilityarea id="PurchasedQuantityArea">
+					<td align="center" class="ShoppingCart" nowrap="">
+						$$PURCHASEDQUANTITYTEXTBOX$$
+					</td>
+				</ac:visibilityarea>
+				<td class="ShoppingCartPrice" nowrap="">
+					$$ITEMPRICE$$
+					$$ADJUSTLINESUBTOTALBY$$
+				</td>
+				<td class="ShoppingCartPrice" nowrap="">
+					$$ITEMTOTAL$$
+				</td>
+			</tr>
+		</ac:layoutarea>
+
+		<ac:visibilityarea id="SubtotalArea">
+			<tr id="trSubtotal">
+				<td colspan="##CARTCOLUMNCOUNT##" class="ShoppingCartTotals">
+					<div class="ShoppingCartClear">
+						<div>$$CLEARCARTLINK$$</div>
+						<div>$$SAVECARTLINK$$</div>
+						<div>$$EMAILCART$$</div>
+					</div>
+					Subtotal</td>
+				<td class="ShoppingCartPrice">
+					$$SUBTOTAL$$
+				</td>
+			</tr>
+			</ac:visibilityarea>
+			<ac:visibilityarea id="ShippingArea">
+			<tr>
+				<td colspan="##CARTCOLUMNCOUNT##" class="ShoppingCartTotals">
+					<ac:visibilityarea id="InlineCalculateShippingFormArea">
+						<div id="dvInlineCalculateShippingForm">
+							<ac:visibilityarea id="InlinePostalCodeArea">        
+								<div style="DISPLAY: inline; FLOAT: left" id="dvInlinePostalcode">
+									$$INLINEPOSTALCODELABEL$$
+									$$INLINEPOSTALCODETEXTBOX$$
+									$$INLINESETSHIPTOBUTTON$$
+									$$SHIPPINGADDITIONALINFORMATION$$
+								</div>
+							</ac:visibilityarea>
+						</div>
+					</ac:visibilityarea>
+					<ac:visibilityarea id="ShippingLabelArea">
+						$$SHIPPINGLABEL$$
+						$$SHIPPINGDESCRIPTION$$
+						<div class="ShoppingCartShippingInfo">$$SHIPPINGINFO$$</div>
+					</ac:visibilityarea>
+				</td>
+				<td class="ShoppingCartPrice">
+					$$SHIPPINGTOTAL$$
+				</td>
+			</tr>
+		</ac:visibilityarea>
+		<ac:visibilityarea id="HandlingArea">
+			<tr>
+				<td colspan="##CARTCOLUMNCOUNT##" class="ShoppingCartTotals">
+					Handling Fee
+				</td>
+				<td class="ShoppingCartPrice">
+					$$HANDLINGTOTAL$$
+				</td>
+			</tr>
+		</ac:visibilityarea>
+		<ac:visibilityarea id="ShippingErrorArea">
+			<tr id="trShipping">
+				<td colspan="##CARTCOLUMNCOUNT##" align="center" class="ShoppingCartTotals">
+					<span class="ErrorText">Shipping Error:
+						$$SHIPPINGERROR$$
+					</span>&nbsp;
+				</td>
+			</tr>
+		</ac:visibilityarea>
+		<ac:visibilityarea id="DiscountArea">
+			<tr id="trDiscount">
+				<td colspan="##CARTCOLUMNCOUNT##" class="ShoppingCartDiscount">
+					$$DISCOUNTLABEL$$
+					$$DISCOUNTSTRING$$
+				</td>
+				<td valign="bottom" class="ShoppingCartPrice">
+					<font color="#ff0000"><b>-$$DISCOUNTTOTAL$$</b></font>
+				</td>
+			</tr>
+		</ac:visibilityarea>
+		<ac:visibilityarea id="TaxArea">
+			<tr id="trTax">
+				<td colspan="##CARTCOLUMNCOUNT##" class="ShoppingCartTotals">
+					Tax
+				</td>
+				<td class="ShoppingCartPrice">
+					$$TAXTOTAL$$
+				</td>
+			</tr>
+		</ac:visibilityarea>
+		<ac:visibilityarea id="TotalArea">
+			<tr id="trTotal">
+				<td colspan="##CARTCOLUMNCOUNT##" class="ShoppingCartTotals">
+					Total
+				</td>
+				<td class="ShoppingCartPrice">
+					$$TOTAL$$
+				</td>
+			</tr>
+		</ac:visibilityarea>
+
+	</table>
+
+	<ac:visibilityarea id="BottomControlsArea">
+		<div id="dvBottomControls">
+			<ac:visibilityarea id="ButtonControlsArea">
+				<div id="dvButtonControls">
+					<ac:visibilityarea id="CouponCodeArea">
+						<div id="dvCouponCode" class="ShoppingCartCouponCode">
+							$$COUPONCODELABEL$$:&nbsp;$$COUPONCODETEXTBOX$$
+							$$ADDCOUPONCODEBUTTON$$
+						</div>
+					</ac:visibilityarea>
+					<div>
+						$$COUPONERROR$$
+					</div>
+					<p>
+					$$CONTINUESHOPPINGBUTTON$$
+					$$UPDATECARTBUTTON$$
+					$$CHECKOUTBUTTON$$
+					<p>
+					<div class="PayPalGoogleCO">
+						$$PAYPALEXPRESSCHECKOUTBUTTON$$
+						$$GOOGLECHECKOUTBUTTON$$
+					</div>
+					<p>
+					<div class="ShoppingCartError">
+						$$ECERROR$$
+					</div>
+					<p>
+				</div>
+			</ac:visibilityarea>
+			<ac:visibilityarea id="MessageControlsArea">
+				<div id="dvMessageControls">
+					$$MESSAGE$$
+					$$SHIPPINGNOTICE$$
+					$$ERRORTEXT$$
+				</div>
+			</ac:visibilityarea>
+			<ac:visibilityarea id="ShippingControlsArea">
+				<div id="dvShippingControls">
+					<ac:visibilityarea id="ShippingMethodArea">
+						<div id="dvShippingMethod">
+							$$SHIPPINGMETHODS$$
+    						$$SHIPPINGMETHODSELECTBUTTON$$
+							$$SHIPPINGADDITIONALINFORMATION2$$
+						</div>
+					</ac:visibilityarea>
+					<ac:visibilityarea id="CalculateShippingFormArea">
+						<div id="dvCalculateShippingForm"><br>
+							<div class="ShippingCalcLabel">
+								$$SHIPPINGCALCULATORLABEL$$
+							</div>
+							$$SHIPPINGCALCULATIONERROR$$
+							<ac:visibilityarea id="CitySelectArea">
+								<div id="dvCitySelect" class="ShippingCalcField">
+									<span class="ShippingCalcFieldLabel">
+										$$CITYLABEL$$
+									</span>
+									<span>
+										$$CITYTEXTBOX$$
+									</span>
+								</div>
+							</ac:visibilityarea>
+    			                    
+							<ac:visibilityarea id="StateSelectArea">
+								<div id="dvStateSelect" class="ShippingCalcField">
+									<span class="ShippingCalcFieldLabel">
+										$$STATELABEL$$
+									</span>
+									<span>
+										$$STATEDROPDOWN$$
+									</span>
+								</div>
+							</ac:visibilityarea>
+    			
+							<ac:visibilityarea id="PostalEntryArea">
+								<div id="dvPostalEntry" class="ShippingCalcField">
+									<span class="ShippingCalcFieldLabel">
+										$$POSTALCODELABEL$$
+									</span>
+									<span>
+										$$POSTALCODETEXTBOX$$
+									</span>
+								</div>
+							</ac:visibilityarea>
+
+							<div class="ShippingCalcField">
+								<span class="ShippingCalcFieldLabel">
+									$$COUNTRYLABEL$$
+								</span>
+								<span>
+									$$COUNTRYDROPDOWN$$
+									$$SETSHIPTOBUTTON$$
+								</span>
+							</div>
+						</div>
+					</ac:visibilityarea>
+				</div>
+			</ac:visibilityarea>
+		</div>
+	</ac:visibilityarea>
+</div></ac:widget>
+</ac:widgetarea>
+
+	$$EMPTYCARTMESSAGE$$
+
+	$$CONTINUESHOPPINGBUTTON$$
+
+	<ac:widgetarea id="Bottom"></ac:widgetarea>
+
+</ac:pagelayout>

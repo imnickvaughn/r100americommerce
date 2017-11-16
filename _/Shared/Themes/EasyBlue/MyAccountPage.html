@@ -1,0 +1,277 @@
+<ac:pagelayout id="MyAccountPage">
+  <ac:widgetarea id="Top">
+</ac:widgetarea>
+  <h1 class="CheckOutHeader">Account Profile</h1>
+  
+  <table width="100%" border="0">
+    <tr>
+      <td>Account profile for:<br>
+        <b>
+          $$CUSTOMERNAME$$
+        </b>
+      </td>
+      <td>$$LOGOUTBUTTON$$</td>
+    </tr>
+    <tr>
+      <td height="15">$$AFFILIATELINK$$</td>
+    </tr>
+    <tr>
+      <td valign="top" width="33%"><span class="CheckOutSubHeader">account information</span>
+        <div align="center"><br>
+          <table width="95%" border="0">
+            <tr>
+              <td><b>customer name:</b><br>
+                $$CUSTOMERNAME2$$
+                <br>
+                <b>email:</b><br>
+                $$CUSTOMEREMAIL$$
+                <div id="divCustomerUsername" runat="server" visible="false">
+                  <b>username: </b>
+                  <br>
+                  $$CUSTOMERUSERNAME$$
+                  <br>
+                </div>
+                <b>password: </b>
+                <br>
+                xxxxxxx
+                <p>$$EDITLOGINBUTTON$$
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <br>
+        <div>
+          <span class="CheckOutSubHeader">other details</span>
+          <div align="center"><br>
+            <table width="95%" border="0">
+              <tr>
+                <td>
+                  $$CUSTOMFIELDS$$
+                  <p>
+                    $$EDITCUSTOMFIELDSBUTTON$$
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </td>
+      <td valign="top" width="33%">
+        <div align="center">
+          <table width="95%" border="0">
+            <tr id="trPaymentInfoHeader" runat="server">
+              <td>
+                <span class="CheckOutSubHeader">payment information</span>
+              </td>
+            </tr>
+            <tr id="trPaymentInfo" runat="server">
+              <td>
+                $$PAYMENTMETHOD$$<br>
+                <br>
+                $$EDITPAYMENTMETHODBUTTON$$<br>
+                <br>
+              </td>
+            </tr>
+            <tr id="trBillingAddressHeader" runat="server">
+              <td>
+                <span class="CheckOutSubHeader">billing address</span>
+              </td>
+            </tr>
+            <tr id="trBillingAddressInfo" runat="server">
+              <td>
+                $$BILLINGADDRESS$$<br>
+                $$EDITBILLINGADDRESSBUTTON$$
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+      <td valign="top">
+        <div align="center">
+          <table width="95%" border="0">
+            <tr id="trShippingAddressHeader" runat="server">
+              <td>
+                <span class="CheckOutSubHeader">shipping address</span>
+              </td>
+            </tr>
+            <tr id="trShippingAddressInfo" runat="server">
+              <td>$$SHIPPINGADDRESS$$<br>
+                $$EDITSHIPPINGADDRESSS$$</td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  
+  <br>
+  
+  <ac:visibilityarea id="ShowHideGiftCertificates">
+    <div class="ShowHideOrdersLink">$$SHOWHIDEGIFTCERTIFICATESLINK$$</div>
+  </ac:visibilityarea>
+  
+  <br>
+  
+  <table border="0" cellpadding="3" cellspacing="0" class="MyAccountShowHideTable" rules="all" id="tblGiftCertificates">
+    <tr class="OrderHistoryHeader">
+      <td>Gift Certificate</td>
+      <td>Amount</td>
+      <td>Expiration Date</td>
+    </tr>
+    <ac:layoutarea id="GiftCertificateListDetail">
+      <tr class="OrderHistoryItem">
+        <td>$$GIFTCERTIFICATECODE$$</td>
+        <td>$$GIFTCERTIFICATEAMOUNT$$</td>
+        <td>$$GIFTCERTIFICATEEXPIRATIONDATE$$</td>
+      </tr>
+    </ac:layoutarea>
+    <ac:layoutarea id="GiftCertificateListDetailAlt">
+      <tr class="OrderHistoryAltItem">
+        <td>$$GIFTCERTIFICATECODE$$</td>
+        <td>$$GIFTCERTIFICATEAMOUNT$$</td>
+        <td>$$GIFTCERTIFICATEEXPIRATIONDATE$$</td>
+      </tr>
+    </ac:layoutarea>
+  </table>
+  
+  <br>
+  
+  <ac:visibilityarea id="ShowHideDownloads">
+    <div class="ShowHideOrdersLink">$$SHOWHIDEDOWNLOADSLINK$$</div>
+  </ac:visibilityarea>
+  
+  <br>
+  
+  <table border="0" cellpadding="3" cellspacing="0" class="MyAccountShowHideTable" rules="all" id="tblDownloads">
+    <tr class="OrderHistoryHeader">
+      <td>Item Name</td>
+      <td>Order Date</td>
+      <td>Download</td>
+    </tr>
+    <ac:layoutarea id="DownloadDetail">
+      <tr class="DownloadItem">
+        <td>$$ITEMNAME$$</td>
+        <td>$$ORDERDATE$$</td>
+        <td>$$DOWNLOADLINK$$</td>
+      </tr>
+    </ac:layoutarea>
+    <ac:layoutarea id="DownloadDetailAlt">
+      <tr class="DownloadAltItem">
+        <td>$$ITEMNAME$$</td>
+        <td>$$ORDERDATE$$</td>
+        <td>$$DOWNLOADLINK$$</td>
+      </tr>
+    </ac:layoutarea>
+  </table>
+  
+  <br>
+  
+  <ac:visibilityarea id="ShowHideOrders">
+    <div class="ShowHideOrdersLink">$$SHOWHIDEORDERSLINK$$</div>
+  </ac:visibilityarea>
+  
+  <br>
+  
+  <table border="0" cellpadding="3" cellspacing="0" class="MyAccountShowHideTable" rules="all" id="tblOrders">
+    <tr class="OrderHistoryHeader">
+      <td>Reorder</td>
+      <td>Date</td>
+      <td>Order #</td>
+      <td>Total</td>
+      <td>Order Status</td>
+      <td>Tracking</td>
+    </tr>
+    <ac:layoutarea id="OrderDetail">
+      <tr class="OrderHistoryItem">
+        <td>$$REORDERLINK$$</td>
+        <td>$$ORDERDATE$$</td>
+        <td>$$ORDERNUMLINK$$</td>
+        <td>$$ORDERTOTAL$$</td>
+        <td>$$ORDERSTATUS$$</td>
+        <td>$$ORDERTRACKINGLINK$$</td>
+      </tr>
+    </ac:layoutarea>
+    <ac:layoutarea id="OrderDetailAlt">
+      <tr class="OrderHistoryAltItem">
+        <td>$$REORDERLINK$$</td>
+        <td>$$ORDERDATE$$</td>
+        <td>$$ORDERNUMLINK$$</td>
+        <td>$$ORDERTOTAL$$</td>
+        <td>$$ORDERSTATUS$$</td>
+        <td>$$ORDERTRACKINGLINK$$</td>
+      </tr>
+    </ac:layoutarea>
+  </table>
+  
+  <br>
+  
+  <ac:visibilityarea id="ShowHideReviewsList">
+    <div class="ShowHideOrdersLink">$$SHOWHIDEREVIEWSLINK$$</div>
+  </ac:visibilityarea>
+  
+  <br>
+  
+  <table border="0" cellpadding="3" cellspacing="0" class="MyAccountShowHideTable" rules="all" id="tblCustomerReviews">
+    <tr class="OrderHistoryHeader">
+      <td>Rating</td>
+      <td>Date</td>
+      <td>Product Name</td>
+      <td>Review Title</td>
+    </tr>
+    <ac:layoutarea id="ReviewsListDetail">
+      <tr class="OrderHistoryItem">
+        <td>$$REVIEWRATING$$</td>
+        <td>$$REVIEWDATE$$</td>
+        <td>$$PRODUCTNAME$$</td>
+        <td>$$REVIEWTITLE$$</td>
+      </tr>
+    </ac:layoutarea>
+    <ac:layoutarea id="ReviewsListDetailAlt">
+      <tr class="OrderHistoryAltItem">
+        <td>$$REVIEWRATING$$</td>
+        <td>$$REVIEWDATE$$</td>
+        <td>$$PRODUCTNAME$$</td>
+        <td>$$REVIEWTITLE$$</td>
+      </tr>
+    </ac:layoutarea>
+  </table>
+  
+  <br>
+  
+  <ac:visibilityarea id="ShowHideSavedCartList">
+    <div class="ShowHideOrdersLink">$$SHOWHIDESAVEDCARTLINK$$</div>
+  </ac:visibilityarea>
+  
+  <br>
+  
+  <table border="0" cellpadding="3" cellspacing="0" class="MyAccountShowHideTable" rules="all" id="tblCustomerSavedCarts">
+    <tr class="OrderHistoryHeader">
+      <td>View</td>
+      <td>Date</td>
+      <td>Cart Name</td>
+      <td>Cart Type</td>
+    </tr>
+    <ac:layoutarea id="SavedCartListDetail">
+      <tr class="OrderHistoryItem">
+        <td>$$VIEWCARTLINK$$</td>
+        <td>$$CARTENTERDATE$$</td>
+        <td>$$CARTNAME$$</td>
+        <td>$$CARTTYPE$$</td>
+      </tr>
+    </ac:layoutarea>
+    <ac:layoutarea id="SavedCartListDetailAlt">
+      <tr class="OrderHistoryAltItem">
+        <td>$$VIEWCARTLINK$$</td>
+        <td>$$CARTENTERDATE$$</td>
+        <td>$$CARTNAME$$</td>
+        <td>$$CARTTYPE$$</td>
+      </tr>
+    </ac:layoutarea>
+  </table>
+  
+  <br>
+  
+  <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+</ac:pagelayout>

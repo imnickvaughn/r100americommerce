@@ -1,0 +1,142 @@
+@font-face
+{
+    font-family: 'AlternateGothic2' , sans-serif;
+    src: url('ALTGOT2N.TTF');
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .navbar-nav .open .dropdown-menu {
+        background-color: white !important;
+    }
+}
+.navbar-brand,
+.navbar  {
+    font-family: 'AlternateGothic2', sans-serif;
+    font-size: 20px;
+    color: white;
+
+}
+
+a.dropdown-toggle {
+    color:white;
+}
+.bg-dark-blue  {
+    background-color: #133b70!important;
+
+}
+
+.navbar-brand,
+a.nav-item ,
+a.nav-link {
+    color: white !important;
+}
+
+body {
+    font-family: 'AlternateGothic2' , sans-serif;
+    background: #f0f0f0;
+
+}
+
+h1,
+.h1 {
+    font-size: 36px;
+    text-align: center;
+    font-size: 5em;
+    color: #fff;
+}
+
+li.col-sm-3 ul{
+    font-family: 'Roboto', sans-serif;
+}
+
+li.col-sm-3 ul li a {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #878787;
+    white-space: normal;
+}
+
+li.col-sm-6 ul li a,
+li.col-sm-6 ul ul li {
+     color: #878787;
+    list-style: none;
+}
+.navbar-toggle {
+    border: 1px solid white !important;
+}
+
+.icon-bar {
+    background-color: white;
+
+}
+
+.navbar-nav>li>.dropdown-menu {
+
+    border-top: #ea212f 4px solid;
+    border-bottom: #ea212f 4px solid;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a {
+
+    font-weight: bold;
+}
+
+.mega-dropdown {
+    position: static !important;
+
+}
+.mega-dropdown-menu {
+    padding: 20px 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.nav>li>a:focus,
+.nav>li>a:hover,
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+    background: #ea212f;
+    color: white;
+}
+
+.mega-dropdown-menu > li > ul {
+    padding: 0;
+    margin: 0;
+}
+.mega-dropdown-menu > li > ul > li {
+    list-style: none;
+}
+.mega-dropdown-menu li a,
+.mega-dropdown-menu li a:hover,
+.mega-dropdown-menu > li > ul > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: bold;
+    line-height: 1.428571429;
+    color: #878787;
+    white-space: normal;
+}
+.mega-dropdown-menu li a:hover,
+.mega-dropdown-menu > li ul > li > a:hover,
+.mega-dropdown-menu > li ul > li > a:focus {
+    text-decoration: none;
+    color: white;
+    background-color:#ea212f;
+}
+
+.mega-dropdown-menu .dropdown-header{
+
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: #e5e5e5 1px solid;
+    text-align: center;
+}
+

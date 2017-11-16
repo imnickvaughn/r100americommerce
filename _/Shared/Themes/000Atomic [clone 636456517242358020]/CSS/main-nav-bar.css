@@ -1,0 +1,210 @@
+@font-face
+{
+  font-family: 'AlternateGothic2' ;
+  src: url('ALTGOT2N.TTF');
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu {
+    background-color: white !important;
+  }
+
+  .navbar {
+    border-radius: 0!important;
+  }
+}
+
+@media (min-width: 767px) {
+  .navbar {
+    border-radius: 0!important;
+  }
+}
+
+.nav.navbar-nav {
+  width: 100%;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+.nav.navbar-nav ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+  zoom: 1;
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+li.dropdown.mega-dropdown {
+  padding: 5px;
+  width: 11vw;
+  display: inline-block; 
+}
+
+.navbar-brand,
+.navbar  {
+  font-family: 'AlternateGothic2';
+  font-size: 20px;
+  color: white;
+
+}
+
+.navbar.bg-dark-blue.navbar-static.justify-content-center {
+  /*padding-left: 15%;
+  padding-right: 15%;*/
+}
+
+a.dropdown-toggle {
+  color:white;
+}
+.bg-dark-blue  {
+  background-color: #133b70!important;
+
+}
+
+.navbar-brand,
+a.nav-item ,
+a.nav-link {
+  color: white !important;
+}
+
+body {
+  font-family: 'AlternateGothic2';
+  background: #f0f0f0;
+
+}
+
+h1,
+.h1 {
+  font-size: 36px;
+  text-align: center;
+  font-size: 5em;
+  color: #fff;
+}
+
+li.col-sm-3 ul{
+  font-family: 'Roboto';
+}
+
+li.col-sm-3 ul li a {
+  font-family: 'Roboto';
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #878787;
+  white-space: normal;
+}
+
+li.col-sm-6 ul li a,
+li.col-sm-6 ul ul li {
+  color: #878787;
+  list-style: none;
+}
+.navbar-toggle {
+  border: 1px solid white !important;
+}
+
+.icon-bar {
+  background-color: white;
+
+}
+
+.navbar-nav .dropdown.open > a[data-toggle=dropdown] + .dropdown-menu {
+  display: block;
+  border-top: #ea212f 4px solid;
+  border-bottom: #ea212f 4px solid;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+.navbar-nav>li>.dropdown-menu {
+
+  border-top: #ea212f 4px solid;
+  border-bottom: #ea212f 4px solid;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a {
+
+  font-weight: bold;
+}
+
+li.dropdown.mega-dropdown.open {
+  box-shadow: inset 0px 0px 13px 3px rgba(0,0,0,0.9);
+  background-color: red
+}
+
+li.dropdown.mega-dropdown a {
+  text-align: left;
+}
+
+a.home {
+
+  color:white; 
+}
+.mega-dropdown {
+  position: static !important;
+
+}
+.mega-dropdown-menu {
+  padding: 20px 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.nav>li>a:focus,
+.nav>li>a:hover,
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+  color: white;
+  background: transparent;
+}
+
+.mega-dropdown-menu > li > ul {
+  padding: 0;
+  margin: 0;
+}
+.mega-dropdown-menu > li > ul > li {
+  list-style: none;
+}
+.mega-dropdown-menu li a,
+.mega-dropdown-menu li a:hover,
+.mega-dropdown-menu > li > ul > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: bold;
+  line-height: 1.428571429;
+  color: #878787;
+  white-space: normal;
+}
+.mega-dropdown-menu li a:hover,
+.mega-dropdown-menu > li ul > li > a:hover,
+.mega-dropdown-menu > li ul > li > a:focus {
+  text-decoration: none;
+  color: white;
+  background-color:#ea212f;
+}
+
+.mega-dropdown-menu .dropdown-header{
+
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: #e5e5e5 1px solid;
+  text-align: center;
+}
+
+.img-book {
+  background: url("https://nickysfolders.americommerce.com/Shared/images/ViewDieCat.png") no-repeat right bottom;
+  background-size: 25%;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: -1%;
+  right: 6%;
+  height: 6.5vw;
+}
+

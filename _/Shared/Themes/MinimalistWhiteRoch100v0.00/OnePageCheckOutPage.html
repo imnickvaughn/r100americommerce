@@ -1,0 +1,71 @@
+<ac:pagelayout id="OnePageCheckOutPage">
+  
+  <ac:widgetarea id="Top"></ac:widgetarea>
+  
+  $$ERRORTEXT$$
+  
+  $$ADDRESSAREA$$
+  <table width="100%">
+    <tbody>
+      $$REGISTRATION$$
+      <tr>
+        $$CUSTOMCUSTOMERFIELDS$$
+        $$CUSTOMORDERFIELDS$$
+      </tr>
+      <tr>
+        <td colspan="2">
+          $$SHIPPINGAREA$$
+          $$PAYMENTAREA$$
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <!--Begin Order Comments-->
+          $$PUBLICORDERCOMMENTS$$
+          <!--End Order Comments-->
+          <!--Begin Gifting-->
+          $$ORDERGIFTING$$
+          <!--End Gifting-->
+        </td>
+      </tr>$$MAILINGLIST$$
+      <tr>
+        <td colspan="2" align="center">
+          <div class="CheckOutSubHeader">
+            $$CHECKOUTSTEPCOUNTER11$$.
+            <!--Confirm &amp; Place Your Order-->$$CONFIRMORDERTEXT$$</div>
+          <br>
+          $$CARTAREA$$
+          <div>$$UPDATECARTLINK$$</div>
+          <ac:widgetarea id="Bottom"></ac:widgetarea>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table width="100%">
+    <tbody>
+      <!--<tr>
+      <asp:checkbox id="chkMailingList" runat="server"></asp:checkbox>Please 
+      check here to let us keep you informed about exciting new products, specials 
+      and promotions!
+    </tr>-->
+      <tr>
+        <td align="right" colspan="2">
+          <br>
+          $$PLACEORDERBUTTON$$
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <div style="DISPLAY:none;FLOAT:right;WIDTH:250px">
+    <div class="CheckOutSubHeader"><!--Order Totals-->$$TOTALSHEADERTEXT$$</div>
+    <div class="CheckOutText"><!--<b>Subtotal:</b>-->$$SUBTOTALTEXT$$
+      $$SUBTOTAL$$</div>
+    $$SHIPPING$$
+    $$HANDLING$$
+    $$DISCOUNT$$
+    $$TAX$$
+    $$TOTAL$$
+  </div>
+  
+</ac:pagelayout>

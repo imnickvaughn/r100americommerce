@@ -1,0 +1,159 @@
+<ac:templateoverridearea id="LeftColumn">
+  <ac:widgetarea id="SearchLeftTop">
+</ac:widgetarea>
+  $$LEFTCOLUMN$$
+  <ac:widgetarea id="SearchLeftBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:templateoverridearea id="RightColumn">
+  <ac:widgetarea id="SearchRightTop">
+</ac:widgetarea>
+  $$RIGHTCOLUMN$$
+  <ac:widgetarea id="SearchRightBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:pagelayout id="SearchPage" productpicheight="125" productpicwidth="125" resizeproductthumb="True" sizeproportionally="True" pagesize="10">
+<ac:widgetarea id="Top">
+</ac:widgetarea>
+<h1 class="CategoryCategoryName">$$PRODUCTSEARCHHEADER$$</h1>
+<hr>
+Search: 
+$$SEARCHBOX$$
+$$SEARCHTYPE$$
+$$SEARCHBUTTON$$
+<div id="dvSearchOptions">
+  <ac:visibilityarea id="AdvancedSearchArea">
+    <div id="dvAdvancedSearch">
+      Only search in: $$ADVANCEDSEARCHDROPDOWN$$
+    </div>
+  </ac:visibilityarea>
+</div>
+
+<hr>
+<b>You searched for:</b>
+$$SEARCHSTRING$$
+<ac:layoutarea id="ManufacturerList">
+  $$MANUFACTURERLINK$$
+</ac:layoutarea>
+<ac:layoutarea id="CategoryList">
+  $$CATEGORYLINK$$
+</ac:layoutarea>
+  <ac:layoutarea id="CMSPageList">
+    <div class="CMSPage">
+      <div class="CMSPageTitleLine"><a href="$$CMSPAGEURL$$"><span class="CMSPageTitle">$$CMSPAGETITLE$$</span></a> <span class="CMSSearchRelevance">$$CMSRELEVANCE$$% Match</span></div>
+      <div class="CMSPageDescription">$$CMSSUMMARY$$</div>
+    </div>
+  </ac:layoutarea>
+  
+
+<div style="clear:both"></div>
+
+<ac:visibilityarea id="TopNavigationArea">
+  <div id="zzz">
+    <div class="CategoryPageNavigation">
+      <div style="float:right;">$$SORTBYDROPDOWN$$</div>
+      <span class="CategoryPageNumberPerPage">$$NUMBERPERPAGEDROPDOWNLABEL$$</span>
+      $$SHOWBYPAGESIZE$$
+      <div style="clear:both"></div>       
+    </div>        
+  </div>
+  <div id="dvNavTop">
+    <div class="CategoryPageNavigation">
+      <div style="float:right;">$$PRODUCTLISTPAGENAVIGATIONTOP$$</div>
+      $$PRODUCTCOUNTTOP$$
+      <div style="clear:both"></div>
+    </div>      
+  </div>    
+</ac:visibilityarea>
+
+<ac:layoutarea id="ProductList">
+  <div class="CategoryProductRow">
+    <div class="CategoryProductNameLink">$$PRODUCTLINK$$</div>
+    <div class="SearchRelevance">$$RELEVANCE$$% Match</div>
+    <div class="CategoryProductThumbnailArea">
+      $$PRODUCTTHUMBNAIL$$
+    </div>
+    <div class="CategoryProductPricingInfo">
+      <div class="CategoryProductFlags">
+        $$PRODUCTFLAGS$$
+      </div>
+      <div class="CategoryProductPricingArea">
+        ##YOTPOSTARS[##ITEMID##]##
+<ac:visibilityarea id="ProductRatingArea">
+          <div class="CategoryProductRatingArea">
+            <div class="CategoryProductRating">
+              $$AVERAGEREVIEWRATINGSTARS$$
+            </div>
+            <div class="CategoryProductRatingText">
+              ##IF[ReviewCount!=0]##
+              ##REVIEWCOUNT## review(s)
+              ##ELSE##
+              No reviews yet
+              ##ENDIF##
+              <br>
+              ##IF[ReviewCount!=0]##
+              Rating: ##AVERAGERATING##
+              ##ELSE##
+              Rating: none
+              ##ENDIF##
+            </div>
+          </div>
+        </ac:visibilityarea>
+        <div class="CategoryProductAvailability">
+          $$AVAILABILITY$$
+        </div>
+        <div class="CategoryProductRetailArea">
+          $$RETAILPRICE$$
+        </div>
+        <div class="CategoryWasPriceArea">
+          $$WASPRICE$$
+        </div>
+        <div class="CategoryProductPriceArea">
+          $$PRICE$$
+        </div>
+        <div class="CategoryMapPricingArea">
+          $$MAPPRICINGLINK$$
+        </div>
+        <br>
+        <ac:visibilityarea id="AddToCartArea">
+          <div class="CategoryProductAddToCart">
+            $$QUANTITYBOX$$
+            $$ADDTOCARTBUTTON$$
+          </div>
+        </ac:visibilityarea>
+        <div class="CategoryProductSeeOptionsLink">
+          $$SEEOPTIONSLINK$$
+        </div>
+      </div>  
+    </div>    
+    <div class="CategoryProductDetails">
+      <span class="CategoryProductMfgName">$$MANUFACTURERLINK$$ $$MANUFACTURERNAME$$</span>
+      <br>
+      $$ITEMNUMBER$$
+      $$SHORTDESCRIPTION$$
+      <span class="CategoryProductLongDescription">##TRIM[200]## ##LONGDESCRIPTION1## ##ENDTRIM##</span>
+      <br>
+      <span class="CategoryProductMoreInfoLink">
+        $$MOREINFOLINK$$
+      </span>
+      <br>
+      $$DISCOUNTLIST$$
+    </div>
+    
+    <div style="clear:both;"></div>
+  </div>
+  <hr class="CategoryProductSeperator">
+</ac:layoutarea>
+
+<ac:visibilityarea id="BottomNavigationArea">
+  <div id="dvNavBottom">
+    <div class="CategoryPageNavigation">
+      <div style="float:right;">$$PRODUCTLISTPAGENAVIGATIONBOTTOM$$</div>
+      $$PRODUCTCOUNTBOTTOM$$
+      <div style="clear:both"></div>
+    </div>
+  </div>
+</ac:visibilityarea>
+<ac:widgetarea id="Bottom">
+</ac:widgetarea>
+</ac:pagelayout>

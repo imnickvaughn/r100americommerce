@@ -1,0 +1,72 @@
+<ac:templateoverridearea id="HeaderAddonArea">
+  <ac:widgetarea id="HomepageHeader">
+<ac:widget id="SLIDESHOW287" type="Slideshow" pause="6000">
+<ul>
+	<li id='slide_1'>
+		Welcome to the Slideshow widget!
+		<br>
+		<br>
+	</li>
+	<li id='slide_2'>
+		This is a sample slide.
+		<br>
+		You can edit these slides and add new ones using Widgets mode in LiveDesign and then choosing the settings editor for this widget.
+		<br>
+		<br>
+	</li>
+	<li id='slide_3'>
+		Slides can consist of any HTML content you want, or they can also be images that you can specify.
+		<br>
+		Advanced users can also add and edit slides directly in the layout of the widget.
+		<br>
+		<br>
+	</li>
+</ul>
+</ac:widget>
+<ac:widget id="HTML288" type="HTML">
+
+</ac:widget>
+</ac:widgetarea>
+  
+</ac:templateoverridearea>
+<ac:pagelayout id="DefaultPage">
+<ac:widgetarea id="Top">
+<ac:widget id="HTML282" type="HTML"><h2>More Home Page SEO</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id justo tortor, pharetra fermentum risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec sit amet est vehicula tellus lobortis consectetur. Sed in dui tortor, vitae ullamcorper ligula. Nullam ac ultrices urna. Suspendisse potenti. Integer tempor venenatis iaculis. Etiam eget mauris ipsum, vitae euismod lorem. Phasellus posuere consequat felis, quis varius velit bibendum a. Morbi eleifend, libero nec sagittis semper, orci tellus porttitor lorem, ac sodales sem augue et augue.</p></ac:widget>
+<ac:widget id="PRODUCTDISPLAY283" type="ProductDisplay" repeatabletype="NewItems"><ac:visibilityarea id="dvControl">
+    $$HEADER$$
+    $$ADMINHELP$$
+    <ac:layoutarea id="Item">
+      <ac:visibilityarea id="dvControlItem">      
+        $$PRICE$$
+        
+        <div class="FeaturedItemsThumbnail">$$PHOTOWITHLINK$$</div>
+        
+        $$PRODUCTNAME$$
+        
+        
+        
+      </ac:visibilityarea>
+    </ac:layoutarea>
+    </ac:visibilityarea></ac:widget>
+<ac:widget id="PRODUCTDISPLAY284" type="ProductDisplay" repeatabletype="FeaturedItems"><ac:visibilityarea id="dvControl">
+    $$HEADER$$
+    $$ADMINHELP$$
+    <ac:layoutarea id="Item">
+      <ac:visibilityarea id="dvControlItem">      
+        $$PRICE$$
+        
+        <div class="FeaturedItemsThumbnail">$$PHOTOWITHLINK$$</div>
+        
+        $$PRODUCTNAME$$
+        
+        
+        
+      </ac:visibilityarea>
+    </ac:layoutarea>
+    </ac:visibilityarea></ac:widget>
+</ac:widgetarea>
+$$HOMEPAGECONTENT$$
+<ac:widgetarea id="Bottom">
+</ac:widgetarea>
+</ac:pagelayout>

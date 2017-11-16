@@ -1,0 +1,35 @@
+<ac:pagelayout id="SavedWishListsPage">
+  
+  <ac:widgetarea id="Top"></ac:widgetarea>
+  <a href="/">Home</a> &gt; <a href="SavedWishLists.aspx">My Saved Wish Lists</a>
+  <div>
+    $$WISHLISTMENU$$
+  </div>
+  <h1>My Saved Wish Lists</h1>
+  Manage your saved wish lists here. You may view, delete, and edit wish lists in this area. Other features include the ability to create 
+		blank wish lists to add items to in the future, and also making your wish 
+		list shared which will make it viewable by any visitor under the Shared Wish Lists tab.
+  <h2>Create or Delete</h2>
+  $$NEWWISHLISTNAME$$
+  $$CREATEWISHLISTBUTTON$$
+  $$ERRORTEXT$$
+  
+  <ac:layoutarea id="WishLists">
+    <tr>
+      <td width="16px">
+        $$SELECTCHECKBOX$$
+      </td>
+      <td>
+        $$WISHLISTID$$
+        $$DELETEBUTTON$$</td>
+      <td>$$WISHLISTNAME$$</td>
+      <td align="center">$$ENTERDATE$$</td>
+      <td align="center">
+        $$SHAREDBUTTON$$</td>
+    </tr>
+  </ac:layoutarea>
+  
+  $$MOVETOCARTBUTTON$$
+  <ac:widgetarea id="Bottom"></ac:widgetarea>
+  
+</ac:pagelayout>

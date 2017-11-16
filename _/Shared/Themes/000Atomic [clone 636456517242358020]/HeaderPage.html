@@ -1,0 +1,349 @@
+<ac:pagelayout id="HeaderPage">
+  <div class="LayoutTopTop">
+    <div class="container m-t-20">
+      <div class="row">
+        <div class="col-sm-7 col-md-2 col-md-offset-5">
+          <ac:widgetarea id="LeftMiddleHeaderWidgets"><ac:widget id="HTML5546" type="HTML">
+            <div class="no-m-t h1 sm-center">
+              <a class="no-ul color-inherit bold store-name" href="/">
+                <ac:if setting="Use Logo Image in Place of Store Name">
+                  ##SETTING[Logo, img]##
+                  <ac:else>
+                    ##STORENAME##
+                  </ac:else>
+                </ac:if>
+              </a>
+            </div>
+            <ac:if setting="Show Tagline in Header">
+              <div class="tagline clearfix pad-b-20">
+                <em>##SETTING[Tagline]##</em>
+              </div>
+            </ac:if>
+            </ac:widget>
+</ac:widgetarea>
+        </div>
+        <!--Shopping Chart Top Left Menu -->
+        <div class="col-sm-5 col-md-5 user-wrapper">
+          <div class="user-menu">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="http://www.nickysfolders.com/store/pg/1-Contact-Us.aspx">Contact</a>
+              </li>
+              <li>
+                <a href="#" data-toggle="dropdown">My Account</a>
+                <ul class="dropdown-menu">
+                  $$CUSTOMERLOGIN6168$$
+                </ul>
+              </li>
+              <li>
+                <a href="#" data-toggle="dropdown">
+                  My Cart
+                  ##IF[CartIsEmpty]## ##ELSE##
+                  <span class="badge">##CARTITEMSCOUNT##</span>
+                  ##ENDIF##
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    ##IF[CartIsEmpty]##
+                    <p class="m-20">Your cart is empty!</p>
+                    ##ENDIF##
+                    $$SMALLSHOPPINGCART6167$$
+                  </li>
+                </ul>
+              </li>
+
+
+              <li class="search">
+                <span class="glyphicon glyphicon-search"></span>
+                <input placeholder="Search">
+
+
+                <!-- ##SEARCHBOX[autocomplete=true]##-->
+
+              </li>
+            </ul>
+
+            <script>
+              jquery(.btnSearchBox).each(function() {
+                alert(jQuery is working);
+              });
+              jquery(.btnSearchBox).remove();
+            </script>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div>
+
+
+
+      <!-- <ac:widgetarea id="BottomHeaderWidgets"><ac:widget id="MainHorizontalMenuBar" type="MenuBar">-->
+
+
+
+      <nav class="navbar bg-dark-blue navbar-static justify-content-center">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+
+        <div class="collapse navbar-collapse js-navbar-collapse">
+          <div class="nav navbar-nav">
+            <ul>
+              <li class="dropdown mega-dropdown">
+                <a href="#" class="home">Home</a></li>
+              <li class="dropdown mega-dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nicky's Folders&copy;</a>
+
+                <ul class="dropdown-menu mega-dropdown-menu row">
+
+                  <li class="col-sm-3">
+                    <ul>
+
+                      <li class="dropdown-header">2-Pockets</li>
+                      <li><a href="#">Nicky's&copy; Version II  <small>(NF VER II) </small></a></li>
+                      <li><a href="#"> Nicky's&copy;Communicator </a></li>
+                      <ul>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Spanish/Multilanguage</a></li>
+                      </ul>
+                      <li><a href="#"> Nicky's&copy; Class Work</a></li>
+                      <li><a href="#">  <b> Nicky's&copy; Homework </b></a></li>
+                      <li><a href="#">  <b> Nicky's&copy; CPA</b></a>
+                        <ul>
+                          <li><a href="#">&emsp;Version 10</a></li>
+                          <li><a href="#">   &emsp;Version 11</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-3">
+                    <ul>
+                      <li class="dropdown-header">Multiple Page</li>
+                      <li><a href="#">   <b>Nicky's&copy;10-in-1 folder </b> </a></li>
+                      <li><a href="#"><b>Nicky's&copy; 4 pocket </b></a></li>
+                      <li><a href="#"><b>Nicky's&copy; 6 pocket </b></a></li>
+                      <li><a href="#"><b>Nicky's&copy; 8 pocket </b></a></li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-3">
+                    <ul>
+                      <li class="dropdown-header">Tabbed</li>
+                      <li><a href="#"><b>Nicky's&copy; Tab File </b></a></li>
+
+                    </ul>
+                  </li>
+                  <li class="col-sm-3">
+                    <ul>
+                      <li class="dropdown-header">Other</li>
+                      <li><a href="#"><b>Nicky's&copy; Mini Wallet</b></a></li>
+
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+              <li class="dropdown mega-dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Katie's&copy; Folder</a>
+              </li>
+              <li class="dropdown mega-dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Vinyl Products&copy;</a>
+
+                <ul class="dropdown-menu mega-dropdown-menu row">
+
+                  <div class="col-sm-6">
+                    <li class="dropdown-header">Holders</li>
+                    <li class="col-sm-6">
+                      <ul>
+
+                        <li><a href="#">Adhesive Holders</a></li>
+                        <li><a href="#">Business Card Holders</a></li>
+                        <ul>
+                          <li><a href="#">STB-582</a></li>
+                          <li><a href="#">STB-1001</a></li>
+                          <li><a href="#">BC-888</a></li>
+                          <li><a href="#">Mini Wallets</a></li>
+                        </ul>
+                        <li><a href="#">Certificate Holders</a></li>
+                        <li><a href="#"> Card Holders</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-sm-6">
+                      <ul>
+
+                        <li><a href="#">   <b>CD Media Holders</b> </a></li>
+                        <ul>
+                          <li><a href="#">  <b> Adhesive Back</b></a></li>
+                          <li><a href="#">  <b> Temper Proof</b></a></li>
+                        </ul>
+                        <li><a href="#"><b>ID Holders</b></a></li>
+                        <li><a href="#"><b>Passbook Jackets </b></a></li>
+                        <li><a href="#"><b>Pocket Wallet Style</b></a></li>
+                        <li><a href="#"><b>Slide Holders</b></a></li>
+                        <li><a href="#"><b>Tag Holders</b></a></li>
+                        <li><a href="#"><b>Zip Lock Holders</b></a></li>
+                      </ul>
+                    </li>
+                  </div>
+                  <div class="col-sm-6">
+                    <li class="col-sm-6">
+                      <ul>
+                        <li class="dropdown-header">Plastic Sleeves</li>
+                        <li><a href="#"><b>PT-Series</b></a></li>
+                        <li><a href="#"><b>SP-Series</b></a></li>
+
+
+                      </ul>
+                    </li>
+                    <li class="col-sm-6">
+                      <ul>
+                        <li class="dropdown-header">Sheet Protectors</li>
+                        <li><a href="#"><b>8.5" x 11" </b></a></li>
+                        <ul>
+                          <li>STB-582</li>
+                          <li>PT-600</li>
+                          <li>PT-2412</li>
+                          <li>SP-811 </li>
+                          <li>Fold-out 2597</li>
+                          <li>Model 1000 Clear Folder</li>
+                        </ul>
+
+                      </ul>
+                    </li>
+
+                  </div>
+                  <div class="img-book"></div>
+                </ul>
+              </li>
+              <li class="dropdown mega-dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Custom Imprinting</a>
+              </li>
+              <li class="dropdown mega-dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Custom Type</a>
+              </li>
+              <li class="dropdown mega-dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
+              </li>
+
+            </ul>
+
+
+          </div>
+
+
+
+
+        </div>
+        <!-- /.nav-collapse -->
+      </nav>
+
+      <!--</ac:widget>-->
+
+
+      <ac:widget id="SMALLSHOPPINGCART5543" type="SmallShoppingCart" enablemergecode="True">
+        <ac:visibilityarea id="dvControl">
+          <div class="panel no-m-b m-t-5 pad-b-10">
+            <div class="center well well-sm no-wrap no-m-b bold m-l-10 m-r-10">
+              <div class="pad-50 no-pad-tb">$$CARTITEMSLABEL$$</div>
+            </div>
+            <div class="media-list">
+
+              <ac:layoutarea id="ShopCartItem">
+                <div class="SmallCartItem pad-t-15 pad-b-15 pad-l-10 pad-r-10 media">
+                  <div class="pull-left m-r-15">
+
+                  </div>
+                  <div class="pull-right m-t-15">
+                    <a class="badge clear-item-link" href="#">&times;</a>
+                  </div>
+                  <div class="media-body">
+                    <div>$$ITEMLINK$$</div>
+                    <div>$$QUANTITYBOX$$ &nbsp;x $$PRICE$$</div>
+                  </div>
+                </div>
+                <hr class="m-l-5 m-r-5 no-m-tb">
+              </ac:layoutarea>
+              <div class="update-qty-link m-5 no-m-t pad-t-5 pad-b-5 pad-10 center">
+                <span class="rel">
+                  <span class="hide update-attention abs" style="right:100%;top:0;">
+                    click &rarr;
+                  </span>
+                  $$UPDATEQTYLINK$$
+                </span>
+                <!--<div>
+$$VIEWCARTLINK$$
+</div>
+<div>
+$$CLEARCARTLINK$$
+</div> -->
+              </div>
+
+              <div class="well well-sm no-m-b m-l-10 m-r-10">
+                <strong class="block right">$$SUBTOTAL$$</strong>
+              </div>
+              <div class="SmallCartCheckoutButton full-input m-l-10 m-r-10">
+                $$CHECKOUTBUTTON$$
+              </div>
+              $$ERROR$$
+            </div>
+          </div>
+          <div class="pad-10 no-wrap center">
+            <a class="block pad-50 no-pad-tb" href="/store/shopcart.aspx">View Full Shopping Cart</a>
+          </div>
+        </ac:visibilityarea>
+      </ac:widget>
+      <ac:widget id="CUSTOMERLOGIN5544" type="CustomerLogin" enablemergecode="True">
+        <ac:visibilityarea id="LoggedOut">
+          <li>
+            <div class="panel-body no-wrap">
+              $$HEADER$$
+
+              <ac:visibilityarea id="btnFacebookLogin">
+                $$FACEBOOKLOGINBUTTON$$
+                <div class="pad-10 center">- OR -</div>
+              </ac:visibilityarea>
+              <div class="full-input">
+                <div>
+                  <label>$$USERNAMELABEL$$</label>
+                  <div>$$USERNAMEINPUT$$</div>
+                </div>
+                <div class="m-20 no-m-lr">
+                  <label>$$PASSWORDLABEL$$</label>
+                  <div>$$PASSWORDINPUT$$</div>
+                  <div class="size-small right">
+                    <a href="/store/lostPassword.aspx">Forgot Password?</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="right m-t-10">$$LOGINBUTTON$$</div>
+              </div>
+              <div class="right size-small">
+                or <a href="/store/register.aspx">Register an Account</a>
+              </div>
+              $$ERROR$$
+            </div>
+          </li>
+        </ac:visibilityarea>
+        <ac:visibilityarea id="LoggedIn">
+          <li class="center">##GRAVATARIMAGE[email=##CUSTOMEREMAIL##,size=50,default=dd.jpg]##</li>
+          <li><a href="/store/myaccount.aspx">My Account</a></li>
+          <li><a href="/store/profile.aspx">My Profile</a></li>
+          <li><a href="/store/myaccount.aspx#Orders">Order Tracking</a></li>
+          <li><a href="/store/logout.aspx">Logout</a></li>
+        </ac:visibilityarea>
+      </ac:widget>
+
+    </div>
+
+
+  </div></ac:pagelayout>

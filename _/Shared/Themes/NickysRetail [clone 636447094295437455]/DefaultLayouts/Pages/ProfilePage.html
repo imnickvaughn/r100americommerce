@@ -1,0 +1,89 @@
+<ac:pagelayout id="ProfilePage">
+  <ac:widgetarea id="Top">
+</ac:widgetarea>
+  
+  $$PROFILEBANNED$$
+  $$PROFILESUSPENDED$$
+  <ac:visibilityarea id="ProfileInfoArea">
+    <h1 class="ProfileName">$$NAME$$'s Profile</h1>
+    <div class="PofileImage">$$IMAGE$$</div>
+    <table class="ProfileInfoTable" id="tblProfile">
+      <tr>
+        <td>Company:</td>
+        <td>$$COMPANY$$</td>
+      </tr>
+      <tr>
+        <td>Title:</td>
+        <td>$$TITLE$$</td>
+      </tr>
+      <tr>
+        <td colspan="2">About:</td>
+      </tr>
+      <tr>
+        <td colspan="2">$$ABOUT$$</td>
+      </tr>
+      $$CONTACTLIST$$
+      <tr>
+        <td colspan="2">$$EDITPROFILELINK$$</td>
+      </tr>
+    </table>
+  </ac:visibilityarea>
+  
+  <ac:layoutarea id="ContactTypes">
+    <tr>
+      <td>$$NAME$$:</td>
+      <td>$$VALUELINK$$</td>
+    </tr>
+  </ac:layoutarea>
+  
+  <ac:visibilityarea id="PostsArea">
+    <h3 class="ProfileTableHeader">My Blog Posts</h3>
+    <table class="ProfileTable" id="tblBlogPosts" width="100%">
+      <tr>
+        <th>Blog</th>
+        <th>Post</th>
+        <th>Published</th>
+      </tr>
+      $$BLOGPOSTLIST$$
+    </table>
+  </ac:visibilityarea>
+  
+  <ac:layoutarea id="BlogPosts">
+    <tr><td>$$BLOGLINK$$</td><td>$$TITLELINK$$</td><td>$$PUBDATE$$</td></tr>
+  </ac:layoutarea>
+  
+  <ac:visibilityarea id="CommentsArea">
+    <h3 class="ProfileTableHeader">My Blog Comments</h3>
+    <table class="ProfileTable" id="tblBlogComments" width="100%">
+      <tr>
+        <th>Blog</th>
+        <th>Post Title</th>
+        <th>Comment Posted</th>
+      </tr>
+      $$BLOGCOMMENTS$$
+    </table>
+  </ac:visibilityarea>
+  
+  <ac:layoutarea id="BlogComments">
+    <tr><td>$$BLOGLINK$$</td><td>$$POSTLINK$$</td><td>$$COMMENTLINK$$</td></tr>
+  </ac:layoutarea>
+  
+  <ac:visibilityarea id="ReviewsArea">
+    <h3 class="ProfileTableHeader">My Reviews</h3>
+    <table class="ProfileTable" id="tblReviews" width="100%">
+      <tr>
+        <th>Product</th>
+        <th>Title</th>
+        <th>Rating</th>
+      </tr>
+      $$REVIEWLIST$$
+    </table>
+  </ac:visibilityarea>
+  
+  <ac:layoutarea id="Reviews">
+    <tr><td>$$PRODUCTLINK$$</td><td>$$REVIEWLINK$$</td><td>$$RATING$$</td></tr>
+  </ac:layoutarea>
+  
+  <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+</ac:pagelayout>

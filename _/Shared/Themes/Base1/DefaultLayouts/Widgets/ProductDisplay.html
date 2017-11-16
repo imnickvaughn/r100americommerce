@@ -1,0 +1,54 @@
+
+  <ac:visibilityarea id="dvControl">
+    $$ADMINHELP$$
+    
+    <div class="pad-20 pad-b-only">
+      <div class="pad-b-10"><h3>$$HEADER$$</h3></div>
+      <div class="">
+        <ac:layoutarea id="Layout">
+          $$GROUP$$
+        </ac:layoutarea>
+        <ac:layoutarea id="Group">
+          <div class="row"> $$ITEM$$</div>
+        </ac:layoutarea>
+        <ac:layoutarea id="Item">
+          <div class="##PRODUCTCOLUMNCSSCLASS[1=col-xs-12,2=col-xs-12 col-sm-6,3=col-xs-6 col-md-4,4=col-xs-12 col-sm-6 col-md-3,6=col-sm-2]## homepage-product ">
+            <ac:visibilityarea id="dvControlItem">    
+              <a href="##ITEMURL##" class="thumbnail rel no-overflow">
+                <ac:if setting="Show Product Quickview on Homepage"> 
+                  <button class="btn btn-default quick-view abs" data-href="##ITEMURL##?previewlayoutname=Product%20Quick%20View" data-title="##ITEMNAME## - ##ITEMNR##">Quick View</button>
+                </ac:if>
+                <ac:visibilityarea id="Featured">
+                  <div class="abs product-flag left top featured"><span>Featured!</span></div>
+                </ac:visibilityarea>
+                <ac:visibilityarea id="Spotlight">
+                  <div class="abs product-flag left bottom spotlight"><span>Spotlight!</span></div>
+                </ac:visibilityarea>
+                <ac:visibilityarea id="Flag1">
+                  <div class="abs product-flag right top flag1"><span>New!</span></div>
+                </ac:visibilityarea>
+                <ac:visibilityarea id="Flag2">
+                  <div class="abs product-flag right bottom flag2"><span>Hot!</span></div>
+                </ac:visibilityarea>
+                <ac:visibilityarea id="Flag3">
+                  <div class="abs product-flag right bottom flag3"><span>Sale!</span></div>
+                </ac:visibilityarea>
+                $$PHOTO$$
+              </a>
+              <div class="caption center">
+                <p><a class="h5 color-inherit" href="##ITEMURL##">##PRODUCTNAME##</a></p>
+                <p class="text-muted">$$PRICE$$</p>
+              </div>
+              <!--
+<p class="hidden-xs center">
+<a class="btn btn-primary" href="##ADDTOCARTURL##">Buy</a>
+<a class="btn btn-default" href="##ITEMURL##">View</a>
+</p>
+-->
+            </ac:visibilityarea>
+          </div>
+        </ac:layoutarea>
+      </div>
+    </div>
+    
+  </ac:visibilityarea>

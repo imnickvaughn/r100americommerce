@@ -1,0 +1,103 @@
+<ac:templateoverridearea id="HeaderAddonArea">
+  <ac:widgetarea id="HomePageHeaderWidgets">
+<ac:widget id="HTML119" type="HTML">
+      <div style="margin:40px 0 0 10px;">
+        <a href="/">Shop all watches now <img src="/shared/themes/Element/images/greenarrow.png" alt="now"></a>
+        <a href="/">Shop all accessories now <img src="/shared/themes/Element/images/greenarrow.png" alt="now"></a>
+        <a href="/">Shop our top picks now <img src="/shared/themes/Element/images/greenarrow.png" alt="now"></a>
+      </div>
+    </ac:widget>
+<ac:widget id="SLIDESHOW120" type="Slideshow" slideheight="268px" slidewidth="918px" pause="6000">
+      <ul>
+        <li id='slide_1'>
+          <a href='' class='predefined_slide_item' target=''>
+            <img alt='' src='/shared/themes/Element/images/banner1.png'>
+          </a>
+        </li>
+        <li id='slide_2'>
+          <a href='' class='predefined_slide_item' target=''>
+            <img alt='' src='/shared/themes/Element/images/banner2.png'>
+          </a>
+        </li>
+        <li id='slide_3'>
+          <a href='' class='predefined_slide_item' target=''>
+            <img alt='' src='/shared/themes/Element/images/banner3.png'>
+          </a>
+        </li>
+      </ul>
+    </ac:widget>
+</ac:widgetarea>
+  <style>
+    .LayoutMiddle { top:-80px }
+  </style>
+</ac:templateoverridearea>
+<ac:templateoverridearea id="PageHeadTags">
+  <link rel="canonical" href="http://##DOMAINNAME##/">
+</ac:templateoverridearea>
+<ac:pagelayout id="DefaultPage">
+  <ac:widgetarea id="Top">
+<ac:widget id="HTML122" type="HTML">
+      <h1>Home Page SEO</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id justo tortor, pharetra fermentum risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec sit amet est vehicula tellus lobortis consectetur. Sed in dui tortor, vitae ullamcorper ligula. Nullam ac ultrices urna. Suspendisse potenti. Integer tempor venenatis iaculis. Etiam eget mauris ipsum, vitae euismod lorem. Phasellus posuere consequat felis, quis varius velit bibendum a. Morbi eleifend, libero nec sagittis semper, orci tellus porttitor lorem, ac sodales sem augue et augue.</p>
+    </ac:widget>
+<ac:widget id="PRODUCTDISPLAY123" type="ProductDisplay" repeatcount="3" repeatabletype="NewItems" productpicturewidth="150" displaycount="6" productpictureheight="130"><ac:visibilityarea id="dvControl">
+      $$HEADER$$
+      $$ADMINHELP$$
+      <ac:layoutarea id="Item">
+        <ac:visibilityarea id="dvControlItem">      
+          <div class="FeaturedItemsItem">
+            <div class="FeaturedItemsThumbnail">$$PHOTOWITHLINK$$</div>
+            <div class="FeaturedItemsPriceTab">
+              <div class="FeaturedItemsName">$$PRODUCTNAME$$</div>
+              <div class="FeaturedItemsPrice">$$PRICE$$</div>
+            </div>
+          </div>
+        </ac:visibilityarea>
+      </ac:layoutarea>
+      </ac:visibilityarea></ac:widget>
+<ac:widget id="PRODUCTDISPLAY124" type="ProductDisplay" repeatcount="3" repeatabletype="FeaturedItems" productpicturewidth="150" displaycount="6" productpictureheight="130"><ac:visibilityarea id="dvControl">
+      $$HEADER$$
+      $$ADMINHELP$$
+      <ac:layoutarea id="Item">
+        <ac:visibilityarea id="dvControlItem">      
+          <div class="FeaturedItemsItem">
+            <div class="FeaturedItemsThumbnail">$$PHOTOWITHLINK$$</div>
+            <div class="FeaturedItemsPriceTab">
+              <div class="FeaturedItemsName">$$PRODUCTNAME$$</div>
+              <div class="FeaturedItemsPrice">$$PRICE$$</div>
+            </div>
+          </div>
+        </ac:visibilityarea>
+      </ac:layoutarea>
+      </ac:visibilityarea></ac:widget>
+<ac:widget id="CAROUSEL125" type="Carousel" nextbuttonimage="/Shared/Themes/Element/images/right.jpg" nextdisabledbuttonimage="/Shared/Themes/Element/images/rightoff.jpg" prevdisabledbuttonimage="/Shared/Themes/Element/images/leftoff.jpg" prevbuttonimage="/Shared/Themes/Element/images/left.jpg" repeatcount="2" repeatabletype="HotSellers" rotatorstartdate="9/7/2011" productpicturewidth="125" displaycount="8" productpictureheight="125"><ac:visibilityarea id="dvControl">
+      $$HEADER$$
+      <ac:layoutarea id="Item">
+        <ac:visibilityarea id="dvControlItem">
+          <div class="CarouselProductName">
+            $$PRODUCTNAME$$
+          </div>
+          <div class="CarouselThumbnail">
+            $$PHOTOWITHLINK$$
+          </div>
+          <div class="CarouselPrice">
+            $$PRICE$$
+          </div>
+        </ac:visibilityarea>
+      </ac:layoutarea>
+      </ac:visibilityarea>
+    </ac:widget>
+</ac:widgetarea>
+  $$HOMEPAGECONTENT$$
+  <ac:widgetarea id="Bottom">
+<ac:widget id="REPEATEDLIST127" type="RepeatedList" repeatabletype="BrowseByCategory" rotatorstartdate="1/1/1900" rotatorenddate="1/1/1900" rootcategorybehavior="-999">
+      <h3>Featured Categories</h3>
+      <ul class="FeaturedCats">
+        <ac:layoutarea id="Item">
+          <li><a href="##CATURL##">##CATNAME##</a></li>
+        </ac:layoutarea>
+      </ul>
+      
+    </ac:widget>
+</ac:widgetarea>
+</ac:pagelayout>

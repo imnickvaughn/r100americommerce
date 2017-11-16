@@ -1,0 +1,153 @@
+<ac:pagelayout id="FooterPage"> 
+  <hr class="pad-20 no-pad-lr no-pad-b">
+  <div class="m-20 no-m-lr">  
+    <div class="row footer-row">
+      <div class="col-md-3 footer-column">
+        <ac:widgetarea id="FooterWidgetsColumn1">
+<ac:widget id="HTML2435" type="HTML">
+            <div class="h4 m-20 no-m-lr">Contact Us</div>
+            <ac:if setting="Show Phone Number in Footer">
+              <p>
+                <abbr title="Phone Number">P:</abbr> ##STOREPHONE##
+              </p>
+            </ac:if>
+            <ac:if setting="Show Email Address in Footer">
+              <p>
+                <abbr title="Email Address">E:</abbr> <a href="mailto:##STOREEMAIL##">##STOREEMAIL##</a>
+              </p>
+            </ac:if>
+            <ac:if setting="Show Address in Footer">
+              <p>
+                <span class="block">##STOREADDRESSLINE1##</span>
+                <span class="block">##STOREADDRESSLINE2##</span>
+                <span class="block">##STOREADDRESSCITY##, ##STOREADDRESSSTATE## ##STOREADDRESSPOSTALCODE##</span>
+              </p>
+            </ac:if>
+          </ac:widget>
+</ac:widgetarea>
+      </div>
+      <!-- /Column -->
+      
+      <div class="col-md-3 footer-column">
+        <ac:widgetarea id="FooterWidgetsColumn2">
+<ac:widget id="HTML2437" type="HTML">
+            <div class="left">
+              <div class=" h4 m-20 no-m-lr">Get to know us!</div>
+              <ac:if setting="Show Facebook Icon">
+                <a class="pad-10 color-inherit no-ul big" href="##SETTING[Facebook Page URL, text]##" target="_blank"><i class="icon-facebook"></i>
+                  <div class="d-none">
+                    Facebook
+                  </div>
+                </a>
+              </ac:if>
+              <ac:if setting="Show Twitter Icon">
+                <a class="pad-10 color-inherit no-ul big" href="##SETTING[Twitter Page URL, text]##" target="_blank">
+                  <i class="icon-twitter"></i>
+                  <div class="d-none">
+                    Twitter
+                  </div>
+                </a>
+              </ac:if>
+              <ac:if setting="Show Youtube Icon">
+                <a class="pad-10 color-inherit no-ul big" href="##SETTING[Youtube Page URL, text]##" target="_blank">
+                  <i class="icon-youtube"></i>
+                  <div class="d-none">
+                    Youtube
+                  </div>
+                </a>
+              </ac:if>
+              <ac:if setting="Show Google+ Icon">
+                <a class="pad-10 color-inherit no-ul big" href="##SETTING[Google Plus Page URL, text]##" target="_blank">
+                  <i class="icon-google-plus"></i>
+                  <div class="d-none">
+                    Google+
+                  </div>
+                </a>
+              </ac:if>
+              <ac:if setting="Show Tumblr Icon">
+                <a class="pad-10 color-inherit no-ul big" href="##SETTING[Tumblr Page URL, text]##" target="_blank">
+                  <i class="icon-tumblr"></i>
+                  <div class="d-none">
+                    Tumblr
+                  </div>
+                </a>
+              </ac:if>
+              <ac:if setting="Show Instagram Icon">
+                <a class="pad-10 color-inherit no-ul big" href="##SETTING[Instagram Page URL, text]##" target="_blank">
+                  <i class="icon-instagram"></i>
+                  <div class="d-none">
+                    Instagram
+                  </div>
+                </a>
+              </ac:if>
+            </div>
+          </ac:widget>
+</ac:widgetarea>
+      </div>
+      <!-- /Column -->
+      
+      <div class="col-md-3 footer-column">
+        <ac:widgetarea id="FooterWidgetsColumn3">
+<ac:widget id="HTML2439" type="HTML">
+            <ac:if setting="Show Accepted Cards in Footer">
+              <div class="left">
+                <div class="h4 m-20 no-m-lr">We Accept</div>
+                ##ACCEPTEDCREDITCARDLOGOS##
+              </div>
+            </ac:if>
+          </ac:widget>
+</ac:widgetarea>
+      </div>
+      <!-- /Column -->
+      
+      <!-- /Column -->
+      
+      <div class="col-md-3 footer-column">
+        <ac:widgetarea id="FooterWidgetsColumn4">
+<ac:widget id="MAILINGLIST2443" type="MailingList">
+            <ac:visibilityarea id="dvControl">
+              <div class="h4 m-20 no-m-lr"> $$HEADER$$
+              </div>
+              <div>
+                <div>$$EMAIL$$   $$GOBUTTON$$ </div>
+              </div>
+              
+              
+              $$RESULT$$
+            </ac:visibilityarea>
+          </ac:widget>
+</ac:widgetarea>
+      </div>
+      <!-- /Column -->
+    </div>
+    <div class="footer-bottom">
+      <ac:widgetarea id="Bottom">
+<ac:widget id="HTML2441" type="HTML">
+          <p class="center pad-20 no-pad-b no-margin clear">
+            &copy; ##CURRENTDATE[yyyy]## ##STORENAME##
+          </p>
+        </ac:widget>
+</ac:widgetarea>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <!-- This is used in various places of the site. 
+figured it'd be good idea to put it in the footer -->
+  <div class="modal fade" id="iframe-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body rel">
+          <div class="progress progress-striped active abs">
+            <div class="progress-bar w-100"></div>
+          </div>
+          <iframe class="rel" id="modal-iframe" name="modalIframe" width="100%" height="800" style="border:none;" frameborder="0" seamless=""></iframe>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</ac:pagelayout>

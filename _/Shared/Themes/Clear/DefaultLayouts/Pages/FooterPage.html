@@ -1,0 +1,144 @@
+<ac:pagelayout id="FooterPage"> 
+  <div class="nav-footer-wrapper">
+    <div class="row">
+      <div class="col-fifth">
+        <div class="nav-footer">
+          <ac:widgetarea id="FooterNavOne"><ac:widget id="MENULIST39362" type="MenuList" linkgroupid="51">
+            <ac:visibilityarea id="dvControl">
+              $$ADMINHELP$$
+
+              <h5>$$HEADER$$</h5>
+              <ul>
+                <ac:layoutarea id="Item">
+                  <li>
+                    <a href="$$HREF$$" target="$$TARGET$$">$$TEXT$$</a>
+                  </li>
+                </ac:layoutarea>
+              </ul>
+            </ac:visibilityarea>
+            </ac:widget>
+</ac:widgetarea>
+        </div>
+      </div>
+      <div class="col-fifth">
+        <div class="nav-footer">
+          <ac:widgetarea id="FooterNavTwo"><ac:widget id="MENULIST39363" type="MenuList" linkgroupid="85">
+            <ac:visibilityarea id="dvControl">
+              $$ADMINHELP$$
+
+              <h5>$$HEADER$$</h5>
+              <ul>
+                <ac:layoutarea id="Item">
+                  <li>
+                    <a href="$$HREF$$" target="$$TARGET$$">$$TEXT$$</a>
+                  </li>
+                </ac:layoutarea>
+              </ul>
+            </ac:visibilityarea>
+            </ac:widget>
+</ac:widgetarea>
+        </div>
+      </div>
+      <div class="col-fifth">
+        <div class="nav-footer">
+          <ac:widgetarea id="FooterNavThree"><ac:widget id="MENULIST39364" type="MenuList" linkgroupid="85">
+            <ac:visibilityarea id="dvControl">
+              $$ADMINHELP$$
+
+              <h5>$$HEADER$$</h5>
+              <ul>
+                <ac:layoutarea id="Item">
+                  <li>
+                    <a href="$$HREF$$" target="$$TARGET$$">$$TEXT$$</a>
+                  </li>
+                </ac:layoutarea>
+              </ul>
+            </ac:visibilityarea>
+            </ac:widget>
+</ac:widgetarea>
+        </div>
+      </div>
+      <div class="col-fifth">
+        <div class="nav-footer">
+          <ac:widgetarea id="FooterNavFour"><ac:widget id="MENULIST39365" type="MenuList" linkgroupid="51">
+            <ac:visibilityarea id="dvControl">
+              $$ADMINHELP$$
+
+              <h5>$$HEADER$$</h5>
+              <ul>
+                <ac:layoutarea id="Item">
+                  <li>
+                    <a href="$$HREF$$" target="$$TARGET$$">$$TEXT$$</a>
+                  </li>
+                </ac:layoutarea>
+              </ul>
+            </ac:visibilityarea>
+            </ac:widget>
+</ac:widgetarea>
+        </div>
+      </div>
+      <div class="col-fifth">
+        <div class="nav-footer">
+          <h5>Social</h5>
+          <ul>
+            <li>
+              <ac:if setting="Show Facebook Icon">
+                <a href="##SETTING[Facebook Page URL, text]##" target="_blank"><span class="icon-wrapper"><i class="icon-facebook"></i></span> Facebook</a>
+              </ac:if>
+            </li>
+            <li>
+              <ac:if setting="Show Twitter Icon">
+                <a href="##SETTING[Twitter Page URL, text]##" target="_blank"><span class="icon-wrapper"><i class="icon-twitter"></i></span> Twitter</a>
+              </ac:if>
+            </li>
+            <li>
+              <ac:if setting="Show Youtube Icon">
+                <a href="##SETTING[Youtube Page URL, text]##" target="_blank"><span class="icon-wrapper"><i class="icon-youtube"></i></span> Youtube</a>
+              </ac:if>
+            </li>
+            <li>
+              <ac:if setting="Show Google+ Icon">
+                <a href="##SETTING[Google Plus Page URL, text]##" target="_blank"><span class="icon-wrapper"><i class="icon-google-plus"></i></span> Google+</a>
+              </ac:if>
+            </li>
+            <li>
+              <ac:if setting="Show Tumblr Icon">
+                <a href="##SETTING[Tumblr Page URL, text]##" target="_blank"><span class="icon-wrapper"><i class="icon-tumblr"></i></span> Tumblr</a>
+              </ac:if>
+            </li>
+            <li>
+              <ac:if setting="Show Instagram Icon">
+                <a href="##SETTING[Instagram Page URL, text]##" target="_blank"><span class="icon-wrapper"><i class="icon-instagram"></i></span> Instagram</a>
+              </ac:if>
+            </li>
+            <li>
+              <ac:if setting="Show Pinterest Icon">
+                <a href="##SETTING[Pinterest Page URL, text]##" target="_blank"><span class="icon-wrapper"><i class="icon-pinterest"></i></span> Pinterest</a>
+              </ac:if>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <!-- This is used in various places of the site. 
+figured it'd be good idea to put it in the footer -->
+  <div class="modal fade" id="iframe-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body rel">
+          <div class="progress progress-striped active abs">
+            <div class="progress-bar w-100"></div>
+          </div>
+          <iframe class="rel" id="modal-iframe" name="modalIframe" width="100%" height="800" style="border:none;" frameborder="0" seamless=""></iframe>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</ac:pagelayout>

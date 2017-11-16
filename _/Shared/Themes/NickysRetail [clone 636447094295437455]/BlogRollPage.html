@@ -1,0 +1,112 @@
+<ac:pagelayout id="BlogRollPage" pagesize="4" commentsprofilepicwidth="35" commentsprofilepicheight="35" pagingtype="NumberedPageLinks" numberofcommentsperpost="2" pagelinksstartandendcount="4" showcomments="True" pagelinksshown="7">
+  <ac:widgetarea id="Top">
+</ac:widgetarea>
+  
+  <div class="BlogRollFeedLinks">$$ATOMFEEDLINK$$ $$RSSFEEDLINK$$</div>
+  <h1 class="BlogRollBlogName">##BLOGNAME##</h1>
+  <div class="BlogRollBlogImage">$$BLOGIMAGE$$</div>
+  <div class="BlogRollBlogTagline">##BLOGTAGLINE##</div>
+  <div class="BlogRollBlogDescription">##BLOGDESCRIPTION##</div>
+  <div style="clear:both;"></div>
+  
+  <ac:layoutarea id="BlogPostLayout">
+    <div class="BlogRoll">$$GROUP$$</div>
+  </ac:layoutarea>
+  <ac:layoutarea id="BlogPostGroup">
+    <article class="BlogPost">
+      $$POST$$
+    </article>
+  </ac:layoutarea>
+  <ac:layoutarea id="BlogPost">     
+    <h1 class="BlogPostTitle"><a href="##BLOGPOSTURL##">$$TITLE$$</a></h1>
+    <div class="BlogPostPostedOnBy">by $$AUTHORLINK$$ on $$POSTDATETIME$$</div>
+    <div class="BlogPostCommentCount"><a href="##BLOGPOSTURL###BlogPostComments">$$COMMENTCOUNTANCHORLINK$$</a></div>
+    <div class="BlogPostAddCommentLink">$$ADDACOMMENTANCHORLINK$$</div>
+    <div class="BlogPostImage">$$TEASERIMAGE$$</div>
+    <div class="BlogPostTeaserTitle"><strong>$$TEASERTITLE$$</strong></div>
+    <div class="BlogPostTeaserDesc">
+      <p>
+        $$TEASERDESCRIPTION$$
+      </p>
+    </div>
+
+    <div class="BlogPostCategoryAndTags">
+      $$POSTCATEGORIESLABEL$$ $$POSTCATEGORIES$$.
+      $$POSTTAGS$$
+    </div>
+    <div style="clear:both;"></div>
+    <div class="BlogPostComments $$HIDECOMMENTS$$">
+      <div class="BlogPostCommentsHeader">
+        $$COMMENTSHEADER$$
+        <div>$$COMMENTLINK$$</div>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+    <div class="BlogPostCommentsBody $$HIDECOMMENTS$$">
+      $$COMMENTMODERATIONMESSAGE$$
+      $$COMMENTS$$
+      
+      <div class="BlogPostCommentsAdd BlogPostComment" style="clear:both;">
+        $$ADDACOMMENTHEADER$$ <br>
+        <div class="BlogPostCommentProfileImage">
+          $$POSTNEWCOMMENTPROFILEIMAGE$$
+        </div>
+        <div class="BlogPostCommentDisplayName">
+          <div>$$DISPLAYNAMETEXT$$</div>
+          $$DISPLAYNAMETEXTBOX$$
+        </div>
+        $$POSTNEWCOMMENTPROFILENAME$$
+        <div>$$POSTAS$$ $$POSTASDROPDOWN$$</div>
+        $$NEWCOMMENTTEXT$$
+        <div>$$POSTCOMMENTBUTTON$$</div>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+    
+  </ac:layoutarea>
+  <ac:layoutarea id="BlogPostComment">
+    <div class="BlogPostComment $$ADMINCOMMENTCSSCLASS$$ $$AUTHORCOMMENTCSSCLASS$$">
+      $$COMMENTANCHOR$$
+      <div class="BlogPostCommentText">
+        <div class="BlogPostCommentNameDate">
+          $$PROFILENAME$$
+          <span class="AdminCommentLabel $$ADMINCOMMENTCSSCLASS$$">$$ADMINCOMMENTLABEL$$</span>
+          <span class="AuthorCommentLabel $$AUTHORCOMMENTCSSCLASS$$">$$AUTHORCOMMENTLABEL$$</span>
+          on $$COMMENTDATE$$ said:
+        </div>
+        <div>$$COMMENTTEXT$$</div>
+        $$VIEWCOMMENTLINK$$
+      </div>
+      
+    </div>
+    <div style="clear:both;"></div>
+  </ac:layoutarea>
+  
+  <ac:layoutarea id="BlogPostCommentAlt">
+    <div class="BlogPostComment BlogPostCommentAlt $$ADMINCOMMENTCSSCLASS$$ $$AUTHORCOMMENTCSSCLASS$$">
+      $$COMMENTANCHOR$$
+      <div class="BlogPostCommentText">
+        <div class="BlogPostCommentNameDate">
+          $$PROFILENAME$$
+          <span class="AdminCommentLabel $$ADMINCOMMENTCSSCLASS$$">$$ADMINCOMMENTLABEL$$</span>
+          <span class="AuthorCommentLabel $$AUTHORCOMMENTCSSCLASS$$">$$AUTHORCOMMENTLABEL$$</span>
+          on $$COMMENTDATE$$ said:
+        </div>
+        <div>$$COMMENTTEXT$$ </div>
+        $$VIEWCOMMENTLINK$$
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+  </ac:layoutarea>
+  
+  <ac:layoutarea id="BlogCommentFooter">
+    <div class="BlogPostCommentFooter" style="clear:both;">
+      $$COMMENTPAGING$$
+    </div>
+  </ac:layoutarea>
+  
+  $$BLOGROLLPAGING$$
+  
+  <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+</ac:pagelayout>

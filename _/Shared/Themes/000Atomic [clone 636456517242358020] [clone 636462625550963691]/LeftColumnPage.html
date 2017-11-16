@@ -1,0 +1,236 @@
+<ac:pagelayout id="LeftColumnPage">
+  <div class="navbar-header navbar-header-leftcol  visible-xs">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".left-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">Left Menu</a>
+  </div>
+  <div class="navbar-collapse left-collapse collapse">
+    
+    <ac:widgetarea id="Top"><ac:widget id="CATEGORYNAVIGATIONLINKS7212" type="CategoryNavigationLinks" rootcategorybehavior="-999" headertext="Categories">
+        <ac:visibilityarea id="dvControl">
+          <div class="well no-pad">
+            <div class="left-head"><strong>$$HEADER$$</strong></div>
+            <ul class="nav nav-stacked  pad-t-10 pad-b-10 nav-pills">
+              <ac:layoutarea id="Item">
+                <li><a class="category-link" href="$$CATEGORYHREF$$">
+                  $$CATEGORYICON$$
+                  $$CATEGORYNAME$$
+                  </a>
+                </li>
+              </ac:layoutarea>
+            </ul>
+          </div>
+        </ac:visibilityarea>
+      </ac:widget>
+<ac:widget id="MANUFACTURERNAVIGATIONLINKS7213" type="ManufacturerNavigationLinks" headertext="Brands">
+        <ac:visibilityarea id="dvControl">
+          <div class="well no-pad">
+            <div class="left-head"><strong>$$HEADER$$</strong></div>
+            <ul class="nav pad-t-10 pad-b-10 nav-stacked nav-pills">
+              <ac:layoutarea id="Item">
+                <li>
+                  <a href="$$MFGHREF$$" class="$$CLASS$$ category-link">$$MFGNAME$$</a>
+                </li>
+              </ac:layoutarea>
+            </ul>
+          </div>
+        </ac:visibilityarea>
+      </ac:widget>
+<ac:widget id="ATTRIBUTENAVIGATIONLINKS7214" type="AttributeNavigationLinks" headertext="Attributes">
+        
+        <ac:visibilityarea id="dvControl">
+          <div class="well no-pad">
+            <div class="left-head"><strong>$$HEADER$$</strong></div>
+            <ul class="nav nav-stacked pad-t-10 pad-b-10 nav-pills">
+              <ac:layoutarea id="Item">
+                <ac:visibilityarea id="phHeader">
+                  <li>$$GROUPHEADER$$</li>
+                </ac:visibilityarea>
+                
+                <li>
+                  <ac:visibilityarea id="ckAtt">
+                    <label class="checkbox" for="$$CHECKBOXID$$">
+                      $$CHECKBOX$$ $$ATTRIBUTENAME$$
+                    </label>
+                  </ac:visibilityarea>
+                  <ac:visibilityarea id="hplAttribute">
+                    <a class="attribute-link" href="$$ATTRIBUTEHREF$$">$$ATTRIBUTENAME$$<span class="badge pull-right">$$COUNT$$</span></a>
+                  </ac:visibilityarea>
+                </li>
+                
+                <ac:visibilityarea id="phFooter">
+                  <li>$$FILTERBUTTON$$</li>
+                </ac:visibilityarea>
+              </ac:layoutarea>
+            </ul>
+          </div>
+        </ac:visibilityarea>
+        
+      </ac:widget>
+<ac:widget id="BILLMELATERBANNER7215" type="BillMeLaterBanner" bannertype="BillMeLater" billmelaterbannersize="190x100">
+        
+      </ac:widget>
+</ac:widgetarea>
+    <ac:widgetarea id="Bottom"><ac:widget id="PRODUCTDISPLAY7217" type="ProductDisplay" featureditemsbuymorelink="False" displaybycategoryonly="False" featureditemsdisplaythumbonseparateline="False" repeatcount="1" repeatabletype="CategoryProductList" displaycount="3" headertext="Recently Viewed" categoryid="35">
+        
+        <ac:visibilityarea id="dvControl">
+          $$ADMINHELP$$
+          <div class="well no-pad">
+            <div class="row">
+              <div class="col-xs-12">
+                <div>$$HEADER$$</div>
+              </div>
+            </div>
+            <div class="pad-t-10 pad-b-10">
+              
+              <ac:layoutarea id="Layout">
+                $$GROUP$$
+              </ac:layoutarea>
+              <ac:layoutarea id="Group">
+                <div> $$ITEM$$</div>
+              </ac:layoutarea>
+              
+              
+              <ac:layoutarea id="Item">
+                <div class="col-xs-12 col-sm-4 col-md-12 homepage-product">
+                  <ac:visibilityarea id="dvControlItem"> 
+                    <div class="row">
+                      <div class="col-xs-4 no-pad">
+                        <a href="##ITEMURL##" class="thumbnail rel no-overflow">
+                          <button class="btn btn-default quick-view abs" data-href="##ITEMURL##?previewlayoutname=Product%20Quick%20View" data-title="##ITEMNAME##">Quick View</button>
+                          
+                          $$PHOTO$$
+                        </a>
+                      </div>
+                      <div class="caption col-xs-8 pad-l-5">
+                        <a href="##ITEMURL##">##PRODUCTNAME##</a>
+                        <p class="text-muted">$$PRICE$$</p>
+                      </div>
+                    </div>
+                    <!--
+<p class="hidden-xs center">
+<a class="btn btn-primary" href="##ADDTOCARTURL##">Buy</a>
+<a class="btn btn-default" href="##ITEMURL##">View</a>
+</p>
+-->
+                  </ac:visibilityarea>
+                </div>
+              </ac:layoutarea>
+            </div>
+          </div>
+          
+        </ac:visibilityarea>
+        
+      </ac:widget>
+<ac:widget id="PRODUCTDISPLAY7218" type="ProductDisplay" featureditemsbuymorelink="False" displaybycategoryonly="False" featureditemsdisplaythumbonseparateline="False" repeatcount="1" repeatabletype="CategoryProductList" displaycount="3" headertext="Great Deals" categoryid="8">
+        
+        <ac:visibilityarea id="dvControl">
+          $$ADMINHELP$$
+          
+          <div class="well no-pad">
+            <div class="row">
+              <div class="col-xs-12">
+                <div>$$HEADER$$</div>
+              </div>
+            </div>
+            <div class="pad-b-10 pad-t-10">
+              
+              <ac:layoutarea id="Layout">
+                $$GROUP$$
+              </ac:layoutarea>
+              <ac:layoutarea id="Group">
+                <div> $$ITEM$$</div>
+              </ac:layoutarea>
+              
+              
+              <ac:layoutarea id="Item">
+                <div class="col-xs-12 col-sm-4 col-md-12 homepage-product">
+                  <ac:visibilityarea id="dvControlItem"> 
+                    <div class="row">
+                      <div class="col-xs-4 no-pad">
+                        <a href="##ITEMURL##" class="thumbnail rel no-overflow">
+                          <button class="btn btn-default quick-view abs" data-href="##ITEMURL##?previewlayoutname=Product%20Quick%20View" data-title="##ITEMNAME##">Quick View</button>
+                          
+                          $$PHOTO$$
+                        </a>
+                      </div>
+                      <div class="caption col-xs-8 pad-l-5">
+                        <a href="##ITEMURL##">##PRODUCTNAME##</a>
+                        <p class="text-muted">$$PRICE$$</p>
+                      </div>
+                    </div>
+                    <!--
+<p class="hidden-xs center">
+<a class="btn btn-primary" href="##ADDTOCARTURL##">Buy</a>
+<a class="btn btn-default" href="##ITEMURL##">View</a>
+</p>
+-->
+                  </ac:visibilityarea>
+                </div>
+              </ac:layoutarea>
+            </div>
+          </div>
+          
+        </ac:visibilityarea>
+        
+      </ac:widget>
+<ac:widget id="PRODUCTDISPLAY7219" type="ProductDisplay" featureditemsbuymorelink="False" displaybycategoryonly="False" featureditemsdisplaythumbonseparateline="False" repeatcount="1" repeatabletype="FeaturedItems" displaycount="3" headertext="Specials" categoryid="35">
+        
+        <ac:visibilityarea id="dvControl">
+          $$ADMINHELP$$
+          
+          <div class="well no-pad">
+            <div class="row">
+              <div class="col-xs-12">
+                <div>$$HEADER$$</div>
+              </div>
+            </div>
+            <div class="pad-b-10 pad-t-10">
+              <div class="row">
+                
+                <ac:layoutarea id="Layout">
+                  $$GROUP$$
+                </ac:layoutarea>
+                <ac:layoutarea id="Group">
+                  <div> $$ITEM$$</div>
+                </ac:layoutarea>
+                
+                
+                <ac:layoutarea id="Item">
+                  <div class="col-xs-12 col-sm-4 col-md-12 homepage-product">
+                    <ac:visibilityarea id="dvControlItem"> 
+                      <div class="row">
+                        <div class="col-xs-4 no-pad">
+                          <a href="##ITEMURL##" class="thumbnail rel no-overflow">
+                            <button class="btn btn-default quick-view abs" data-href="##ITEMURL##?previewlayoutname=Product%20Quick%20View" data-title="##ITEMNAME##">Quick View</button>
+                            
+                            $$PHOTO$$
+                          </a>
+                        </div>
+                        <div class="caption col-xs-8 pad-l-5">
+                          <a href="##ITEMURL##">##PRODUCTNAME##</a>
+                          <p class="text-muted">$$PRICE$$</p>
+                        </div>
+                      </div>
+                      <!--
+<p class="hidden-xs center">
+<a class="btn btn-primary" href="##ADDTOCARTURL##">Buy</a>
+<a class="btn btn-default" href="##ITEMURL##">View</a>
+</p>
+-->
+                    </ac:visibilityarea>
+                  </div>
+                </ac:layoutarea>
+              </div>
+            </div>
+          </div>
+          
+        </ac:visibilityarea>
+        
+      </ac:widget>
+</ac:widgetarea>
+  </div>
+</ac:pagelayout>

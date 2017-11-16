@@ -1,0 +1,25 @@
+<!-- Reference the theme's stylesheet -->
+<link rel="stylesheet" type="text/css" href="##FILEPATHVERSIONED[/shared/themes/Element/CSS/style.css]##">
+<style>
+@media all and (max-width:1520px) and (min-width:1410px){
+.pagewidth {position:relative;left:-40px;}
+}
+@media all and (max-width:1410px) and (min-width:1320px){
+.pagewidth {position:relative;left:-90px;}
+}
+@media all and (max-width:1320px) and (min-width:1280px){
+.pagewidth {position:relative;left:-125px;}
+}
+@media all and (max-width:1279px){
+.FloatingSideBar {display:none;}
+}
+</style>
+<script>
+$(function(){
+  $(".LayoutMiddle").css("min-height",$(".FloatingSideBar").height())
+})
+</script>
+<!--[if IE 9]>
+<style>.HorizontalNavItem a {line-height:30px;}</style>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/Shared/css/entity-specific.css">

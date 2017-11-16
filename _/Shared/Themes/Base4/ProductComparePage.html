@@ -1,0 +1,127 @@
+<ac:pagelayout id="ProductComparePage">
+  <table class="table product-compare-table">
+    <thead>
+      <tr>
+        <th></th>
+        <ac:layoutarea id="ProductHeader">
+			  <th style="vertical-align:top;">
+				<div class="center rel pad-10">
+				  <div class="abs remove-link">$$REMOVE$$</div>
+				  <a href="##ITEMURL##">
+					<div><img src="/resize##ITEMPHOTOURL##?bh=125&lr=t"></div>
+					<div>##ITEMNAME##</div>
+				  </a>
+				</div>
+			  </th>
+		  </ac:layoutarea>
+      </tr>
+    </thead>
+    
+    <tbody>
+      
+      <tr>
+        <th>Item Number</th>
+        <ac:layoutarea id="ItemNr">
+			  <td>
+				<div id="lblItemNr_##ITEMID##">##ITEMNR##</div>
+			  </td>
+		  </ac:layoutarea>
+        
+      </tr>
+      
+      <tr>
+        <th>Rating</th>
+        <ac:layoutarea id="Rating">
+			  <td>
+				<div>##REVIEWCOUNT## Review(s)</div>
+				$$RATING$$
+			  </td>
+		  </ac:layoutarea>
+      </tr>
+      
+      <tr>
+        <th>Description</th>
+        <ac:layoutarea id="Description">
+			  <td>##LONGDESCRIPTION1##</td>
+		  </ac:layoutarea>
+      </tr>
+      
+      <tr>
+        <th>Manufacturer</th>
+        <ac:layoutarea id="Manufacturer">
+			  <td>##MFGNAME##</td>
+		  </ac:layoutarea>
+      </tr>
+      
+      <tr>
+        <th>Availability</th>
+        <ac:layoutarea id="Status">
+			  <td>
+				<!--$$AVAILABILITY$$-->
+				<span id="lblProductStatus_##ITEMID##">##PRODUCTSTATUS##</span>
+			  </td>
+		  </ac:layoutarea>
+      </tr>
+      
+      <tr>
+        <th>Retail</th>
+        <ac:layoutarea id="Retail">
+			  <td>
+				<del>##RETAIL##</del>
+			  </td>
+		  </ac:layoutarea>
+      </tr>
+      
+      <tr>
+        <th>Price</th>
+        <ac:layoutarea id="Price">
+			  <td>
+				<span id="lblPrice_##ITEMID##">##PRICE##</span>
+			  </td>
+		  </ac:layoutarea>
+      </tr>
+      
+      <ac:visibilityarea id="Attributes">
+        
+        <tr><th colspan="$$PRODUCTCOUNTPLUS1$$"></th></tr>
+        <tr>
+          <th colspan="$$PRODUCTCOUNTPLUS1$$">
+            <div class="center">Product Attributes</div>
+          </th>
+        </tr>
+        <tr><th colspan="$$PRODUCTCOUNTPLUS1$$"></th></tr>
+        
+        <ac:layoutarea id="AttributeGroup">
+			  <tr>
+				<th>$$GROUPNAME$$</th>
+				<!--[ac] repeats the "Attribute" layoutarea -->
+				$$ATTRIBUTELIST$$
+			  </tr>
+		  </ac:layoutarea>
+        <ac:layoutarea id="Attribute">
+			  <td>
+				$$ATTRIBUTE$$
+			  </td>
+		  </ac:layoutarea>
+        
+      </ac:visibilityarea>
+      
+    </tbody>
+    <tfoot>
+      <tr>
+        <th></th>
+        <ac:layoutarea id="AddToCart">
+			  <td style="vertical-align:bottom;">
+				
+				
+				<br>
+				<div class="no-wrap">
+				  $$QTYBOX$$
+				  $$ADDTOCARTBUTTON$$
+				</div>
+			  </td>
+		  </ac:layoutarea>
+      </tr>
+    </tfoot>
+  </table>
+			</ac:pagelayout>

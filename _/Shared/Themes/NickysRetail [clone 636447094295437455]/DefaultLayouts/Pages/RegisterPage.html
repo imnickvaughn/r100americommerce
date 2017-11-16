@@ -1,0 +1,98 @@
+<ac:pagelayout id="RegisterPage">
+  
+  <h1>Registration</h1>
+  <div>Please enter your information below:<br>
+    <span class="Notes">(Note: All required fields are marked with an *)</span></div>
+  <div>$$ERRORTEXT$$</div>
+  <ac:widgetarea id="Top">
+</ac:widgetarea>
+  <table>
+    <tr>
+      <td>
+        $$FIRSTNAMETEXT$$
+      </td>
+      <td>* Last Name:</td>
+    </tr>
+    <tr>
+      <td class="RegisterBox">$$FIRSTNAMETEXTBOX$$</td>
+      <td class="RegisterBox">$$LASTNAMETEXTBOX$$</td>
+    </tr>
+    <tr>
+      <td colspan="2">$$DISPLAYNAMETEXT$$</td>
+    </tr>
+    <tr>
+      <td class="RegisterBox" colspan="2">
+        $$DISPLAYNAMETEXTBOX$$
+        <p style="font-size:10px; padding:0; margin:0;">This is the name that will be shown on your public profile as well as on any blog comments.</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        $$EMAILADDRESSTEXT$$
+      </td>
+    </tr>
+    <tr>
+      <td class="RegisterBox" colspan="2">$$EMAILADDRESSTEXTBOX$$</td>
+    </tr>
+    $$PASSWORDTEXT$$
+    $$PASSWORDSUBHEADER$$
+    $$PASSWORDTEXTBOXES$$
+    $$COMPANYTEXT$$
+    $$COMPANYTEXTBOX$$
+    <tr>
+      <td>
+        $$ADDRESSTEXT1$$
+      </td>
+    </tr>
+    <tr>
+      <td class="RegisterBox">$$ADDRESSTEXTBOX1$$</td>
+    </tr>
+    <tr>
+      <td>Street Address Line 2:</td>
+    </tr>
+    <tr>
+      <td class="RegisterBox">$$ADDRESSTEXTBOX2$$</td>
+    </tr>
+    <tr>
+      <td>* City:</td>
+      <td>$$STATETEXT$$</td>
+    </tr>
+    <tr>
+      <td class="RegisterBox">$$CITYTEXTBOX$$</td>
+      <td class="RegisterBox">
+        $$STATEDROPDOWN$$
+        $$STATETEXTBOX$$
+      </td>
+    </tr>
+    <tr>
+      <td>$$ZIPCODETEXT$$</td>
+      <td>* Country:</td>
+    </tr>
+    <tr>
+      <td class="RegisterBox">$$ZIPCODETEXTBOX$$</td>
+      <td class="RegisterBox">$$COUNTRYDROPDOWN$$</td>
+    </tr>
+    <tr>
+      <td>$$PHONETEXT$$</td>
+      $$FAXTEXT$$
+    </tr>
+    <tr>
+      <td class="RegisterBox">$$PHONETEXTBOX$$</td>
+      $$FAXTEXTBOX$$
+    </tr>
+    $$DONOTREMEMBERME$$
+    <tr>
+      <td colspan="2" class="RegisterBox">$$MAILINGLISTCHECKBOX$$ $$MAILINGLISTLABEL$$</td>
+    </tr>
+  </table>
+  
+  $$CUSTOMFIELDS$$
+  
+  <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+  
+  <br>
+  
+  <div style="TEXT-ALIGN: center">$$REGISTERBUTTON$$</div>
+  
+</ac:pagelayout>

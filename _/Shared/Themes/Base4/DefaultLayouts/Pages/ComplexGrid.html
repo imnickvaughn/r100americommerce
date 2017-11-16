@@ -1,0 +1,118 @@
+<ac:templateoverridearea id="LeftColumn">
+  <ac:widgetarea id="CategoryLeftTop">
+</ac:widgetarea>
+  $$LEFTCOLUMN$$
+  <ac:widgetarea id="CategoryLeftBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:templateoverridearea id="RightColumn">
+  <ac:widgetarea id="CategoryRightTop">
+</ac:widgetarea>
+  $$RIGHTCOLUMN$$
+  <ac:widgetarea id="CategoryRightBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:pagelayout id="CategoryPage" resizeproductthumb="True" productpicwidth="400" productsperrow="5" sizeproportionally="True" layoutstyle="Horizontal" pagingtype="NumberedPageLinks" productpicheight="" displaysortbox="True" pagesize="12">
+  
+  <div class="breadcrumb" itemprop="breadcrumb">$$CATEGORYTRAIL$$</div>
+  <div class="page-header">
+    <h1 class="CategoryCategoryName">$$CATEGORYNAME$$</h1>
+  </div>
+  
+  <ac:widgetarea id="Top">
+</ac:widgetarea>
+  <div>$$CATEGORYHEADER$$</div>
+  $$TOPCATEGORYSPECIFICWIDGETAREA$$
+  $$TOPATTRIBUTESPECIFICWIDGETAREA$$
+  <div>$$CATEGORYIMAGE$$</div>
+  <div>$$EXTERNALCONTENTAREA$$</div>
+  <div style="WIDTH: 100%">
+    <ul class="nav nav-pills clearfix">
+      <ac:layoutarea id="ChildCategoriesList">
+        <li class="CategoryChildCategories">
+          <!--<div class="CategoryCategoryThumbnail">
+$$CATEGORYTHUMBNAIL$$
+</div>-->
+          $$CATEGORYLINK$$
+          <!--<div class="CategoryChildCategoriesShortDesc">
+$$CATEGORYSHORTDESCRIPTION$$
+</div>-->
+        </li>
+      </ac:layoutarea>
+    </ul>
+  </div>
+  <br>
+  <div style="clear:both"></div>
+  <ac:visibilityarea id="TopNavigationArea">
+    <div class="clearfix pad-20 no-pad-lr">
+      <div class="in-block v-mid pad-r-20 pad-t-5">$$PRODUCTCOUNTTOP$$</div>
+      <div class="in-block v-mid pad-r-20">$$SORTBYDROPDOWN$$</div>
+      <div class="in-block v-mid pad-r-20">$$NUMBERPERPAGEDROPDOWNLABEL$$ $$SHOWBYPAGESIZE$$</div>    
+    </div>    
+  </ac:visibilityarea>
+  
+  <ac:layoutarea id="ProductListLayout">
+    <div class="product-list CompGridProduct-list">$$GROUP$$</div>
+  </ac:layoutarea>
+  <ac:layoutarea id="ProductListGroup">
+    <div>$$ITEM$$</div>
+  </ac:layoutarea>
+  <ac:layoutarea id="ProductList">
+    <div class="category-product">
+      <a href="##ITEMURL##" class="thumbnail">
+        <button class="btn btn-default quick-view abs" data-href="##ITEMURL##?previewlayoutname=Product%20Quick%20View">Quick View<span class="hidden product-name">##ITEMNAME## - ##ITEMNR##</span></button>
+        $$THUMBNAIL$$
+        <ac:visibilityarea id="Featured">
+          <div class="abs product-flag left top featured"><span>Featured!</span></div>
+        </ac:visibilityarea>
+        <ac:visibilityarea id="Spotlight">
+          <div class="abs product-flag left bottom spotlight"><span>Spotlight!</span></div>
+        </ac:visibilityarea>
+        <ac:visibilityarea id="Flag1">
+          <div class="abs product-flag right top flag1"><span>New!</span></div>
+        </ac:visibilityarea>
+        <ac:visibilityarea id="Flag2">
+          <div class="abs product-flag right bottom flag2"><span>Hot!</span></div>
+        </ac:visibilityarea>
+        <ac:visibilityarea id="Flag3">
+          <div class="abs product-flag right bottom flag3"><span>Sale!</span></div>
+        </ac:visibilityarea>
+        <div class="caption CompGridCaption center lh-15">
+          <div class="no-m-b">##PRODUCTNAME##</div>
+          <div>
+            <ac:visibilityarea id="ltrPrice">
+              <div class="text-muted in-block">$$PRICE$$</div>
+            </ac:visibilityarea>
+          </div>
+        </div> 
+      </a>
+      
+      
+      
+    </div>
+  </ac:layoutarea>
+  <script>
+    $(function(){
+      $(".CategoryProductQuantityTextbox").qtySpinner()
+    });
+  </script>
+  <ac:visibilityarea id="BottomNavigationArea">
+    <div class="clearfix pad-20 no-pad-lr">
+      <ac:layoutarea id="ProductListPaging">
+        <div class="center">
+          <ul class="pagination">
+            <li>$$PREVIOUS$$</li>
+            $$PAGES$$
+            <li>$$NEXT$$</li>
+          </ul>
+        </div>
+      </ac:layoutarea>   
+    </div>  
+  </ac:visibilityarea>
+  
+  <div>$$CATEGORYFOOTER$$</div>
+  $$BOTTOMATTRIBUTESPECIFICWIDGETAREA$$
+  $$BOTTOMCATEGORYSPECIFICWIDGETAREA$$
+  <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+</ac:pagelayout>

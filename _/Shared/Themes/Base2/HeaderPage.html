@@ -1,0 +1,237 @@
+<ac:pagelayout id="HeaderPage">
+  <div class="LayoutTopTop">
+    <div class="row">
+      <div class="col-sm-6">
+        <ac:widgetarea id="TopLeftHeader">
+<ac:widget id="HTML1890" type="HTML"><div class="no-m-t h1 sm-center"><img src="/images/nickysc.png" unselectable="on"></div><ac:if setting="Show Tagline in Header"><div class="tagline clearfix pad-b-20"><em><span style="font-size: 20px;"><span style="font-size: 24px;"><span style="font-size: 20px;">The One Stop Destination For All Your Organizational Needs</span></span></span></em></div></ac:if></ac:widget>
+</ac:widgetarea>
+      </div>
+      <div class="col-sm-6">
+        <ac:widgetarea id="TopRightHeader">
+<ac:widget id="HTML1892" type="HTML"><ac:if setting="Show Phone Number in Header"><div class="no-m-b right sm-center"><h3><strong></strong></h3><h3><strong><img style="margin: 0px 0px 10px 10px; width: 419px; float: right;" alt="" src="/images/homecc.png" unselectable="on"><br></strong></h3><h3><strong>##STOREPHONE##</strong></h3></div></ac:if><div class="no-m-b right sm-center">
+              <ac:if setting="Show Email Address in Header">
+                <div>E:&nbsp;<a class="inherit no-ul color-inherit" href="mailto:info@rochester100.com">info@rochester100.com</a></div><p>              
+              <ac:if setting="Show Search as Dropdown">
+                <ac:else>
+                  ##SEARCHBOX##
+                </ac:else>
+              </ac:if>
+            </p></ac:if></div></ac:widget>
+<ac:widget id="HTML2277" type="HTML"><p style="text-align: right;"><img style="width: 147px;" src="/New Web Pics/Ver-II-folder.png"></p></ac:widget>
+</ac:widgetarea>
+      </div>
+    </div>
+    <ac:widgetarea id="TopHeaderWidgets">
+<ac:widget id="CUSTOMERLOGIN1887" type="CustomerLogin" enablemergecode="True">
+        <ac:visibilityarea id="LoggedOut">
+          <li>
+            <div class="panel-body no-wrap">
+              $$HEADER$$
+              <ac:visibilityarea id="btnFacebookLogin">
+                $$FACEBOOKLOGINBUTTON$$
+                <div class="pad-10 center">- OR -</div>
+              </ac:visibilityarea>
+              <div class="full-input">
+                <div>
+                  <label>$$USERNAMELABEL$$</label>
+                  <div>$$USERNAMEINPUT$$</div>
+                </div>
+                <div class="m-20 no-m-lr">
+                  <label>$$PASSWORDLABEL$$</label>
+                  <div>$$PASSWORDINPUT$$</div>
+                  <div class="size-small right">
+                    <a href="/store/lostPassword.aspx">Forgot Password?</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="right m-t-10">$$LOGINBUTTON$$</div>
+              </div>
+              <div class="right size-small">
+                or <a href="/store/register.aspx">Register an Account</a>
+              </div>
+              $$ERROR$$
+            </div>
+          </li>
+        </ac:visibilityarea>
+        <ac:visibilityarea id="LoggedIn">
+          <li class="center">##GRAVATARIMAGE[email=##CUSTOMEREMAIL##,size=50,default=dd.jpg]##</li>
+          <li><a href="/store/myaccount.aspx">My Account</a></li>
+          <li><a href="/store/profile.aspx">My Profile</a></li>
+          <li><a href="/store/myaccount.aspx#Orders">Order Tracking</a></li>
+          <li><a href="/store/logout.aspx">Logout</a></li>
+        </ac:visibilityarea>
+      </ac:widget>
+<ac:widget id="SMALLSHOPPINGCART1888" type="SmallShoppingCart" enablemergecode="True">
+        <ac:visibilityarea id="dvControl">
+          <div class="panel no-m-b m-t-5 pad-b-10">
+            <div class="center well well-sm no-wrap no-m-b bold m-l-10 m-r-10">
+              <div class="pad-50 no-pad-tb">$$CARTITEMSLABEL$$</div>
+            </div>
+            <div class="media-list">
+              
+              <ac:layoutarea id="ShopCartItem">
+                <div class="SmallCartItem pad-t-15 pad-b-15 pad-l-10 pad-r-10 media">
+                  <div class="pull-left m-r-15">
+                    <img src="##IMAGERESIZER[path=##ITEMPHOTOURL##,bw=50,lr=t]##
+">
+                  </div>
+                  <div class="pull-right m-t-15">
+                    <a class="badge clear-item-link" href="#">&times;</a>
+                  </div>
+                  <div class="media-body">
+                    <div>$$ITEMLINK$$</div>
+                    <div>$$QUANTITYBOX$$ &nbsp;x $$PRICE$$</div>
+                  </div>
+                </div>
+                <hr class="m-l-5 m-r-5 no-m-tb">
+              </ac:layoutarea>
+              <div class="update-qty-link m-5 no-m-t pad-t-5 pad-b-5 pad-10 center">
+                <span class="rel">
+                  <span class="hide update-attention abs" style="right:100%;top:0;">
+                    click &rarr;
+                  </span>
+                  $$UPDATEQTYLINK$$
+                </span>
+                <!--<div>
+$$VIEWCARTLINK$$
+</div>
+<div>
+$$CLEARCARTLINK$$
+</div> -->
+              </div>
+              
+              <div class="well well-sm no-m-b m-l-10 m-r-10">
+                <strong class="block right">$$SUBTOTAL$$</strong>
+              </div>
+              <div class="SmallCartCheckoutButton full-input m-l-10 m-r-10">
+                $$CHECKOUTBUTTON$$
+              </div>
+              $$ERROR$$
+            </div>
+          </div>
+          <div class="pad-10 no-wrap center">
+            <a class="block pad-50 no-pad-tb" href="/store/shopcart.aspx">View Full Shopping Cart</a>
+          </div>
+        </ac:visibilityarea>
+      </ac:widget>
+<ac:widget id="MENUBAR2252" type="MenuBar" linkgroupid="24">
+  <ac:visibilityarea id="dvControl">
+    $$ADMINHELP$$
+    
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="navbar-header visible-xs">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#!">Menu</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <ac:layoutarea id="Item">
+            <ac:visibilityarea id="phDDLink">
+              <li class="dropdown">
+                <a href="$$HREF$$" target="$$TARGET$$" data-toggle="">$$TEXT$$</a>
+                <ac:visibilityarea id="phSubMenu">
+                  <ul class="dropdown-menu">$$SUBMENU$$</ul>
+                </ac:visibilityarea>
+              </li>
+            </ac:visibilityarea>
+            <ac:visibilityarea id="phNoDDLink">
+              <li>
+                <a href="$$HREF$$" target="$$TARGET$$">$$TEXT$$</a>
+              </li>
+            </ac:visibilityarea>
+          </ac:layoutarea>
+          
+        </ul>
+        <div class="navbar-right">
+          <ul class="nav navbar-nav">
+            <ac:if setting="Show Search as Dropdown">
+              <li><a href="#" data-toggle="dropdown">
+                <i class="icon-search"></i>
+                <span class="visible-xs">Search</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <div class="panel-body no-wrap search-box">
+                      ##SEARCHBOX[autocomplete=true]##
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ac:if>
+            <li class="no-wrap">
+              <ac:if setting="Show Shopping Cart as Dropdown">
+                <a href="#" data-toggle="dropdown">
+                  <div class="in-block"><i class="icon-shopping-cart"></i></div>
+                  <span class="visible-xs">Shopping Cart</span>
+                  ##IF[CartIsEmpty]## ##ELSE##
+                  <span class="badge">##CARTITEMSCOUNT##</span>
+                  ##ENDIF##
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    ##IF[CartIsEmpty]##
+                    <p class="m-20">Your cart is empty!</p>
+                    ##ENDIF##
+                    $$SMALLSHOPPINGCART1888$$
+                  </li>
+                </ul>
+                
+                <ac:else>
+                  <a href="/store/shopcart.aspx" rel="nofollow">
+                    <div class="in-block"><i class="icon-shopping-cart"></i></div>
+                    <span class="visible-xs">Shopping Cart</span>
+                    ##IF[CartIsEmpty]## ##ELSE##
+                    <span class="badge">##CARTITEMSCOUNT##</span>
+                    ##ENDIF##
+                  </a>
+                </ac:else>
+              </ac:if>
+            </li>
+            <!--<li>
+              <ac:if setting="Show Customer Login as Dropdown">
+                <a href="#" data-toggle="dropdown">
+                  <i class="icon-user"></i>
+                  <span class="visible-xs">##IF[LoggedIn]## My Account ##ELSE## Login ##ENDIF##</span>
+                </a>
+                <ul class="dropdown-menu">
+                  $$CUSTOMERLOGIN1887$$
+                </ul>
+                <ac:else>
+                  <a href="/store/myaccount.aspx">
+                    <i class="icon-user"></i>
+                    <span class="visible-xs">##IF[LoggedIn]## My Account ##ELSE## Login ##ENDIF##</span>
+                  </a>
+                </ac:else>
+              </ac:if>
+            </li> -->
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    <ac:layoutarea id="SubItem">
+      <ac:visibilityarea id="phDDLink">
+        
+        <li class="dropdown-submenu">
+          <a href="$$HREF$$" target="$$TARGET$$">$$TEXT$$</a>
+          <ac:visibilityarea id="phSubMenu">
+            <ul class="dropdown-menu">$$SUBMENU$$</ul>
+          </ac:visibilityarea>
+        </li>
+      </ac:visibilityarea>
+      <ac:visibilityarea id="phNoDDLink">
+        <li>
+          <a href="$$HREF$$" target="$$TARGET$$">$$TEXT$$</a>
+        </li>
+      </ac:visibilityarea>
+    </ac:layoutarea>
+  </ac:visibilityarea>
+</ac:widget>
+</ac:widgetarea>
+  </div>
+</ac:pagelayout>

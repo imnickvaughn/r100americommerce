@@ -1,0 +1,348 @@
+<ac:pagelayout id="ProductDetailsPage" swatchimagewidth="50" productpicwidth="500" renderswatchesasunorderedlist="True" swatchposition="Below" swatchimageheight="30" thumbwidth="150" productpicheight="500" usetabs="True" showswatchnexttovariantoption="True" thumbmaxcols="4">
+  ##INCLUDESTYLESHEET[/store/inc/bxslider/jquery.bxslider.css]##
+  
+  
+  <div itemscope="" itemtype="http://schema.org/Product">
+    
+    <meta itemprop="productID" content="##GTIN##">
+    <meta itemprop="mpn" content="##MFGPARTNUMBER##">
+    <div class="row no-m">
+      <div class="visible-xs pad-20">
+        <img src="##ITEMPHOTOURL##" itemprop="image">
+      </div>
+      <div class="col-xs-12 product-details-product product-photo" style="background:url(##ITEMPHOTOURL##);">
+        <div class="site-container">
+          
+          <div class="row">
+            
+            <div class="col-sm-5 col-md-4 ">
+              <div class="pad-15 product-info-wrapper">
+                <div class="back-to-products m-t-15"><a href="/all-products"><i class="icon-long-arrow-left"></i>  Back to All Products</a></div>
+                <div class="product-details-item-name"><h1 itemprop="name">##ITEMNAME##</h1></div>
+                <meta itemprop="sku" content="##ITEMNR##">
+                <meta itemprop="manufacturer" content="##MFGNAME##">
+                
+                <div id="dvProductPricing" class="ProductDetailsPricing pad-10 no-pad-t" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                  <div class="product-details-price size-small" style="text-decoration:line-through;">$$WASPRICE$$</div>
+                  <div class="product-details-price">$$PRICE$$</div>
+                  <meta itemprop="seller" content="##STORENAME##">
+                  <div style="display:none;">
+                    <div itemprop="price">##PRICE##</div>
+                    <div itemprop="availability">##PRODUCTSTATUS##</div>
+                  </div>
+                </div>
+                
+                <ac:visibilityarea id="ProductDetailsArea">
+                  <ac:visibilityarea id="ProductVariations">
+                    <div class="pad-t-10 pad-b-10">
+                      <div class="ProductDetails">
+                        <!--##TELLAFRIEND##-->
+                        <div id="dvProductVariations" class="ProductDetailsVariations full-input">
+                          <ac:layoutarea id="Personalization">
+                            <div class="ProductDetailsVariations pad-b-20">
+                              <div><strong>$$PERSONALIZATIONQUESTION$$</strong></div>
+                              $$PERSONALIZATIONCONTROLS$$
+                            </div>              
+                          </ac:layoutarea>
+                          <ac:layoutarea id="Variant">  
+                            <div class="pad-b-20 Variant">
+                              <div><strong>
+                                $$VARIANTGROUPNAME$$ 
+                                $$VARIANTGROUPHEADER$$  
+                                </strong></div>
+                              $$VARIANTGROUPCONTROLS$$    
+                              <ac:visibilityarea id="VariantGroupSwatches"> 
+                                <div class="clearfix">
+                                  $$VARIANTGROUPSWATCHES$$
+                                </div>
+                              </ac:visibilityarea>            
+                              $$VARIANTGROUPFOOTER$$
+                            </div>
+                          </ac:layoutarea>
+                          <script>
+                            $(function(){
+                              hs.expand = function() {};
+                              msPhotoImgCtl = msPhotoImgCtl + ", .main-product-photo img";
+                            });
+                          </script>
+                          <br>
+                          <ac:visibilityarea id="DetailedConfiguration">
+                            <span>$$DETAILEDCONFIGLINK$$</span>
+                          </ac:visibilityarea>
+                        </div>
+                      </div>
+                    </div>
+                  </ac:visibilityarea>
+                </ac:visibilityarea>
+                
+                <ac:visibilityarea id="AddToCartArea">
+                  <div class="m-b-90">
+                    <div id="dvProductQuantity" class="ProductDetailsQuantity qty-wrapper">
+                      $$QUANTITY$$
+                      $$ADDTOCART$$
+                      
+                      
+                    </div>
+                  </div>
+                </ac:visibilityarea>
+                
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_native_toolbox"></div>
+                
+                <ac:visibilityarea id="ReviewRatingArea">
+                  <div class="ProductDetailsReviewDisplay clear">
+                    <div id="dvAverageReviewRatingStars" class="ProductDetailsReviewRatingStars m-b-5 v-mid">
+                      $$AVERAGEREVIEWRATINGSTARS$$
+                    </div>
+                    <div class="ProductDetailsReviewRatingCount  v-mid">
+                      ##IF[ReviewCount!=0]##
+                      <span itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/aggregaterating">
+                        
+                        <div style="display:none;">
+                          <span itemprop="ratingValue">##AVERAGERATING##</span>
+                          <span itemprop="reviewCount">##REVIEWCOUNT##</span>
+                        </div>
+                        $$READALLREVIEWSLINK$$
+                      </span>
+                      $$REVIEWCOUNTLINK$$.
+                      ##ELSE##
+                      There are no reviews yet.
+                      ##ENDIF##
+                      | $$WRITEREVIEWLINK$$
+                    </div>
+                  </div>
+                </ac:visibilityarea>
+                
+                <ac:visibilityarea id="AvailabilityArea">
+                  
+                  <div class="AvailableArea">
+                    <div id="dvProductAvailability" class="ProductDetailsAvailability pad-t-15 pad-b-15">
+                      $$AVAILABILITY$$
+                      $$NOTIFYME$$
+                    </div>
+                    
+                    <ac:visibilityarea id="ETADateArea">
+                      <div class="ProductDetailsETADate pad-10 no-pad-t">
+                        $$ETADATELABEL$$
+                        $$ETADATE$$
+                      </div>
+                    </ac:visibilityarea>
+                    
+                    <ac:visibilityarea id="QuantityInStockArea">
+                      <div id="dvProductQuantityInStock" class="ProductDetailsQuantityInStock  pad-10 no-pad-t">
+                        $$STOCKLABEL$$
+                        $$STOCKQUANTITY$$
+                      </div>
+                    </ac:visibilityarea>
+                  </div>
+                </ac:visibilityarea>
+                
+                <ac:layoutarea id="Tabs">
+                  
+                  <ul class="nav nav-tabs" id="tabs">
+                    <ac:visibilityarea id="desc1">
+                      <li><a class="active" data-toggle="tab" href="#desc1">$$TABNAME1$$</a></li>
+                    </ac:visibilityarea>
+                    <ac:visibilityarea id="desc2">
+                      <li><a class="active" data-toggle="tab" href="#desc2">$$TABNAME2$$</a></li>
+                    </ac:visibilityarea>
+                    <ac:visibilityarea id="desc3">
+                      <li><a class="active" data-toggle="tab" href="#desc3">$$TABNAME3$$</a></li>
+                    </ac:visibilityarea>
+                    <ac:visibilityarea id="desc4">
+                      <li><a class="active" data-toggle="tab" href="#desc4">$$TABNAME4$$</a></li>
+                    </ac:visibilityarea>
+                    <ac:visibilityarea id="desc5">
+                      <li><a class="active" data-toggle="tab" href="#desc5">$$TABNAME5$$</a></li>
+                    </ac:visibilityarea>
+                    <li><a class="active" data-toggle="tab" href="#reviews">Reviews (##REVIEWCOUNT##)</a></li>
+                  </ul>
+                  
+                  <div class="tab-content" itemprop="description">
+                    <ac:visibilityarea id="desc1">
+                      <div class="tab-pane fade in pad-15 active" id="desc1">$$TAB1$$</div>
+                    </ac:visibilityarea>
+                    <ac:visibilityarea id="desc2">
+                      <div class="tab-pane fade in pad-15 active" id="desc2">$$TAB2$$</div>
+                    </ac:visibilityarea>
+                    <ac:visibilityarea id="desc3">
+                      <div class="tab-pane fade in pad-15 active" id="desc3">$$TAB3$$</div>
+                    </ac:visibilityarea>
+                    <ac:visibilityarea id="desc4">
+                      <div class="tab-pane fade in pad-15 active" id="desc4">$$TAB4$$</div>
+                    </ac:visibilityarea>
+                    <ac:visibilityarea id="desc5">
+                      <div class="tab-pane fade in pad-15 active" id="desc5">$$TAB5$$</div>
+                    </ac:visibilityarea>
+                    <div class="tab-pane fade in pad-20 no-pad-lr active" id="reviews">
+                      
+                      <ac:widgetarea id="Reviews">
+<ac:widget id="PRODUCTREVIEWSLISTING39230" type="ProductReviewsListing" numberofreviewstodisplay="20">
+                          <ac:visibilityarea id="dvControl">
+                            <!--$$HEADER$$-->
+                            $$ADMINHELP$$
+                            <ac:layoutarea id="Summary">
+                            </ac:layoutarea>
+                            ##IF[ReviewCount!=0]##
+                            <div class="ProductDisplay pad-20">
+                              <h3>Most Recent Reviews for ##ITEMNAME##</h3>
+                            </div>
+                            ##ENDIF##
+                            <div class="media-list pad-20 no-pad-lr">
+                              <ac:layoutarea id="Item">
+                                <div class="col-sm-6 product-review" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                                  <hr>
+                                  <div class="ProductReviewItemMeta">
+                                    <div class="clearfix" style="line-height:25px;">
+                                      <div itemprop="author" class="fff bold f-left pad-r-10">$$AUTHORNAME$$</div> 
+                                      <div class="text-muted f-left size-small pad-r-10">$$AUTHORLOCATION$$</div> 
+                                      <div itemprop="datePublished" class="f-left size-small pad-r-10">
+                                        $$REVIEWDATE$$
+                                      </div>
+                                      <div class="f-left m-t--5">$$REVIEWRATINGS$$</div>
+                                    </div>
+                                  </div>
+                                  <div itemprop="description pad-t-10">
+                                    <span class="in-block bold" itemprop="about">$$REVIEWTITLE$$ </span> $$REVIEWBODY$$
+                                  </div>
+                                  
+                                </div>
+                              </ac:layoutarea>
+                            </div>
+                            <style>
+                              .ProductReviewDimensionName { display:none; }
+                              .product-review {
+                              }
+                              .ProductReviewTitle, .ProductReviewBody {display:inline; }
+                            </style>
+                            <script>
+                              $(".product-review:first hr, .product-review:eq(1) hr").hide();
+                              $(".product-review:odd").after("<div style='clear:left;'></div>");
+                            </script>
+                          </ac:visibilityarea>
+                          
+                        </ac:widget>
+</ac:widgetarea>
+                    </div>
+                    
+                  </div>
+                  
+                  <script>
+                    $(function(){
+                      $("#tabs a").click(function(e){
+                        e.preventDefault();
+                        $(this).tab("show");
+                      });
+                      $("#tabs a:first").click();
+                    });
+                  </script>
+                </ac:layoutarea>
+                
+                
+              </div>
+            </div>
+            
+            <div class=" col-sm-2 PhotoBgThumbnails">
+              
+              <ac:layoutarea id="PhotoArea">
+                <!--<a href="$$LINKHREF$$" itemprop="image" class="main-product-photo block zoom rel">
+$$MAINPHOTO$$
+
+</a>
+-->
+                <ac:visibilityarea id="lvCarousel">
+                  <div class="row">
+                    $$THUMBNAILS$$
+                  </div>
+                </ac:visibilityarea>
+              </ac:layoutarea>
+              
+              <ac:layoutarea id="PhotoThumbLayout">
+                <ul class="product-thumbnails list-unstyled no-padding">$$GROUP$$</ul>
+              </ac:layoutarea>
+              <ac:layoutarea id="PhotoThumbGroup">
+                $$ITEM$$
+              </ac:layoutarea>
+              <ac:layoutarea id="PhotoThumb">
+                <li class="pad-15 col-xs-6 col-sm-12"><a href="$$THUMBLINKHREF$$">$$THUMBNAIL$$</a></li>
+              </ac:layoutarea>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="site-container">
+      <div class="row no-m">
+        <div class="col-xs-12">
+          <ac:widgetarea id="relatedItems">
+<ac:widget id="PRODUCTDISPLAY39232" type="ProductDisplay" repeatabletype="CategoryProductList" productpicturewidth="250" categoryid="35" productpictureheight="250">
+              
+              
+              <ac:visibilityarea id="dvControl">
+                $$ADMINHELP$$
+                
+                <div class="pad-20 pad-b-only">
+                  <div class="pad-b-20"><h3>$$HEADER$$</h3></div>
+                  <div class="">
+                    <ac:layoutarea id="Layout">
+                      $$GROUP$$
+                    </ac:layoutarea>
+                    <ac:layoutarea id="Group">
+                      <div class="row"> $$ITEM$$</div>
+                    </ac:layoutarea>
+                    <ac:layoutarea id="Item">
+                      <div class="##PRODUCTCOLUMNCSSCLASS[1=col-xs-12,2=col-xs-12 col-sm-6,3=col-xs-6 col-md-4,4=col-xs-12 col-sm-6 col-md-3,6=col-sm-2]## homepage-product">
+                        <ac:visibilityarea id="dvControlItem">    
+                          <a href="##ITEMURL##" class="thumbnail rel no-overflow">
+                            <button class="btn btn-default quick-view abs" data-href="##ITEMURL##?previewlayoutname=Product%20Quick%20View" data-title="##ITEMNAME##">Quick View</button>
+                            <ac:visibilityarea id="Featured">
+                              <div class="abs product-flag left top featured"><span>Featured!</span></div>
+                            </ac:visibilityarea>
+                            <ac:visibilityarea id="Spotlight">
+                              <div class="abs product-flag left bottom spotlight"><span>Spotlight!</span></div>
+                            </ac:visibilityarea>
+                            <ac:visibilityarea id="Flag1">
+                              <div class="abs product-flag right top flag1"><span>New!</span></div>
+                            </ac:visibilityarea>
+                            <ac:visibilityarea id="Flag2">
+                              <div class="abs product-flag right bottom flag2"><span>Hot!</span></div>
+                            </ac:visibilityarea>
+                            <ac:visibilityarea id="Flag3">
+                              <div class="abs product-flag right bottom flag3"><span>Sale!</span></div>
+                            </ac:visibilityarea>
+                            $$PHOTO$$
+                          </a>
+                          <div class="caption center">
+                            <h4>##PRODUCTNAME##</h4>
+                            <p class="text-muted">$$PRICE$$</p>
+                          </div>
+                          <!--
+<p class="hidden-xs center">
+<a class="btn btn-primary" href="##ADDTOCARTURL##">Buy</a>
+<a class="btn btn-default" href="##ITEMURL##">View</a>
+</p>
+-->
+                        </ac:visibilityarea>
+                      </div>
+                    </ac:layoutarea>
+                  </div>
+                </div>
+                
+              </ac:visibilityarea>
+              
+              
+            </ac:widget>
+</ac:widgetarea>
+        </div>
+      </div>
+    </div>
+    
+    ##INCLUDESCRIPTBOTTOM[/store/inc/bxslider/jquery.bxslider.js]##
+    ##INCLUDESCRIPTBOTTOM[##THEMEDIR##js/jquery.zoom.js]##
+    ##INCLUDESCRIPTBOTTOM[##THEMEDIR##js/product-page.js]##
+    
+  </div>
+</ac:pagelayout>

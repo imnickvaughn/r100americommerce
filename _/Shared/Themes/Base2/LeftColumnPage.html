@@ -1,0 +1,73 @@
+<ac:pagelayout id="LeftColumnPage">
+  <div class="navbar-header navbar-header-leftcol panel visible-xs">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".left-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">Left Menu</a>
+  </div>
+  <div class="navbar-collapse left-collapse collapse">
+    <div class="well">
+      <ac:widgetarea id="Top">
+<ac:widget id="CATEGORYNAVIGATIONLINKS1904" type="CategoryNavigationLinks" rootcategorybehavior="-999">
+          <ac:visibilityarea id="dvControl">
+            
+            <ul class="nav nav-stacked nav-pills">
+              <li><strong>$$HEADER$$</strong></li>
+              <ac:layoutarea id="Item">
+                <li><a class="category-link" href="$$CATEGORYHREF$$">
+                  <!--$$CATEGORYICON$$-->
+                  $$CATEGORYNAME$$
+                  </a>
+                </li>
+              </ac:layoutarea>
+            </ul>
+          </ac:visibilityarea>
+        </ac:widget>
+<ac:widget id="ATTRIBUTENAVIGATIONLINKS1905" type="AttributeNavigationLinks" headertext="Phil">
+          <ac:visibilityarea id="dvControl">
+            <ul class="nav nav-stacked nav-pills">
+              <li><strong>$$HEADER$$</strong></li>
+              
+              <ac:layoutarea id="Item">
+                <ac:visibilityarea id="phHeader">
+                  <li>$$GROUPHEADER$$</li>
+                </ac:visibilityarea>
+                
+                <li>
+                  <ac:visibilityarea id="ckAtt">
+                    <label class="checkbox" for="$$CHECKBOXID$$">
+                      $$CHECKBOX$$ $$ATTRIBUTENAME$$
+                    </label>
+                  </ac:visibilityarea>
+                  <ac:visibilityarea id="hplAttribute">
+                    <a class="attribute-link" href="$$ATTRIBUTEHREF$$">$$ATTRIBUTENAME$$<span class="badge pull-right">$$COUNT$$</span></a>
+                  </ac:visibilityarea>
+                </li>
+                
+                <ac:visibilityarea id="phFooter">
+                  <li>$$FILTERBUTTON$$</li>
+                </ac:visibilityarea>
+              </ac:layoutarea>
+            </ul>
+          </ac:visibilityarea>
+        </ac:widget>
+<ac:widget id="MANUFACTURERNAVIGATIONLINKS1906" type="ManufacturerNavigationLinks">
+          <ac:visibilityarea id="dvControl">
+            <ul class="nav nav-stacked nav-pills">
+              <li><strong>$$HEADER$$</strong></li>
+              <ac:layoutarea id="Item">
+                <li>
+                  <a href="$$MFGHREF$$" class="$$CLASS$$ category-link">$$MFGNAME$$</a>
+                </li>
+              </ac:layoutarea>
+            </ul>
+          </ac:visibilityarea>
+        </ac:widget>
+</ac:widgetarea>
+      <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+    </div>
+  </div>
+</ac:pagelayout>

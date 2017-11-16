@@ -1,0 +1,35 @@
+/* Large desktop */
+@media (min-width: 1200px) { 
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 991px) { 
+.CompGridProduct-list > div div.category-product {width:33%}
+.CompGridProduct-list > div div.category-product:first-of-type, .CompGridProduct-list > div div.category-product:nth-of-type(2) { width:50%;}
+.CompGridProduct-list > div div.category-product:first-of-type a, .CompGridProduct-list > div div.category-product:nth-of-type(2) a { max-height:inherit; height:400px; line-height:400px;}
+.CompGridProduct-list .category-product .thumbnail { min-height: inherit; height:205px; line-height: inherit; margin-bottom: 0px; }
+.CompGridProduct-list > div div.category-product:first-of-type .thumbnail:hover .quick-view {top:100px;}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+.PhotoBgThumbnails {float:none;}
+.CompGridProduct-list > div div.category-product {width:50%}
+.CompGridProduct-list > div:nth-of-type(2n+1) div.category-product:first-of-type, .CompGridProduct-list > div:nth-of-type(1n+1) div.category-product:first-of-type { width:100%;}
+.CompGridProduct-list > div:nth-of-type(2n+1) div.category-product:first-of-type, .CompGridProduct-list > div:nth-of-type(1n+1) div.category-product:first-of-type a {height:inherit;}
+.CompGridProduct-list > div div.category-product:first-of-type a, .CompGridProduct-list > div div.category-product:nth-of-type(2) a { max-height:inherit; height:300px; line-height:300px;}
+.CompGridProduct-list .category-product .thumbnail { min-height: inherit; height:300px; line-height: inherit; margin-bottom: 0px; }
+.CompGridProduct-list > div:nth-of-type(1n+1) div.category-product {float:left;}
+.CompGridProduct-list > div div.category-product:first-of-type .thumbnail:hover .quick-view {top:100px;}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+.CompGridProduct-list > div div.category-product {width:100%}
+.CompGridProduct-list > div div.category-product:first-of-type a, .CompGridProduct-list > div div.category-product:nth-of-type(2) a { max-height:inherit; height:inherit; line-height:inherit;}
+.CompGridProduct-list .category-product .thumbnail { min-height: inherit; height:inherit; line-height: inherit; margin-bottom: 0px; }
+}
+
+
+

@@ -1,0 +1,56 @@
+<ac:pagelayout id="FooterPage">
+  <div class="FooterTop pagewidth">
+    <ac:widgetarea id="FooterTopWidgets">
+</ac:widgetarea>
+  </div>
+  <div class="fullwrap">
+    <div class="inner pagewidth" style="min-height:400px;">
+      <div class="FooterLeft">
+        <ac:widgetarea id="FooterLeft">
+<ac:widget id="HTML263" type="HTML">
+            <h3>About ##STORENAME##</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id justo tortor, pharetra fermentum risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec sit amet est vehicula tellus lobortis consectetur. Sed in dui tortor, vitae ullamcorper ligula. Nullam ac ultrices urna. Su
+            </p>
+          </ac:widget>
+</ac:widgetarea>
+      </div>
+      <div class="FooterRight">
+        <ac:widgetarea id="FooterRight">
+<ac:widget id="LINKGROUP265" type="LinkGroup" linkgroupid="17" headertext="Useful Links"></ac:widget>
+<ac:widget id="HTML267" type="HTML"><h3>Stay in Touch</h3>
+            <ul class="social">
+              <li><a href="#"><img src="/Shared/Themes/Element/images/icofb_off.png" alt="Fan Us on Facebook"></a></li>
+              <li><a href="#"><img src="/Shared/Themes/Element/images/icotw_off.png" alt="Follow Us on Twitter"></a></li>
+              <li><a href="#"><img src="/Shared/Themes/Element/images/icoyt_off.png" alt="Watch Us on Youtube"></a></li>
+              <li><a href="#"><img src="/Shared/Themes/Element/images/icorss_off.png" alt="Grab our RSS"></a></li>
+            </ul>
+            <script>
+              $(".social li a img").each(function(){
+                $(this).mouseover(function(){
+                  src = $(this).attr("src");
+                  $(this).attr("src", src.replace("_off","_on"));
+                });
+                $(this).mouseout(function(){
+                  src = $(this).attr("src");
+                  $(this).attr("src", src.replace("_on","_off"));
+                });
+              });
+            </script>
+          </ac:widget>
+<ac:widget id="HTML266" type="HTML">
+            <ul class="storeinfo">
+              <li>##STORENAME##</li>
+              <li>##STOREPHONE##</li>
+              <li>##STOREEMAIL##</li>
+            </ul>
+          </ac:widget>
+</ac:widgetarea>
+        
+      </div>
+      <ac:widgetarea id="FooterWidgets">
+</ac:widgetarea>
+      <div style="clear:both;position:absolute;bottom:0;left:auto;" class="pagewidth">##POWEREDBYLINK##</div>
+    </div>
+  </div>
+</ac:pagelayout>

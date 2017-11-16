@@ -1,0 +1,192 @@
+<ac:templateoverridearea id="FooterAddonArea">
+  <div class="container">
+    <section class="product-list">
+      <ac:widgetarea id="ProductListOne"><ac:widget id="PRODUCTDISPLAY5727" type="ProductDisplay" repeatabletype="HotSellers" productpicturewidth="200" headertext="Popular Products" categoryid="0" productpictureheight="200">
+        <ac:visibilityarea id="dvControl">
+          $$ADMINHELP$$
+
+          <h3>$$HEADER$$</h3>
+
+          <ac:layoutarea id="Layout">
+            $$GROUP$$
+          </ac:layoutarea>
+          <ac:layoutarea id="Group">
+            <div class="row">$$ITEM$$</div>
+          </ac:layoutarea>
+          <ac:layoutarea id="Item">
+            <div class="col-md-3 col-sm-6 small-product">
+              <div class="inner">
+                <ac:visibilityarea id="dvControlItem">
+                  <a href="##ADDTOCARTURL##" class="add-to-cart">
+                    <span class="d-none">Add to Cart</span>
+                  </a>
+                  <a href="##ITEMURL##">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        $$PHOTO$$
+                      </div>
+                      <div class="meta-wrapper">
+                        <p><strong>##PRODUCTNAME##</strong> ##TRIM[100]####LONGDESCRIPTION1####ENDTRIM##</p>
+                      </div>
+                      <div class="footer-wrapper">
+                        <span class="reviews">$$AVERAGEREVIEWRATINGSTARS$$</span>
+                        <span class="price">$$PRICE$$</span>
+                      </div>
+                    </div>
+                  </a>
+                </ac:visibilityarea>
+              </div>
+            </div>
+          </ac:layoutarea>
+        </ac:visibilityarea>
+        </ac:widget>
+</ac:widgetarea>
+    </section>
+    <section class="product-list">
+      <ac:widgetarea id="ProductListTwo"><ac:widget id="PRODUCTDISPLAY5729" type="ProductDisplay" repeatabletype="FeaturedItems" productpicturewidth="200" headertext="On Sale" categoryid="0" productpictureheight="200">
+        <ac:visibilityarea id="dvControl">
+          $$ADMINHELP$$
+
+          <h3>$$HEADER$$</h3>
+
+          <ac:layoutarea id="Layout">
+            $$GROUP$$
+          </ac:layoutarea>
+          <ac:layoutarea id="Group">
+            <div class="row">$$ITEM$$</div>
+          </ac:layoutarea>
+          <ac:layoutarea id="Item">
+            <div class="col-md-3 col-sm-6 small-product">
+              <div class="inner">
+                <ac:visibilityarea id="dvControlItem">
+                  <a href="##ADDTOCARTURL##" class="add-to-cart">
+                    <span class="d-none">Add to Cart</span>
+                  </a>
+                  <a href="##ITEMURL##">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        $$PHOTO$$
+                      </div>
+                      <div class="meta-wrapper">
+                        <p><strong>##PRODUCTNAME##</strong> ##TRIM[100]####LONGDESCRIPTION1####ENDTRIM##</p>
+                      </div>
+                      <div class="footer-wrapper">
+                        <span class="reviews">$$AVERAGEREVIEWRATINGSTARS$$</span>
+                        <span class="price">$$PRICE$$</span>
+                      </div>
+                    </div>
+                  </a>
+                </ac:visibilityarea>
+              </div>
+            </div>
+          </ac:layoutarea>
+        </ac:visibilityarea>
+        </ac:widget>
+</ac:widgetarea>
+    </section>
+    <section class="mailing-list">
+      <ac:widgetarea id="MailingList"><ac:widget id="MAILINGLIST5731" type="MailingList">
+
+        <ac:visibilityarea id="dvControl">
+          <h3>Keep in Touch</h3>
+          <p>Subscribe for latest stories and promotions.</p>
+          <div class="input-wrapper">
+            $$EMAIL$$ $$GOBUTTON$$  
+          </div>
+
+          $$RESULT$$
+
+          <script>
+            $(function() {
+              $('.mailing-list .input-wrapper input[type="submit"]').attr('value', 'Sign Up');
+            });
+          </script>
+        </ac:visibilityarea>
+
+        </ac:widget>
+</ac:widgetarea>
+    </section>
+  </div>
+
+  <!--[ac]<div class="instagram-feed-wrapper">
+    <div class="container">
+      <h3>Instagram</h3>
+      <a href="##SETTING[Instagram Page URL, text]##">@clear-theme</a>
+      <div id="instafeed"></div>
+    </div>
+
+    <script src="/Shared/Themes/Clear/js/instafeed.js"></script>
+    <script>
+      var feed = new Instafeed({
+        get: 'user',
+        userId: '1576086303',
+        clientId: ''
+      });
+      feed.run();
+    </script>
+  </div>-->
+</ac:templateoverridearea>
+<ac:templateoverridearea id="HeaderAddonArea">
+  <div class="slides-wrapper">
+    <ac:widgetarea id="SlideshowArea"><ac:widget id="SLIDESHOW5719" type="Slideshow" slidewidth="100%" pause="6000" responsive="True">
+<ul>
+<li id='slide_3'>
+<a href='/store/c/83-Clothing-Apparel.aspx' class='predefined_slide_item' target=''>
+<img alt='' title='' src='/Shared/Themes/Clear/images/slide-1.png'>
+</a>
+</li>
+<li id='slide_2'>
+<a href='/store/c/83-Clothing-Apparel.aspx' class='predefined_slide_item' target=''>
+<img alt='' title='' src='/Shared/Themes/Clear/images/slide-1.png'>
+</a>
+</li>
+</ul>
+</ac:widget>
+</ac:widgetarea>
+  </div>
+  <div class="row img-thirds">
+    <div class="col-sm-4">
+      <ac:widgetarea id="ImageLeft"><ac:widget id="IMAGELOGO5721" type="ImageLogo" imagepath="/images/img-left.png" navigateurl="/store/c/86-Electronics.aspx">
+
+        </ac:widget>
+</ac:widgetarea>
+    </div><div class="col-sm-4">
+    <ac:widgetarea id="ImageMiddle"><ac:widget id="IMAGELOGO5723" type="ImageLogo" imagepath="/images/img-center.png" navigateurl="/store/c/50-Use-Case-Scenarios.aspx">
+
+      </ac:widget>
+</ac:widgetarea>
+    </div><div class="col-sm-4">
+    <ac:widgetarea id="ImageRight"><ac:widget id="IMAGELOGO5725" type="ImageLogo" imagepath="/images/img-right.png" navigateurl="/store/c/103-Wedding.aspx">
+
+      </ac:widget>
+</ac:widgetarea>
+    </div>
+  </div>
+</ac:templateoverridearea>
+<ac:pagelayout id="DefaultPage">
+  <ac:widgetarea id="MainArea"><ac:widget id="HTML5733" type="HTML"><div class="html-card">
+    <div class="row">
+      <div class="col-sm-6">
+        <a href="/store/m/41-Ahnu.aspx">
+          <span class="h1">
+            Shop <br>Mens Shoes <img src="/Shared/Themes/Clear/images/go-arrow.svg">
+          </span>
+          <div class="img-wrapper">
+            <img src="/Shared/Themes/Clear/images/mens-shoes.png">
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6">
+        <a href="/store/m/41-Ahnu.aspx">
+          <span class="h1">
+            Shop <br>Womens Bags <img src="/Shared/Themes/Clear/images/go-arrow.svg">
+          </span>
+          <div class="img-wrapper">
+            <img src="/Shared/Themes/Clear/images/womens-bags.png">
+          </div>
+        </a>
+      </div>
+    </div>
+    </div></ac:widget>
+</ac:widgetarea>
+</ac:pagelayout>

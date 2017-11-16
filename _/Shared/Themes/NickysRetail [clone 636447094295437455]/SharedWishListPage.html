@@ -1,0 +1,33 @@
+<ac:pagelayout id="SharedWishListPage">
+  
+  <ac:widgetarea id="Top">
+</ac:widgetarea>
+  
+  <a href="/">Home</a> &gt; <a href="SavedWishLists.aspx">Shared Wish Lists</a>
+  <div>
+    $$WISHLISTMENU$$
+  </div>
+  <h1>Shared Wish Lists</h1>
+  These are Wish Lists that others have created and marked as shared.  To find a Wish List, search below.
+  <h2>Search Wish Lists</h2>
+  $$WISHLISTNAMETEXTBOX$$
+  $$SEARCHBUTTON$$
+  <div>$$ERRORTEXT$$</div>
+  <ac:layoutarea id="WishListItems">
+    <tr>
+      <td width="16px">
+        $$SELECTCHECKBOX$$
+        $$WISHLISTID$$
+      </td>
+      <td>$$WISHLISTNAME$$</td>
+      <td align="center">$$ENTERDATE$$</td>
+      
+    </tr>
+  </ac:layoutarea>
+  
+  
+  <div>$$MOVETOCARTBUTTON$$</div>
+  <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+  
+</ac:pagelayout>

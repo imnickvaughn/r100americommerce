@@ -1,0 +1,117 @@
+<ac:pagelayout id="WriteReviewPage">
+  <ac:widgetarea id="Top">
+</ac:widgetarea>
+  
+  <h1>Write a new product review</h1>
+  
+  <ac:layoutarea id="ProductInfo">
+    <div>
+      <div style="float:left;">$$THUMBNAIL$$</div>
+      <div style="float:left;">
+        <div><h2>##ITEMNAME## (##ITEMNR##)</h2></div>
+        <div><p>##SHORTDESCRIPTION##</p></div>
+        <div><a href="##ITEMURL##">Return to product page</a></div>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </ac:layoutarea>
+  
+  <ac:visibilityarea id="ExistingCustomers">
+    <div>
+      <h3>Existing Customers</h3>
+      <div>If you have an account, $$LOGINLINK$$.</div>
+    </div>
+  </ac:visibilityarea>
+  
+  <h3>Ratings</h3>
+  <p>Assign ratings to the dimensions listed below.</p>
+  
+  <table cellpadding="2" cellspacing="3" border="0">
+    
+    <ac:layoutarea id="RatingListItem">
+      <tr>
+        <td class="ProductReviewFieldLabel">$$DIMENSIONNAME$$</td>
+        <td>$$DIMENSIONRATING$$</td>
+      </tr>
+    </ac:layoutarea>
+    
+    <ac:visibilityarea id="SingleDimensionRating">
+      <tr>
+        <td class="ProductReviewFieldLabel">Overall Rating:</td>
+        <td>$$SINGLEDIMENSIONRATING$$</td>
+      </tr>
+    </ac:visibilityarea>
+  </table>
+  
+  <h3>Review</h3>
+  <p>Detail how you feel about this product. The title is optional, but you should at least
+    leave some comments about why you rated the product the way you did above.</p>
+  
+  <table cellpadding="2" cellspacing="3" border="0" width="100%">
+    <tr>
+      <td class="ProductReviewFieldLabel">Title:</td>
+      <td class="ProductReviewFieldInput">$$TITLEFIELD$$</td>
+    </tr>
+    <tr>
+      <td class="ProductReviewFieldLabel" valign="top">Review Body:</td>
+      <td class="ProductReviewFieldInput">$$BODYFIELD$$</td>
+    </tr>
+  </table>
+  
+  <ac:visibilityarea id="ProsCons">
+    <p>Pick some keywords or adjectives that describe what you liked and/or disliked about the product
+      in particular, i.e. "price" or "quality."</p>
+    
+    <table cellpadding="2" cellspacing="3" border="0" width="100%">
+      <tr>
+        <td class="ProductReviewFieldLabel" valign="top">Pros:</td>
+        <td class="ProductReviewFieldInput">$$PROS$$</td>
+      </tr>
+      <tr>
+        <td class="ProductReviewFieldLabel" valign="top">Cons:</td>
+        <td class="ProductReviewFieldInput">$$CONS$$</td>
+      </tr>
+    </table>
+  </ac:visibilityarea>
+  
+  <h3>Customer Information</h3>
+  <p>Your email address will not be shown, but the rest of this information will be visible by anyone who can see the review.</p>
+  
+  <table cellpadding="2" cellspacing="3" border="0">
+    <tr>
+      <td class="ProductReviewFieldLabel" valign="top">$$DISPLAYNAMELABEL$$</td>
+      <td class="ProductReviewFieldInput">$$DISPLAYNAMEFIELD$$</td>
+    </tr>
+    <tr>
+      <td class="ProductReviewFieldLabel" valign="top">Email:</td>
+      <td class="ProductReviewFieldInput">$$EMAILFIELD$$</td>
+    </tr>
+    <ac:visibilityarea id="EmailTip">
+      <tr>
+        <td></td>
+        <td><span class="ProductReviewChangeEmail">To change your email address, please use the My Account page.</span></td>
+      </tr>
+    </ac:visibilityarea>
+    <tr>
+      <td class="ProductReviewFieldLabel">Website:</td>
+      <td class="ProductReviewFieldInput">$$WEBSITEFIELD$$</td>
+    </tr>
+    <tr>
+      <td class="ProductReviewFieldLabel">Your Location:</td>
+      <td class="ProductReviewFieldInput">$$LOCATIONFIELD$$</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>$$MAKEDEFAULTCHECKBOX$$</td>
+    </tr>
+  </table>
+  
+  <br>
+  
+  <div style="text-align: right;">$$CONTINUEBUTTON$$</div>
+  
+  <br>
+  <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+  
+</ac:pagelayout>

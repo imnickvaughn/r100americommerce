@@ -1,0 +1,48 @@
+<ac:pagelayout id="HeaderPage">
+  <div class="LayoutTopTop">
+    <ac:widgetarea id="TopHeaderWidgets">
+</ac:widgetarea>
+  </div>
+  <div class="LayoutTopMiddle">
+    <div class="LayoutTopLeft">
+      <ac:widgetarea id="LeftHeaderWidgets">
+<ac:widget id="HTML3373" type="HTML">
+          <a id="storename" href="http://##DOMAINNAME##">##STORENAME##</a>
+        </ac:widget>
+</ac:widgetarea>
+    </div>
+    <div class="LayoutTopRight">
+      <ac:widgetarea id="RightHeaderWidgets">
+<ac:widget id="HTML3375" type="HTML">
+          Search: ##SEARCHBOX[autocomplete=true]##
+        </ac:widget>
+</ac:widgetarea>
+    </div>
+    <div style="clear:both"></div>
+  </div>
+  <div class="LayoutTopBottom">
+    <ac:widgetarea id="BottomHeaderWidgets">
+<ac:widget id="HTML3377" type="HTML">
+        <div id="utilnav">
+          <ul>
+            ##IF[LoggedIn]##
+            <li>Welcome ##CUSTOMERFIRSTNAME##</li>
+            ##ENDIF##
+            <li>##LOGINLOGOUTLINK##</li>
+            ##IF[LoggedIn]##
+            <li><a href="/store/myaccount.aspx">My Account</a></li>
+            ##ENDIF##
+            <li><a href="/store/shopcart.aspx">##CARTITEMSCOUNT## <img src="/Shared/Themes/MinimalistWhiteRoch100 [clone 636451243303720639]/images/cart-black.png"></a></li>
+            <li><a href="/store/checkout.aspx">Checkout</a></li>
+          </ul>
+        </div>
+      </ac:widget>
+<ac:widget id="LINKGROUP3378" type="LinkGroup" displayorientation="Horizontal" linkgroupid="17"></ac:widget>
+<ac:widget id="HTML3379" type="HTML">
+        <div class="shadowline">
+          
+        </div>
+      </ac:widget>
+</ac:widgetarea>
+  </div>
+</ac:pagelayout>

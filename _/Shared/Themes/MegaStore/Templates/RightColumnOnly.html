@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<![endif]-->
+    $$HEADTAGS$$
+    <ac:templateoverridearea id="HeadTagsAddonArea"></ac:templateoverridearea>
+    <link rel="stylesheet" href="/Shared/Themes/MegaStore/Templates/RightColumnOnly.css" type="text/css">
+  </head>
+<body class="RightColumn ##PAGEBODYCLASSES##" itemtype="http://schema.org/WebPage" itemscope="">
+    <div class="Layout">
+      <header class="LayoutTop">
+        
+        $$HEADER$$
+        
+      </header>
+      
+      <div class="container">
+        <ac:templateoverridearea id="HeaderAddonArea"></ac:templateoverridearea>
+      </div>
+      
+      <section class="LayoutMiddle container">
+        <div class="row">
+          <section class="LayoutContent col-sm-8 col-md-9">
+            <div class="LayoutContentInner">
+              $$PAGELAYOUT$$
+            </div>
+            <div style="clear:both"></div>
+          </section>
+          <aside class="LayoutRightColumn col-sm-4 col-md-3">
+            <div class="LayoutRightColumnInner">
+              <ac:templateoverridearea id="RightColumn">
+                $$RIGHTCOLUMN$$
+              </ac:templateoverridearea>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <footer class="LayoutBottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              $$FOOTER$$
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

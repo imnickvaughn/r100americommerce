@@ -1,0 +1,7 @@
+.nav-tabs>li>a {
+    background-color: #f7f7f7;
+    color: #999;
+    border-color: #f7f7f7 #f7f7f7 #ddd;
+}
+
+.nav-tabs>li:first-of-type { margin-left: 15px; }

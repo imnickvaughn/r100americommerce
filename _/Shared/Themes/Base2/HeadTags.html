@@ -1,0 +1,37 @@
+<!-- helps makes site responsive on phones/tablets. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Reference the theme's stylesheet after bootstrap to allow overriding -->
+<link rel="stylesheet" type="text/css" href="##FILEPATHVERSIONED[##THEMEDIR##css/bootstrap.min.css]##">
+<link rel="stylesheet" type="text/css" href="##FILEPATHVERSIONED[##THEMEDIR##css/base.css]##">
+<link rel="stylesheet" type="text/css" href="##FILEPATHVERSIONED[##THEMEDIR##css/style.css]##">
+<link rel="stylesheet" type="text/css" href="/Shared/css/entity-specific.css">
+##THEMEPRESETSTYLESHEET##
+
+<ac:if setting="Specify Favicon Location">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="##SETTING[Favicon, text]##">
+</ac:if>
+
+<!-- include DeputyCSS library for all kinds of useful helper css -->
+<link rel="stylesheet" type="text/css" href="##THEMEDIR##css/deputy.css">
+
+<!-- Font Awesome-->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+<!-- Custom Responsive StyleSheet -->
+<link rel="stylesheet" type="text/css" href="##THEMEDIR##css/response.css">
+
+<!--Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="##THEMEDIR##css/bootstrap.min.css">
+<script src="##THEMEDIR##js/respond.min.js"></script>
+<![endif]-->
+
+<!-- contains some init type stuff used by the theme later on -->
+<script src="##THEMEDIR##js/themepre.js"></script>
+
+
+##INCLUDESCRIPTBOTTOM[##THEMEDIR##js/bootstrap.min.js]##
+##INCLUDESCRIPTBOTTOM[##THEMEDIR##js/theme.js]##
+##INCLUDESCRIPTBOTTOM[##THEMEDIR##js/QtySpinner.js]##

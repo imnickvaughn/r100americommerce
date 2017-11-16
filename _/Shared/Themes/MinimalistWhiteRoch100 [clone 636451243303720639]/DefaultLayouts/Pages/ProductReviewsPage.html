@@ -1,0 +1,83 @@
+<ac:pagelayout id="ProductReviewsPage">
+  <ac:widgetarea id="Top"></ac:widgetarea>
+  
+  <ac:layoutarea id="ProductInfo">
+    <div class="ReviewProduct">
+      <div style="float: left;">$$THUMBNAIL$$</div>
+      <div style="float: left;">
+        <div><h2>##ITEMNAME## (##ITEMNR##)</h2></div>
+        <div><p>##SHORTDESCRIPTION##</p></div>
+        <div>
+          <div>$$OVERALLRATING$$</div>
+          <div>Based on ##REVIEWCOUNT## review(s)</div>
+        </div>
+        <div><a href="##ITEMURL##">Return to product page</a> | <a href="/store/WriteReview.aspx?ProductID=##ITEMID##">Write a new review</a></div>
+      </div>
+      <div style="clear: both;"></div>
+    </div>
+  </ac:layoutarea>
+  
+  <ac:visibilityarea id="TopNavigationArea">
+    <div id="zzz">
+      <div class="CategoryPageNavigation">
+        <div style="float:right;">$$SORTBYDROPDOWN$$</div>
+        <span class="CategoryPageNumberPerPage">$$NUMBERPERPAGEDROPDOWNLABEL$$</span>
+        $$SHOWBYPAGESIZE$$
+        <div style="clear:both"></div>       
+      </div>        
+    </div>
+    <div id="dvNavTop">
+      <div class="CategoryPageNavigation">
+        <div style="float:right;">$$REVIEWLISTPAGENAVIGATION$$</div>
+        $$REVIEWCOUNTTOP$$
+        <div style="clear:both"></div>
+      </div>      
+    </div>    
+  </ac:visibilityarea>
+  
+  <ac:layoutarea id="Item">
+    <div class="ReviewItem">
+      
+      <div class="ReviewItemTitle">$$TITLE$$</div>
+      
+      <div class="ReviewItemRatings">$$RATINGLIST$$</div>
+      
+      <div class="ReviewItemMeta">
+        <div>
+          <strong>Author:</strong><br>
+          $$AUTHORNAME$$
+        </div>
+        <div>
+          <strong>Location:</strong><br>
+          $$AUTHORLOCATION$$
+        </div>
+        <ac:visibilityarea id="Pros">
+          <div class="ReviewItemProsArea">
+            <div class="ReviewItemProsHeader">Pros:</div>
+            <div class="ReviewItemPros">$$PROSLIST$$</div>
+          </div>
+        </ac:visibilityarea>
+        <ac:visibilityarea id="Cons">
+          <div class="ReviewItemConsArea">
+            <div class="ReviewItemConsHeader">Cons:</div>
+            <div class="ReviewItemCons">$$CONSLIST$$</div>
+          </div>
+        </ac:visibilityarea>
+      </div>   
+      
+      <div class="ReviewItemBody">$$BODY$$</div>
+      
+    </div>
+  </ac:layoutarea>
+  
+  <ac:visibilityarea id="BottomNavigationArea">
+    <div id="dvNavBottom">
+      <div class="CategoryPageNavigation">
+        <div style="float:right;">$$REVIEWLISTPAGENAVIGATIONBOTTOM$$</div>
+        $$REVIEWCOUNTBOTTOM$$
+        <div style="clear:both"></div>
+      </div>
+    </div>
+  </ac:visibilityarea>
+  <ac:widgetarea id="Bottom"></ac:widgetarea>
+</ac:pagelayout>

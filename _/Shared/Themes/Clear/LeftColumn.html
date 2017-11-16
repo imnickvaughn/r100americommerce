@@ -1,0 +1,161 @@
+<ac:templateoverridearea id="LeftColumn">
+  <ac:widgetarea id="CategoryLeftTop"></ac:widgetarea>
+  $$LEFTCOLUMN$$
+  <ac:widgetarea id="CategoryLeftBottom"></ac:widgetarea>
+</ac:templateoverridearea>
+<ac:templateoverridearea id="RightColumn">
+  <ac:widgetarea id="CategoryRightTop"></ac:widgetarea>
+  $$RIGHTCOLUMN$$
+  <ac:widgetarea id="CategoryRightBottom"></ac:widgetarea>
+</ac:templateoverridearea>
+<ac:pagelayout id="CategoryPage" resizeproductthumb="True" productpicwidth="" productsperrow="4" sizeproportionally="True" layoutstyle="Horizontal" pagingtype="NumberedPageLinks" productpicheight="250" displaysortbox="True" pagesize="12">
+
+  <div class="page-header">
+    <div class="img-wrapper">$$CATEGORYIMAGE$$</div>
+    <h1 class="title">$$CATEGORYNAME$$</h1>
+  </div>
+
+  <div style="clear:both"></div>
+  <ac:visibilityarea id="TopNavigationArea">
+    <div class="top-nav">
+      <div class="f-left">
+        $$SORTBYDROPDOWN$$
+      </div>
+
+      <div class="f-right">
+        <div class="btn-group">
+          <button title="Grid Product Layout" class="layout-grid active"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="19"><path class="st0" d="M10 7.3c0 .4-.3.7-.7.7H.7C.3 8 0 7.7 0 7.3V.7C0 .3.3 0 .7 0h8.7c.3 0 .6.3.6.7v6.6zM10 18.3c0 .4-.3.7-.7.7H.7c-.4 0-.7-.3-.7-.7v-6.6c0-.4.3-.7.7-.7h8.7c.4 0 .7.3.7.7v6.6zM23 7.3c0 .4-.3.7-.7.7h-8.7c-.3 0-.6-.3-.6-.7V.7c0-.4.3-.7.7-.7h8.7c.3 0 .6.3.6.7v6.6zM23 18.1c0 .4-.1.9-.5.9h-8.7c-.4 0-.9-.5-.9-.9v-6.6c0-.4.5-.4.9-.4h8.7c.4 0 .5.1.5.4v6.6z"></path></svg></button>
+          <button title="List Product Layout" class="layout-list"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="19"><path class="st0" d="M6 4.4c0 .3-.3.6-.6.6H.6C.3 5 0 4.7 0 4.4V.6C0 .3.3 0 .6 0h4.8c.3 0 .6.3.6.6v3.8zM6 11.4c0 .3-.3.6-.6.6H.6c-.3 0-.6-.3-.6-.6V7.6c0-.3.3-.6.6-.6h4.8c.3 0 .6.3.6.6v3.8zM6 18.4c0 .3-.3.6-.6.6H.6c-.3 0-.6-.3-.6-.6v-3.8c0-.3.3-.6.6-.6h4.8c.3 0 .6.3.6.6v3.8zM22 4.4c0 .3-.3.6-.6.6H8.6c-.3 0-.6-.3-.6-.6V.6c0-.3.3-.6.6-.6h12.8c.3 0 .6.3.6.6v3.8zM22 11.4c0 .3-.3.6-.6.6H8.6c-.3 0-.6-.3-.6-.6V7.6c0-.3.3-.6.6-.6h12.8c.3 0 .6.3.6.6v3.8zM22 18.4c0 .3-.3.6-.6.6H8.6c-.3 0-.6-.3-.6-.6v-3.8c0-.3.3-.6.6-.6h12.8c.3 0 .6.3.6.6v3.8z"></path></svg></button>
+        </div>
+      </div>
+    </div>    
+  </ac:visibilityarea>
+
+  <ac:layoutarea id="ProductListLayout">
+    <div class="product-list"><div class="row">$$GROUP$$</div></div>
+  </ac:layoutarea>
+  <ac:layoutarea id="ProductListGroup">
+    $$ITEM$$
+  </ac:layoutarea>
+  <ac:layoutarea id="ProductList">
+
+    <div class="col-md-4 col-sm-6 small-product grid-view">
+      <div class="inner">
+        <ac:visibilityarea id="dvControlItem">
+          <a href="##ADDTOCARTURL##" class="add-to-cart">
+            <span class="d-none">Add to Cart</span>
+          </a>
+          <a href="##ITEMURL##">
+            <div class="card">
+                <ac:visibilityarea id="Featured">
+                  <div class="abs product-flag left top featured"><span>Featured!</span></div>
+                </ac:visibilityarea>
+                <ac:visibilityarea id="Spotlight">
+                  <div class="abs product-flag left bottom spotlight"><span>Spotlight!</span></div>
+                </ac:visibilityarea>
+                <ac:visibilityarea id="Flag1">
+                  <div class="abs product-flag right top flag1"><span>New!</span></div>
+                </ac:visibilityarea>
+                <ac:visibilityarea id="Flag2">
+                  <div class="abs product-flag right bottom flag2"><span>Hot!</span></div>
+                </ac:visibilityarea>
+                <ac:visibilityarea id="Flag3">
+                  <div class="abs product-flag right bottom flag3"><span>Sale!</span></div>
+                </ac:visibilityarea>
+
+              <div class="img-wrapper">
+                $$THUMBNAIL$$
+              </div>
+              <div class="meta-wrapper grid-view-only">
+                <p><strong>##PRODUCTNAME##</strong> ##TRIM[100]####LONGDESCRIPTION1####ENDTRIM##</p>
+              </div>
+              <div class="meta-wrapper list-view-only">
+                <span class="h3 product-name">##PRODUCTNAME##</span>
+                <ac:visibilityarea id="lblAvailability">
+                  <p class="product-availability">
+                    $$AVAILABILITY$$
+                  </p>
+                </ac:visibilityarea>
+
+
+                <ac:visibilityarea id="MapPricingLink">
+                  <p class="product-map-pricing">
+                    $$MAPPRICINGLINK$$
+                  </p>
+                </ac:visibilityarea>
+
+
+                <ac:visibilityarea id="hlMfgLink">
+                  <p class="product-mfg">$$MANUFACTURERLINK$$</p>
+                </ac:visibilityarea>
+
+                <ac:visibilityarea id="lblItemNr">
+                  <p class="product-number">$$ITEMNUMBER$$</p>
+                </ac:visibilityarea>
+
+                <ac:visibilityarea id="rpDiscountList">
+                  <p class="product-discounts">$$DISCOUNTLIST$$</p>
+                </ac:visibilityarea>
+                <p class="product-desc">##TRIM[500]## ##LONGDESCRIPTION1## ##ENDTRIM##</p>
+              </div>
+              <div class="footer-wrapper">
+                <span class="reviews">$$AVERAGEREVIEWRATINGSTARS$$</span>
+                <span class="price">$$PRICE$$</span>
+              </div>
+            </div>
+          </a>
+        </ac:visibilityarea>
+      </div>
+    </div>
+  </ac:layoutarea>
+  <ac:visibilityarea id="BottomNavigationArea">
+    <div class="bottom-nav">
+
+    </div>
+
+
+    <ul class="pagination hidden">
+      <ac:layoutarea id="ProductListPaging">
+        <li>$$PREVIOUS$$</li>
+        $$PAGES$$
+        <li>$$NEXT$$</li>
+      </ac:layoutarea>   
+    </ul>
+  </ac:visibilityarea>
+
+  <script>
+    $(function() {
+      $cur = $('.pagination .CurrentPage > a');
+      $next = $('.pagination > li').last().find('> a').addClass('next');
+      $next.text('Next');
+      $('.pagination > li').last().remove();
+      $last = $('.pagination > li').last().find('> a');
+      $prev = $('.pagination > li').first().find('> a').addClass('prev');
+      $prev.text('Previous');
+
+      $nav = $('<div class="theme-pagination"></div>');
+      if ($prev.length > 0) {
+        $nav.append($prev);
+      } else {
+        $nav.append($('<span class="prev">Previous</span>'));
+      }
+
+      $nav.append($('<span class="paging">Page ' + $cur.text() + ' of ' + $last.text() + '</span>'));
+
+      if ($next.length > 0) {
+        $nav.append($next);
+      } else {
+        $nav.append($('<span class="next">Next</span>'));
+      }
+
+      if (($next.length > 0) || ($prev.length > 0)) {
+        $('.bottom-nav, .top-nav').append($nav.clone());
+      }
+    });
+  </script>
+
+  <div>$$CATEGORYFOOTER$$</div>
+  $$BOTTOMATTRIBUTESPECIFICWIDGETAREA$$
+  $$BOTTOMCATEGORYSPECIFICWIDGETAREA$$
+  <ac:widgetarea id="Bottom"></ac:widgetarea>
+</ac:pagelayout>

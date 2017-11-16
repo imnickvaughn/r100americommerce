@@ -1,0 +1,100 @@
+<ac:pagelayout id="HeaderPage">
+  <div class="inner pagewidth">
+    <div class="LayoutTopTop">
+      <ac:widgetarea id="TopHeaderWidgets">
+</ac:widgetarea>
+    </div>
+    <div class="LayoutTopMiddle">
+      <div class="LayoutTopLeft">
+        <ac:widgetarea id="LeftHeaderWidgets">
+<ac:widget id="HTML247" type="HTML">
+  <div class="storename"><a class="storename" href="http://##DOMAINNAME##">##STORENAME##</a></div>
+</ac:widget>
+<ac:widget id="IMAGELOGO248" type="ImageLogo" imagepath="/Shared/Themes/Element/images/zig.png">
+
+</ac:widget>
+</ac:widgetarea>
+      </div>
+      <div class="LayoutTopRight">
+        <ac:widgetarea id="RightHeaderWidgets">
+<ac:widget id="HTML250" type="HTML">
+            <div id="utilnav">
+              <div id="phone" class="utillink">##STOREPHONE##
+                ##IF[LoggedIn]##
+                <a class="utillink" id="account" href="/store/myaccount.aspx">Account</a>
+                ##ENDIF##
+              </div>
+              <div id="utilright">
+                <a class="utillink2" href="/store/checkout.aspx">Checkout</a>
+                <a class="utillink2" href="/store/shopcart.aspx">##CARTITEMSCOUNT## <span class="cartitemscount">items</span></a>
+              </div>
+              
+              <div id="utilmid">
+                
+                ##IF[LoggedIn]##
+                <a class="utillink" id="account" href="/store/logout.aspx">Logout</a>
+                ##ELSE##
+                <a class="utillink" id="account" href="/store/login.aspx">Login</a>
+                ##ENDIF##
+                
+                <a class="utillink" href="/store/shopcart.aspx">View Cart</a>
+              </div>
+            </div>
+          </ac:widget>
+</ac:widgetarea>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+    <div class="LayoutTopBottom">
+      <div id="leftRibbon"></div>
+      <div id="rightRibbon"></div>
+      <div class="inner">
+        <ac:widgetarea id="BottomHeaderWidgets">
+<ac:widget id="HTML252" type="HTML">
+            ##SEARCHBOX[autocomplete=true]##
+          </ac:widget>
+<ac:widget id="LINKGROUP253" type="LinkGroup" displayorientation="Horizontal" linkgroupid="17"></ac:widget>
+<ac:widget id="LINKGROUP254" type="LinkGroup" displayorientation="Horizontal" linkgroupid="17"></ac:widget>
+</ac:widgetarea>
+      </div>
+    </div>
+    
+    <div class="FloatingSideBar">
+      <div class="top">
+      </div>
+      <div class="middle">
+        <ac:widgetarea id="FloatingSideBar">
+<ac:widget id="PRODUCTDISPLAY256" type="ProductDisplay" featureditemsbuymorelink="False" displaybycategoryonly="False" featureditemsdisplaythumbonseparateline="False" repeatcount="1" repeatabletype="SpotlightItems" productpicturewidth="125" displaycount="1" headertext="<strong>Deal</strong> of the <strong>Month</strong>" categoryid="0" productpictureheight="125"><ac:visibilityarea id="dvControl">
+            $$HEADER$$
+            $$ADMINHELP$$
+            <ac:layoutarea id="Item">
+              <ac:visibilityarea id="dvControlItem">      
+                <div class="DealOfMonthThumbnail">$$PHOTOWITHLINK$$</div>
+                <div class="DealOfMonthName">
+                  $$PRODUCTNAME$$
+                </div>
+                <div class="DealOfMonthPrice">
+                  $$PRICE$$
+                </div>
+              </ac:visibilityarea>
+            </ac:layoutarea>
+            </ac:visibilityarea></ac:widget>
+<ac:widget id="IMAGELOGO259" type="ImageLogo" imagepath="/shared/themes/Element/images/20off.png">
+
+</ac:widget>
+<ac:widget id="HTML257" type="HTML">
+            <div class="quotes">
+              <blockquote><p>They did a wonderful job and I am very pleased!<cite>Mrs. A.</cite></p></blockquote>
+              <blockquote><p>We are thrilled to death with the job they did. Everything is clean and neat and perfect!<cite>David Thorne</cite></p></blockquote>
+            </div>
+            <div class="ControlHeader">##TELLAFRIEND##</div>
+          </ac:widget>
+<ac:widget id="IMAGELOGO258" type="ImageLogo" imagepath="/shared/themes/Element/images/ac.png">
+
+</ac:widget>
+</ac:widgetarea>
+      </div>
+      <div class="bottom">
+      </div>
+    </div> </div>
+</ac:pagelayout>

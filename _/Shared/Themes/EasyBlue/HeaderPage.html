@@ -1,0 +1,48 @@
+<ac:pagelayout id="HeaderPage">
+  <div class="LayoutTopTop">
+    <ac:widgetarea id="TopHeaderWidgets">
+</ac:widgetarea>
+  </div>
+  <div class="LayoutTopLeft">
+    <ac:widgetarea id="LeftHeaderWidgets">
+<ac:widget id="HTML403" type="HTML">
+        <a id="storename" href="http://##DOMAINNAME##">##STORENAME##</a>
+      </ac:widget>
+<ac:widget id="IMAGELOGO405" type="ImageLogo" imagepath="/Shared/Themes/EasyBlue/images/drip.png" navigateurl="http://##DOMAINNAME##">
+        
+      </ac:widget>
+<ac:widget id="HTML404" type="HTML"><div id="tagline">This is your tagline...</div></ac:widget>
+</ac:widgetarea>
+  </div>
+  <div class="LayoutTopRight">
+    <ac:widgetarea id="RightHeaderWidgets">
+<ac:widget id="HTML407" type="HTML">
+        <div id="utilnav">
+          <ul> 
+            ##IF[LoggedIn]##
+            <li>Welcome ##CUSTOMERFIRSTNAME##</li>
+            ##ENDIF##
+            <li>##LOGINLOGOUTLINK##</li>
+            ##IF[LoggedIn]##
+            <li><a href="/store/myaccount.aspx">My Account</a></li>
+            ##ENDIF##
+            <li>##SHOPCARTLINE##</li>
+            <li><a href="/store/shopcart.aspx">View Cart</a></li>
+            <li><a href="/store/checkout.aspx">Checkout</a></li>
+          </ul>
+        </div>
+      </ac:widget>
+<ac:widget id="HTML408" type="HTML">
+        Search the Store: ##SEARCHBOX[autocomplete=true]##
+      </ac:widget>
+<ac:widget id="HTML409" type="HTML">
+        Browse Categories: ##CATEGORYDROPDOWN[defaulttext=Select...]##
+      </ac:widget>
+</ac:widgetarea>
+  </div>
+  <div class="LayoutTopBottom">
+    <ac:widgetarea id="BottomHeaderWidgets">
+<ac:widget id="LINKGROUP411" type="LinkGroup" displayorientation="Horizontal" linkgroupid="17"></ac:widget>
+</ac:widgetarea>
+  </div>
+</ac:pagelayout>

@@ -1,0 +1,239 @@
+<ac:pagelayout id="HeaderPage">
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 social-icons">
+          <ac:if setting="Show Facebook Icon">
+            <a class="pad-10 color-inherit no-ul big" href="##SETTING[Facebook Page URL, text]##" target="_blank"><i class="icon-facebook"></i>
+              <div class="d-none">
+                Facebook
+              </div>
+            </a>
+          </ac:if>
+          <ac:if setting="Show Twitter Icon">
+            <a class="pad-10 color-inherit no-ul big" href="##SETTING[Twitter Page URL, text]##" target="_blank">
+              <i class="icon-twitter"></i>
+              <div class="d-none">
+                Twitter
+              </div>
+            </a>
+          </ac:if>
+          <ac:if setting="Show Youtube Icon">
+            <a class="pad-10 color-inherit no-ul big" href="##SETTING[Youtube Page URL, text]##" target="_blank">
+              <i class="icon-youtube"></i>
+              <div class="d-none">
+                Youtube
+              </div>
+            </a>
+          </ac:if>
+          <ac:if setting="Show Google+ Icon">
+            <a class="pad-10 color-inherit no-ul big" href="##SETTING[Google Plus Page URL, text]##" target="_blank">
+              <i class="icon-google-plus"></i>
+              <div class="d-none">
+                Google+
+              </div>
+            </a>
+          </ac:if>
+          <ac:if setting="Show Tumblr Icon">
+            <a class="pad-10 color-inherit no-ul big" href="##SETTING[Tumblr Page URL, text]##" target="_blank">
+              <i class="icon-tumblr"></i>
+              <div class="d-none">
+                Tumblr
+              </div>
+            </a>
+          </ac:if>
+          <ac:if setting="Show Instagram Icon">
+            <a class="pad-10 color-inherit no-ul big" href="##SETTING[Instagram Page URL, text]##" target="_blank">
+              <i class="icon-instagram"></i>
+              <div class="d-none">
+                Instagram
+              </div>
+            </a>
+          </ac:if>
+          <ac:if setting="Show Pinterest Icon">
+            <a class="pad-10 color-inherit no-ul big" href="##SETTING[Pinterest Page URL, text]##" target="_blank">
+              <i class="icon-pinterest"></i>
+              <div class="d-none">
+                Pinterest
+              </div>
+            </a>
+          </ac:if>
+        </div>
+        <div class="col-sm-6 right">
+          <ac:widgetarea id="UtilArea"><ac:widget id="SMALLSHOPPINGCART39339" type="SmallShoppingCart" enablemergecode="True">
+            <ac:visibilityarea id="dvControl">
+              <div class="panel no-m-b m-t-5 pad-b-10">
+                <div class="center well well-sm no-wrap no-m-b bold m-l-10 m-r-10">
+                  <div class="pad-50 no-pad-tb">$$CARTITEMSLABEL$$</div>
+                </div>
+                <div class="media-list">
+
+                  <ac:layoutarea id="ShopCartItem">
+                    <div class="SmallCartItem pad-t-15 pad-b-15 pad-l-10 pad-r-10 media">
+                      <div class="pull-left m-r-15">
+                        <img src="##IMAGERESIZER[path=##ITEMPHOTOURL##,bw=50,lr=t]##
+">
+                      </div>
+                      <div class="pull-right m-t-15">
+                        <a class="badge clear-item-link" href="#">&times;</a>
+                      </div>
+                      <div class="media-body">
+                        <div>$$ITEMLINK$$</div>
+                        <div>$$QUANTITYBOX$$ &nbsp;x $$PRICE$$</div>
+                      </div>
+                    </div>
+                    <hr class="m-l-5 m-r-5 no-m-tb">
+                  </ac:layoutarea>
+                  <div class="update-qty-link m-5 no-m-t pad-t-5 pad-b-5 pad-10 center">
+                    <span class="rel">
+                      <span class="hide update-attention abs" style="right:100%;top:0;">
+                        click &rarr;
+                      </span>
+                      $$UPDATEQTYLINK$$
+                    </span>
+                    <!--<div>
+$$VIEWCARTLINK$$
+</div>
+<div>
+$$CLEARCARTLINK$$
+</div> -->
+                  </div>
+
+                  <div class="well well-sm no-m-b m-l-10 m-r-10">
+                    <strong class="block right">$$SUBTOTAL$$</strong>
+                  </div>
+                  <div class="SmallCartCheckoutButton full-input m-l-10 m-r-10">
+                    $$CHECKOUTBUTTON$$
+                  </div>
+                  $$ERROR$$
+                </div>
+              </div>
+              <div class="pad-10 no-wrap center">
+                <a class="block pad-50 no-pad-tb" href="/store/shopcart.aspx">View Full Shopping Cart</a>
+              </div>
+            </ac:visibilityarea>
+            </ac:widget>
+<ac:widget id="MENULIST39333" type="MenuList" linkgroupid="104">
+              <ac:visibilityarea id="dvControl">
+                $$ADMINHELP$$
+                <ul class="nav nav-util">
+                  <ac:layoutarea id="Item">
+                    <li>
+                      <a href="$$HREF$$" target="$$TARGET$$">$$TEXT$$</a>
+                    </li>
+                  </ac:layoutarea>
+                  <li class="no-wrap">
+                    <ac:if setting="Show Shopping Cart as Dropdown">
+                      <a href="#" data-toggle="dropdown">
+                        <span class="in-block">My Cart <span class="bluegreen">(##CARTITEMSCOUNT##)</span></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          ##IF[CartIsEmpty]##
+                          <p class="m-20">Your cart is empty!</p>
+                          ##ENDIF##
+                          $$SMALLSHOPPINGCART39339$$
+                        </li>
+                      </ul>
+
+                      <ac:else>
+                        <a href="/store/shopcart.aspx" rel="nofollow">
+                          <span class="in-block">My Cart <span class="bluegreen">(##CARTITEMSCOUNT##)</span></span>
+                        </a>
+                      </ac:else>
+                    </ac:if>
+                  </li>
+                </ul>
+              </ac:visibilityarea>
+            </ac:widget>
+</ac:widgetarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <ac:widgetarea id="PrimaryNav"><ac:widget id="MENULIST39336" type="MenuList" linkgroupid="1">
+            <ac:visibilityarea id="dvControl">
+              $$ADMINHELP$$
+              <div class="navbar" role="navigation">
+                <div class="navbar-header visible-xs">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+
+                  <a class="navbar-brand" href="/">
+                    <ac:if setting="Use Logo Image in Place of Store Name">
+                      ##SETTING[Logo, img]##
+                      <ac:else>
+                        ##STORENAME##
+                      </ac:else>
+                    </ac:if>
+                  </a>
+                </div>
+                <div class="navbar-collapse collapse navbar-main">
+                  <ul class="nav nav-list">
+                    <li class="nav-header hidden-xs">
+                      <a class="no-ul color-inherit bold store-name" href="/">
+                        <ac:if setting="Use Logo Image in Place of Store Name">
+                          ##SETTING[Logo, img]##
+                          <ac:else>
+                            ##STORENAME##
+                          </ac:else>
+                        </ac:if>
+                      </a>
+                    </li>
+                    <ac:layoutarea id="Item"><ac:visibilityarea id="phDDLink">
+                      <li class="dropdown-submenu">
+                        <a href="$$HREF$$" target="$$TARGET$$" data-toggle="dropdown">$$TEXT$$</a>
+                        <ac:visibilityarea id="phSubMenu">
+                          <ul class="dropdown-menu">$$SUBMENU$$</ul>
+                        </ac:visibilityarea>
+                      </li></ac:visibilityarea><ac:visibilityarea id="phNoDDLink">
+                      <li>
+                        <a href="$$HREF$$" target="$$TARGET$$">$$TEXT$$</a>
+                      </li></ac:visibilityarea></ac:layoutarea>
+                  </ul>
+
+
+                  <ac:layoutarea id="SubItem">
+                    <ac:visibilityarea id="phDDLink">
+
+                      <li class="dropdown-submenu">
+                        <a href="$$HREF$$" target="$$TARGET$$">$$TEXT$$</a>
+                        <ac:visibilityarea id="phSubMenu">
+                          <ul class="dropdown-menu">$$SUBMENU$$</ul>
+                        </ac:visibilityarea>
+                      </li>
+                    </ac:visibilityarea>
+                    <ac:visibilityarea id="phNoDDLink">
+                      <li>
+                        <a href="$$HREF$$" target="$$TARGET$$">$$TEXT$$</a>
+                      </li>
+                    </ac:visibilityarea>
+                  </ac:layoutarea>
+                </div>
+              </div>
+            </ac:visibilityarea>
+            </ac:widget>
+</ac:widgetarea>
+        </div>
+        <div class="col-sm-3">
+          <div class="search-wrapper">
+            <ac:widgetarea id="SearchArea"><ac:widget id="SEARCHBOX39337" type="SearchBox">
+
+              </ac:widget>
+</ac:widgetarea>
+          </div>
+        </div>
+        <script>$(function() {
+  $('header .header-bottom .search-wrapper .ControlInput').attr('placeholder', 'Search');
+});</script>
+      </div>
+    </div>
+  </div>
+</ac:pagelayout>

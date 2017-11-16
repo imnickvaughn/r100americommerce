@@ -1,0 +1,168 @@
+<ac:pagelayout id="OnePageCheckOutPage">
+  <div style="padding-left:0px; padding-right:10px; width:99%;">
+    <ac:widgetarea id="Top">
+</ac:widgetarea>
+    
+    $$ERRORTEXT$$
+    
+    $$ADDRESSAREA$$
+    <table width="100%">
+      <tbody>
+        $$REGISTRATION$$
+        <tr>
+          $$CUSTOMCUSTOMERFIELDS$$
+          $$CUSTOMORDERFIELDS$$
+        </tr>
+        <tr>
+          <td colspan="2">
+            $$SHIPPINGAREA$$
+            $$PAYMENTAREA$$
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <!--Begin Order Comments-->
+            $$PUBLICORDERCOMMENTS$$
+            <!--End Order Comments-->
+            <!--Begin Gifting-->
+            $$ORDERGIFTING$$
+            <!--End Gifting-->
+          </td>
+        </tr>$$MAILINGLIST$$
+        <tr>
+          <td colspan="2" align="center">
+            <div class="CheckOutSubHeader">
+              $$CHECKOUTSTEPCOUNTER11$$.
+              <!--Confirm &amp; Place Your Order-->$$CONFIRMORDERTEXT$$</div>
+            <br>
+            <ac:layoutarea id="OnePageCheckOutCartArea">
+            <table width="100%" class="ShoppingCart OnePageCheckoutShoppingCart">
+              <tr>
+                <td class="ShoppingCartHeader">Product Description</td>
+                <td class="ShoppingCartHeader ShoppingCartHeaderText">Qty</td>
+                <td class="ShoppingCartHeader ShoppingCartHeaderText">Each</td>
+                <td class="ShoppingCartHeader ShoppingCartHeaderText">Total</td>
+              </tr>
+              $$CARTITEMS$$                
+              <tr id="trSubtotal">
+                <td colspan="3" class="ShoppingCartTotals">$$SUBTOTALTEXT$$</td>
+                <td class="ShoppingCartPrice">$$SUBTOTAL$$</td>
+              </tr>
+              <ac:visibilityarea id="PointsEarnedArea">
+                <tr id="trPointsEarned">
+                  <td colspan="##CARTCOLUMNCOUNT##" class="ShoppingCartTotals">##REWARDPOINTSLABEL## Earned</td>
+                  <td class="ShoppingCartPrice">$$REWARDPOINTSEARNED$$</td>
+                </tr>
+              </ac:visibilityarea>
+              <ac:visibilityarea id="ShippingArea">
+                <tr id="trShipping">
+                  <td colspan="3" class="ShoppingCartTotals">
+                    $$SHIPPINGTEXT$$
+                    $$SHIPPINGINFO$$
+                  </td>
+                  <td class="ShoppingCartPrice">$$SHIPPING$$</td>
+                </tr>
+              </ac:visibilityarea>
+              <ac:visibilityarea id="HandlingArea">
+                <tr id="trHandling">
+                  <td colspan="3" class="ShoppingCartTotals">$$HANDLINGTEXT$$</td>
+                  <td class="ShoppingCartPrice">$$HANDLING$$</td>
+                </tr>
+              </ac:visibilityarea>
+              <ac:visibilityarea id="DiscountArea">
+                <tr id="trDiscount">
+                  <td colspan="3" class="ShoppingCartTotals">
+                    $$DISCOUNTTEXT$$
+                    $$DISCOUNTINFO$$
+                  </td>
+                  <td class="ShoppingCartPrice">$$DISCOUNT$$</td>
+                </tr>
+              </ac:visibilityarea>
+              <ac:visibilityarea id="TaxArea">
+                <tr id="trTax">
+                  <td colspan="3" class="ShoppingCartTotals">$$TAXTEXT$$</td>
+                  <td class="ShoppingCartPrice">$$TAX$$</td>
+                </tr>
+              </ac:visibilityarea>
+              <ac:visibilityarea id="AdditionalFeesArea">
+                <tr id="trAdditionalFees">
+                  <td colspan="3" class="ShoppingCartTotals">$$ADDITIONALFEESTEXT$$</td>
+                  <td class="ShoppingCartPrice">$$ADDITIONALFEES$$</td>
+                </tr>
+              </ac:visibilityarea>
+              <ac:visibilityarea id="TotalArea">
+                <tr id="trTotal">
+                  <td colspan="3" class="ShoppingCartTotals">$$TOTALTEXT$$</td>
+                  <td class="ShoppingCartPrice">$$TOTAL$$</td>
+                </tr>
+              </ac:visibilityarea>
+              <ac:visibilityarea id="TotalInPointsArea">
+                <tr id="trTotalInPoints">
+                  <td colspan="3" class="ShoppingCartTotals"><b>Total in ##REWARDPOINTSLABEL##</b></td>
+                  <td class="ShoppingCartPrice">$$TOTALINPOINTS$$</td>
+                </tr>
+              </ac:visibilityarea>
+              <ac:visibilityarea id="AppliedPointsArea">
+                <tr id="trAppliedPointsTotal">
+                  <td colspan="3" class="ShoppingCartTotals"><b>Applied ##REWARDPOINTSLABEL##</b></td>
+                  <td class="ShoppingCartPrice">$$APPLIEDPOINTSTOTAL$$</td>
+                </tr>
+              </ac:visibilityarea>
+              <ac:visibilityarea id="AppliedPaymentsArea">
+                <tr id="trAppliedPaymentsTotal">
+                  <td colspan="3" class="ShoppingCartTotals"><b>Applied Payments</b></td>
+                  <td class="ShoppingCartPrice">$$APPLIEDPAYMENTSTOTAL$$</td>
+                </tr>
+              </ac:visibilityarea>
+              <ac:visibilityarea id="AdjustedTotalArea">
+                <tr id="trAdjustedTotal">
+                  <td colspan="3" class="ShoppingCartTotals"><b>Adjusted Total</b></td>
+                  <td class="ShoppingCartPrice">$$ADJUSTEDTOTAL$$</td>
+                </tr>
+              </ac:visibilityarea>
+            </table>
+          </ac:layoutarea>
+          <ac:layoutarea id="OnePageCheckOutItem">
+            <tr>
+              <td>
+                $$ITEMNAME$$
+                $$ITEMNR$$
+                $$VARIANTS$$
+                $$PERSONALIZE$$
+              </td>
+              <td align="center">$$QUANTITY$$</td>
+              <td align="center">$$PRICE$$</td>
+              <td align="center">$$SUBTOTAL$$</td>
+            </tr>
+          </ac:layoutarea>
+            <div>$$UPDATECARTLINK$$</div>
+            <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table width="100%">
+      <tbody>
+        
+        <tr>
+          <td align="right" colspan="2">
+            <br>
+            $$PLACEORDERBUTTON$$
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div style="DISPLAY:none;FLOAT:right;WIDTH:250px">
+      <div class="CheckOutSubHeader"><!--Order Totals-->$$TOTALSHEADERTEXT$$</div>
+      <div class="CheckOutText"><!--<b>Subtotal:</b>-->$$SUBTOTALTEXT$$
+        $$SUBTOTAL$$</div>
+      $$SHIPPING$$
+      $$HANDLING$$
+      $$DISCOUNT$$
+      $$TAX$$
+      $$TOTAL$$
+    </div>
+  </div>
+</ac:pagelayout>

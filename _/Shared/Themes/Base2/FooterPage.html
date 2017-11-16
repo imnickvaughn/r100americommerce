@@ -1,0 +1,130 @@
+<ac:pagelayout id="FooterPage"> 
+  <hr class="pad-20 no-pad-lr no-pad-b">
+  <div class="m-20 no-m-lr">  
+    <div class="row footer-row">
+      <div class="col-md-3 footer-column">
+        <ac:widgetarea id="FooterWidgetsColumn1">
+<ac:widget id="HTML1894" type="HTML"><div class="h4 m-20 no-m-lr">Contact Us</div><p>            <ac:if setting="Show Phone Number in Footer">
+              
+</ac:if></p><p>
+                <abbr title="Phone Number">P:</abbr> ##STOREPHONE##
+              </p><p>            
+            <ac:if setting="Show Email Address in Footer">
+              
+</ac:if></p><p>
+                <abbr title="Email Address">E:</abbr> <a href="mailto:info@rochester100.com">info@rochester100.com</a>
+              </p><p>            
+            <ac:if setting="Show Address in Footer">
+              
+</ac:if></p><p>
+                <span class="block">##STOREADDRESSLINE1##</span>
+                <span class="block">##STOREADDRESSLINE2##</span>
+                <span class="block">##STOREADDRESSCITY##, ##STOREADDRESSSTATE## ##STOREADDRESSPOSTALCODE##</span>
+              </p></ac:widget>
+</ac:widgetarea>
+      </div>
+      <!-- /Column -->
+      
+      <div class="col-md-3 footer-column">
+        <ac:widgetarea id="FooterWidgetsColumn2">
+<ac:widget id="HTML1896" type="HTML"><div class="left">
+	<div class=" h4 m-20 no-m-lr">
+		Get to know us!
+	</div>
+		<ac:if setting="Show Facebook Icon"><a class="pad-10 color-inherit no-ul big" href="##SETTING[Facebook Page URL, text]##" target="_blank">
+	<i class="icon-facebook"></i>
+	<div class="d-none">
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Facebook&nbsp;https://www.facebook.com/pages/Nickys-Folders/198268790197403
+	</div>
+		</a></ac:if><a class="pad-10 color-inherit no-ul big" href="##SETTING[Youtube Page URL, text]##" target="_blank" style="font-size: 1em; background-color: initial;"><ac:if setting="Show Youtube Icon">
+	<div class="d-none" style="display: inline !important;">
+		Youtube
+		<iframe src="https://www.youtube.com/embed/0afE5XBPNe8?feature=player_embedded" allowfullscreen="" frameborder="0" height="200" width="200">
+		</iframe>
+	</div>
+	</ac:if></a>
+	<p>
+		<a class="pad-10 color-inherit no-ul big" href="##SETTING[Youtube Page URL, text]##" target="_blank" style="font-size: 1em; background-color: initial;">&nbsp;
+		</a>
+	</p>
+</div>
+<div class="left">
+	<ac:if setting="Show Google+ Icon">
+	<p>
+		<a class="pad-10 color-inherit no-ul big" href="##SETTING[Google Plus Page URL, text]##" target="_blank"></a><br>
+		<ac:if setting="Show Instagram Icon"></ac:if>
+	</p>
+	<p>
+		<a class="pad-10 color-inherit no-ul big" href="##SETTING[Instagram Page URL, text]##" target="_blank"></a>
+	</p>
+	</ac:if>
+</div></ac:widget>
+</ac:widgetarea>
+      </div>
+      <!-- /Column -->
+      
+      <div class="col-md-3 footer-column">
+        <ac:widgetarea id="FooterWidgetsColumn3">
+<ac:widget id="HTML1898" type="HTML">
+            <ac:if setting="Show Accepted Cards in Footer">
+              <div class="left">
+                <div class="h4 m-20 no-m-lr">We Accept</div>
+                ##ACCEPTEDCREDITCARDLOGOS##
+              </div>
+            </ac:if>
+          </ac:widget>
+</ac:widgetarea>
+      </div>
+      <!-- /Column -->
+      
+      <!-- /Column -->
+      
+      <div class="col-md-3 footer-column">
+        <ac:widgetarea id="FooterWidgetsColumn4">
+<ac:widget id="MAILINGLIST1902" type="MailingList">
+            <ac:visibilityarea id="dvControl">
+              <div class="h4 m-20 no-m-lr"> $$HEADER$$
+              </div>
+              <div>
+                <div>$$EMAIL$$   $$GOBUTTON$$ </div>
+              </div>
+              
+              
+              $$RESULT$$
+            </ac:visibilityarea>
+          </ac:widget>
+</ac:widgetarea>
+      </div>
+      <!-- /Column -->
+    </div>
+    <div class="footer-bottom">
+      <ac:widgetarea id="Bottom">
+<ac:widget id="HTML1900" type="HTML">
+          <p class="center pad-20 no-pad-b no-margin clear">
+            &copy; ##CURRENTDATE[yyyy]## ##STORENAME##
+          </p>
+        </ac:widget>
+</ac:widgetarea>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <!-- This is used in various places of the site. 
+figured it'd be good idea to put it in the footer -->
+  <div class="modal fade" id="iframe-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body rel">
+          <div class="progress progress-striped active abs">
+            <div class="progress-bar w-100"></div>
+          </div>
+          <iframe class="rel" id="modal-iframe" name="modalIframe" width="100%" height="800" style="border:none;" frameborder="0" seamless=""></iframe>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</ac:pagelayout>

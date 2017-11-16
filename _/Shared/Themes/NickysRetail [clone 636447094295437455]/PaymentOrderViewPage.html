@@ -1,0 +1,128 @@
+<ac:pagelayout id="PaymentOrderViewPage">
+	<ac:widgetarea id="Top"></ac:widgetarea>
+  <div align="center">
+    <div class="CheckOutSubHeader">Order #
+      $$ORDERNUMBER$$
+      Placed
+      $$ORDERDATE$$
+      <br>
+    </div>
+      
+    $$CONFIRMATIONMESSAGE$$
+    <br>
+
+    <table width="100%">
+      <tr>
+        <td width="50%" valign="top">
+          <span class="CheckOutSubHeader">
+            $$ORDERPAYMENTINFORMATION$$
+          </span>
+          <div align="center">
+			<table width="95%">
+                <tr>
+                    <th>$$LASTPAYMENTAPPLIEDDATEHEADER$$</th>
+                    <th>$$LASTPAYMENTTYPEHEADER$$</th>
+                    <th>$$LASTPAYMENTAMOUNTHEADER$$</th>
+                    <th>$$LASTPAYMENTPAYMENTNOTEHEADER$$</th>
+                    <th>$$LASTPAYMENTPAYMENTDATEHEADER$$</th>
+                </tr>
+				<tr>
+					<td>
+						$$LASTPAYMENTAPPLIEDDATE$$
+					</td>
+					<td>
+						$$LASTPAYMENTTYPE$$
+					</td>
+					<td>
+						$$LASTPAYMENTAMOUNT$$
+					</td>
+					<td>
+						$$LASTPAYMENTPAYMENTNOTE$$
+					</td>
+					<td>
+						$$LASTPAYMENTPAYMENTDATE$$
+					</td>
+				</tr>
+			</table>
+          </div>
+          <br>
+          <ac:visibilityarea id="CustomFieldContainer">
+            <span class="CheckOutSubHeader">
+              other order information
+            </span>
+            <div align="center">
+              <table width="95%">
+                <tr>
+                  <td>
+                    $$CUSTOMFIELDS$$
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </ac:visibilityarea>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <span class="CheckOutSubHeader">
+      $$ORDERSTATUSHEADER$$
+    </span>
+    $$ORDERSTATUS$$<br>
+    $$PAYMENTREJECTIONREASON$$
+    $$PAYMENTSTATUS$$<br>
+    $$PAYMENTDIRECTIONS$$
+    $$RECEIPTLINK$$
+    <br>
+    <div class="errorText">$$SPECIALINSTRUCTIONS$$</div>
+    <ac:visibilityarea id="PublicCommentsContainer">
+      <div class="PaymentOrderViewText">
+        <span class="CheckOutSubHeader">$$PUBLICCOMMENTSHEADER$$</span><br>
+        $$PUBLICCOMMENTS$$
+      </div>
+    </ac:visibilityarea>
+    <ac:visibilityarea id="OrderInstructionsContainer">
+      <div class="PaymentOrderViewText">
+        
+        <span class="CheckOutSubHeader">$$ORDERINSTRUCTIONSHEADER$$</span><br>
+        $$ORDERINSTRUCTIONS$$
+      </div>
+      <br>
+    </ac:visibilityarea>
+    
+    <ac:layoutarea id="ItemHeader">
+    <table class="PaymentOrderViewTable" width="100%" border="0" cellpadding="3" cellspacing="0">
+      <tr class="PaymentOrderViewHeader">
+        <td class="PaymentOrderViewHeader" align="right">
+          $$ITEMNUMBERHEADER$$
+        </td>
+        <td class="PaymentOrderViewHeader" align="right">
+          $$ITEMPRICEHEADER$$
+        </td>
+        <td class="PaymentOrderViewHeader" align="right">
+          $$ORDERBALANCEHEADER$$
+        </td>
+      </tr>
+      </table></ac:layoutarea>
+      <ac:layoutarea id="ItemDetail">
+        <tr class="PaymentOrderViewItem">
+          <td align="right"><div class="OrderDetailsItemNr">$$ITEMNUMBER$$</div></td>
+          <td align="right"><span class="OrderDetailsItemName">$$ITEMPRICE$$</span>
+          </td>
+          <td align="right"><div class="OrderDetailsItemQuantity">$$ORDERBALANCE$$</div></td>
+        </tr>
+      </ac:layoutarea>
+      <ac:layoutarea id="ItemDetailAlt">
+        <tr class="PaymentOrderViewItemAlt">
+          <td align="right"><div class="OrderDetailsItemNr">$$ITEMNUMBER$$</div></td>
+          <td align="right"><span class="OrderDetailsItemName">$$ITEMPRICE$$</span>
+          </td>
+          <td align="right"><div class="OrderDetailsItemQuantity">$$ORDERBALANCE$$</div></td>
+        </tr>
+      </ac:layoutarea>
+    <ac:layoutarea id="ItemFooter">
+    
+    </ac:layoutarea>
+  </div>
+  <ac:widgetarea id="Bottom"></ac:widgetarea>
+</ac:pagelayout>

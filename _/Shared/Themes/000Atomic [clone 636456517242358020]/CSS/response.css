@@ -1,0 +1,79 @@
+/* Large desktop */
+@media (min-width: 1200px) { 
+.highwide {padding:25px 0;}
+}
+
+
+/* Smaller desktop */
+@media (max-width: 1160px) { 
+.Control.MenuBar .navbar-default .navbar-nav > li > a { font-size: 16px; padding-left: 15px; padding-right: 15px;}
+.topgrey .Control.MenuBar .navbar-default .navbar-nav > li > a {font-size:inherit;}
+.highwide {padding:5px 0;}
+.homepage-product .thumbnail img {max-height: 189px;}
+}
+
+/* Smaller desktop */
+@media (max-width: 1100px) { 
+.Control.MenuBar .navbar-default .navbar-nav > li > a {  padding-left: 10px; padding-right: 10px;}
+
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 991px) { 
+.left-collapse.collapse {display:none !important;}
+.navbar-header-leftcol.visible-xs {display:block !important; float: none;}
+.navbar-header-leftcol .navbar-toggle {display:block !important;}
+.left-collapse.collapse.in {display:block !important;}
+
+.CompGridProduct-list > div div.category-product {width:33%}
+.CompGridProduct-list > div div.category-product:first-of-type, .CompGridProduct-list > div div.category-product:nth-of-type(2) { width:50%;}
+.CompGridProduct-list > div div.category-product:first-of-type a, .CompGridProduct-list > div div.category-product:nth-of-type(2) a { max-height:inherit; height:400px; line-height:400px;}
+.CompGridProduct-list .category-product .thumbnail { min-height: inherit; height:205px; line-height: inherit; margin-bottom: 0px; }
+.CompGridProduct-list > div div.category-product:first-of-type .thumbnail:hover .quick-view {top:100px;}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+.SmBanImg1 {margin-top:30px;}
+.Control.MenuBar .navbar-default .navbar-nav > li > a {border-right:none;}
+.Control.MenuBar .navbar-default.navbar-static-top {text-align:left; padding-left:10px; padding-right:10px;}
+.LayoutTopTop .Control.ImageLogo { margin-bottom: 25px;}
+.LayoutTopTop .Control.ImageLogo img {width:100%;}
+.LayoutTopTop .container {text-align:center;}
+.SmBanImg, .SmBanImg1 {margin-top:30px;}
+.HomeBlogPost .BlogPostImage img {width:100%;}
+.sMallGraphicNews img {margin-bottom:30px;}
+.FreeShipBlue img {padding-top:30px;}
+.ui-tabs .ui-tabs-nav li a {font-size: 18px;
+  padding: 0.5em 2em;}
+.left-collapse.collapse {display:none !important;}
+.navbar-header-leftcol.visible-xs {display:block !important; float: none;}
+.left-collapse.collapse.in {display:block !important;}
+
+.PhotoBgThumbnails {float:none;}
+.CompGridProduct-list > div div.category-product {width:50%}
+.CompGridProduct-list > div:nth-of-type(2n+1) div.category-product:first-of-type, .CompGridProduct-list > div:nth-of-type(1n+1) div.category-product:first-of-type { width:100%;}
+.CompGridProduct-list > div:nth-of-type(2n+1) div.category-product:first-of-type, .CompGridProduct-list > div:nth-of-type(1n+1) div.category-product:first-of-type a {height:inherit;}
+.CompGridProduct-list > div div.category-product:first-of-type a, .CompGridProduct-list > div div.category-product:nth-of-type(2) a { max-height:inherit; height:300px; line-height:300px;}
+.CompGridProduct-list .category-product .thumbnail { min-height: inherit; height:300px; line-height: inherit; margin-bottom: 0px; }
+.CompGridProduct-list > div:nth-of-type(1n+1) div.category-product {float:left;}
+.CompGridProduct-list > div div.category-product:first-of-type .thumbnail:hover .quick-view {top:100px;}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+.LayoutBottom {text-align:center;}
+.specialprod {width:100%;}
+.col-xxs { display:block; float:none; width: 100%}
+
+.CompGridProduct-list > div div.category-product {width:100%}
+.CompGridProduct-list > div div.category-product:first-of-type a, .CompGridProduct-list > div div.category-product:nth-of-type(2) a { max-height:inherit; height:inherit; line-height:inherit;}
+.CompGridProduct-list .category-product .thumbnail { min-height: inherit; height:inherit; line-height: inherit; margin-bottom: 0px; }
+
+}
+
+
+
