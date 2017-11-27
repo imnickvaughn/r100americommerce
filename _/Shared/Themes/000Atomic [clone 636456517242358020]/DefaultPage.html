@@ -1,40 +1,71 @@
 <ac:pagelayout id="DefaultPage">
 
-
-      <div class="container">
-        <div class="row pad-t-5">
-          <div class="col-xs-12 col-sm-8 col-med-8" style="padding-left: 0px; padding-right: 0px;">
-            <ac:widgetarea id="Video"><ac:widget id="Video" type="HTML">
-                <div id="containingBlock">
-                  <div class="videoWrapper">
-                    <iframe src="https://www.youtube.com/embed/VZLGMwx806o?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="">
-                    </iframe>
-                  </div>
-                </div>
-              </ac:widget>
-</ac:widgetarea>
-          </div role="col">
-          <div class="no-m col-xs-12 col-sm-4 col-med-4" style="padding-left: 5px !important; padding-right: 0px;">
-            <ac:widgetarea id="QuickFind"><ac:widget id="QuickFind" type="HTML" donotcreatecontrolwrapper="True">
-                <img src="https://nickysfolders.americommerce.com/Shared/images/r100quickfind.png" style='height: auto; width: 100%; object-fit: contain;'>
-              </ac:widget>
-</ac:widgetarea>
-          </div role="col">
-        </div role="row">
-      </div role="container">
+  <div class="container-fluid video-row">
+    <div class="row">
+      <div id="vidquick-col-fix" class="col-md-12">
+        <div class="col-sm-8 video-wrap">
+          <div class="videoWrapper">
+            <iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/VZLGMwx806o?autoplay=1&controls=0&rel=0&showinfo=0" frameborder="0" allowfullscreen="">
+            </iframe>
 
 
-      <div class="container">
-       <div class="row">
+          </div>
+        </div>
+        <div class="col-sm-4 quickfind-sidebar">
+
+
+       
+        <div class="col-sm-8 img-resp-container">
+          <h1 class="quick-title col-sm-offset-1">Quick Find</h1>
+          <div id="quick-col-fix" class="link-wrapper">
+            <div class="col-sm-8 para">
+              <h5 class="no-margin"><b>Nicky's Folder</b></h5>
+              <p>The finest American made plastic folders<br>
+                <b>Learn More</b><small> <i class="glyphicon glyphicon-play"></i></small></p>
+            </div>
+            <div class="col-sm-4">
+              <div class="image-css folders-img"></div>
+            </div>
+          </div>
+          <div class="link-wrapper">
+            <div class="col-sm-8 para">
+              <h5 class="no-margin"><b>Vinyl Products</b></h5>
+              <p>The World's Supermarket of vinyl products<br>
+                <b>Learn More</b><small> <i class="glyphicon glyphicon-play"></i></small></p>
+            </div>
+            <div class="col-sm-4">
+              <div class="image-css vinyl-img"></div>
+            </div>
+          </div>
+          <div class="link-wrapper">
+            <div class="col-sm-8 para">
+              <h5 class="no-margin"><b>Custom Imprinting</b></h5>
+              <p>Custom imprinting folders are available on order over 100 pieces<br>
+                <b>Learn More</b><small> <i class="glyphicon glyphicon-play"></i></small></p>
+            </div>
+            <div class="col-sm-4">
+              <div class="image-css custom-print-img"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div class="row">
         <div class="col-xs-12 col-sm-12">
           <ac:widgetarea id="BotRibbon"><ac:widget id="BotRibbon" type="HTML" donotcreatecontrolwrapper="True">
-              <img src="https://nickysfolders.americommerce.com/Shared/images/r100bot.png">
+            <div class="img-resp-container">
+              <img src='https://nickysfolders.americommerce.com/Shared/images/r100bot.jpg' class="img-center  img-resp-container" alt='PricesQualityService'>
+            </div>
             </ac:widget>
 </ac:widgetarea>
         </div>
       </div>
-      </div>
-   
+    </div>
 
 
 
@@ -43,5 +74,6 @@
 
 
 
-  
-</ac:pagelayout>
+
+
+  </div></div></ac:pagelayout>

@@ -1,8 +1,8 @@
 <ac:pagelayout id="HeaderPage">
   <div class="LayoutTopTop">
-    <div class="container m-t-20">
+    <div class="container m-t-20 head-logo">
       <div class="row">
-        <div class="col-sm-7 col-md-2 col-md-offset-5">
+        <div class="col-sm-7 col-md-2">
           <ac:widgetarea id="LeftMiddleHeaderWidgets"><ac:widget id="HTML5546" type="HTML">
             <div class="no-m-t h1 sm-center">
               <a class="no-ul color-inherit bold store-name" href="/">
@@ -16,15 +16,15 @@
             </div>
             <ac:if setting="Show Tagline in Header">
               <div class="tagline clearfix pad-b-20">
-                <em>##SETTING[Tagline]##</em>
+                <em>##SETTING[Taglineversion]##</em>
               </div>
             </ac:if>
             </ac:widget>
 </ac:widgetarea>
         </div>
         <!--Shopping Chart Top Left Menu -->
-        <div class="col-sm-5 col-md-5 user-wrapper">
-          <div class="user-menu">
+        <div class="col-sm-5 col-md-5 col-custom-offset-4 user-wrapper"> 
+          <div class="user-menu"><div class="row"><div class="col-sm-6  phone-text">             Call Us: (800) 498-1463</div></div>
             <ul class="nav navbar-nav">
               <li>
                 <a href="http://www.nickysfolders.com/store/pg/1-Contact-Us.aspx">Contact</a>
@@ -37,7 +37,7 @@
               </li>
               <li>
                 <a href="#" data-toggle="dropdown">
-                  My Cart
+                  My Cart(0)
                   ##IF[CartIsEmpty]## ##ELSE##
                   <span class="badge">##CARTITEMSCOUNT##</span>
                   ##ENDIF##
@@ -55,7 +55,7 @@
 
               <li class="search">
                 <span class="glyphicon glyphicon-search"></span>
-                <input placeholder="Search">
+                <input>
 
 
                 <!-- ##SEARCHBOX[autocomplete=true]##-->
@@ -99,10 +99,8 @@
         <div class="collapse navbar-collapse js-navbar-collapse">
           <div class="nav navbar-nav">
             <ul>
-              <li class="dropdown mega-dropdown">
-                <a href="#" class="home">Home</a></li>
-              <li class="dropdown mega-dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nicky's Folders&copy;</a>
+              <li class="dropdown mega-dropdown folders-dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nicky's Folders<span class="small-reg">&reg;</span></a>
 
                 <ul class="dropdown-menu mega-dropdown-menu row">
 
@@ -110,42 +108,44 @@
                     <ul>
 
                       <li class="dropdown-header">2-Pockets</li>
-                      <li><a href="#">Nicky's&copy; Version II  <small>(NF VER II) </small></a></li>
-                      <li><a href="#"> Nicky's&copy;Communicator </a></li>
+                      <li><a href="#"><b>Nicky's<sup>&reg;</sup> Version II  </b><small>(NF VER II) </small></a></li>
+                      <li><a href="#"> <b>Nicky's<sup>&reg;</sup> Communicator </b></a></li>
                       <ul>
                         <li><a href="#">English</a></li>
-                        <li><a href="#">Spanish/Multilanguage</a></li>
+                        <li><a href="#">Spanish Multilanguage</a></li>
                       </ul>
-                      <li><a href="#"> Nicky's&copy; Class Work</a></li>
-                      <li><a href="#">  <b> Nicky's&copy; Homework </b></a></li>
-                      <li><a href="#">  <b> Nicky's&copy; CPA</b></a>
+                      <li><a href="#"> Nicky's<span class="small-reg">&reg;</span> Class Work</a></li>
+                      <li><a href="#">  <b> Nicky's<sup>&reg;</sup> Homework </b></a></li>
+                      <li><a href="#">  <b> Nicky's<sup>&reg;</sup> CPA</b></a>
                         <ul>
-                          <li><a href="#">&emsp;Version 10</a></li>
-                          <li><a href="#">   &emsp;Version 11</a></li>
+                          <li><a href="#">Version 10</a></li>
+                          <li><a href="#">Version 11</a></li>
                         </ul>
                       </li>
                     </ul>
                   </li>
                   <li class="col-sm-3">
                     <ul>
-                      <li class="dropdown-header">Multiple Page</li>
-                      <li><a href="#">   <b>Nicky's&copy;10-in-1 folder </b> </a></li>
-                      <li><a href="#"><b>Nicky's&copy; 4 pocket </b></a></li>
-                      <li><a href="#"><b>Nicky's&copy; 6 pocket </b></a></li>
-                      <li><a href="#"><b>Nicky's&copy; 8 pocket </b></a></li>
+                      <li class="dropdown-header" style="padding-left:10px">Multiple Pocket</li>
+                      <li><a href="#">   <b>Nicky's<sup>&reg;</sup> 10-in-1 folder</b> </a></li>
+                      <li><a href="#"><b>Nicky's<sup>&reg;</sup> 4 pocket </b></a></li>
+                      <li><a href="#"><b>Nicky's<sup>&reg;</sup> 6 pocket </b></a></li>
+                      <li><a href="#"><b>Nicky's<sup>&reg;</sup> 8 pocket </b></a></li>
                     </ul>
                   </li>
                   <li class="col-sm-3">
                     <ul>
                       <li class="dropdown-header">Tabbed</li>
-                      <li><a href="#"><b>Nicky's&copy; Tab File </b></a></li>
+                      <li><a href="#"><b>Nicky's<sup>&reg;</sup> Tab File</b></a></li>
 
                     </ul>
                   </li>
                   <li class="col-sm-3">
                     <ul>
                       <li class="dropdown-header">Other</li>
-                      <li><a href="#"><b>Nicky's&copy; Mini Wallet</b></a></li>
+                      <li><a href="#"><b>Nicky's<sup>&reg;</sup> Mini Wallet</b></a></li>
+                      <li><a href="#"><b>Nicky's<sup>&reg;</sup> Auto Insurance Form Holder</b></a></li>
+                      <li><a href="#"><b>Nicky's<sup>&reg;</sup> FS-20 Insurance Form Holder</b></a></li>
 
                     </ul>
                   </li>
@@ -153,10 +153,10 @@
                 </ul>
               </li>
               <li class="dropdown mega-dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Katie's&copy; Folder</a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Katie's Folders<span class="small-reg">&reg;</span></a>
               </li>
-              <li class="dropdown mega-dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Vinyl Products&copy;</a>
+              <li class="dropdown mega-dropdown vinyl-dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Vinyl Products</a>
 
                 <ul class="dropdown-menu mega-dropdown-menu row">
 
@@ -168,10 +168,10 @@
                         <li><a href="#">Adhesive Holders</a></li>
                         <li><a href="#">Business Card Holders</a></li>
                         <ul>
-                          <li><a href="#">STB-582</a></li>
-                          <li><a href="#">STB-1001</a></li>
-                          <li><a href="#">BC-888</a></li>
-                          <li><a href="#">Mini Wallets</a></li>
+                          <li><a href="#" style="font-weight: lighter;">STB-582</a></li>
+                          <li><a href="#" style="font-weight: lighter;">STB-1001</a></li>
+                          <li><a href="#" style="font-weight: lighter;">BC-888</a></li>
+                          <li><a href="#" style="font-weight: lighter;">Mini Wallets</a></li>
                         </ul>
                         <li><a href="#">Certificate Holders</a></li>
                         <li><a href="#"> Card Holders</a></li>
@@ -180,10 +180,10 @@
                     <li class="col-sm-6">
                       <ul>
 
-                        <li><a href="#">   <b>CD Media Holders</b> </a></li>
+                        <li><a href="#"><b>CD Media Holders</b> </a></li>
                         <ul>
-                          <li><a href="#">  <b> Adhesive Back</b></a></li>
-                          <li><a href="#">  <b> Temper Proof</b></a></li>
+                          <li><a href="#" style="font-weight: lighter;">Adhesive Back</a></li>
+                          <li><a href="#" style="font-weight: lighter;">Temper Proof</a></li>
                         </ul>
                         <li><a href="#"><b>ID Holders</b></a></li>
                         <li><a href="#"><b>Passbook Jackets </b></a></li>
@@ -209,12 +209,12 @@
                         <li class="dropdown-header">Sheet Protectors</li>
                         <li><a href="#"><b>8.5" x 11" </b></a></li>
                         <ul>
-                          <li>STB-582</li>
-                          <li>PT-600</li>
-                          <li>PT-2412</li>
-                          <li>SP-811 </li>
-                          <li>Fold-out 2597</li>
-                          <li>Model 1000 Clear Folder</li>
+                          <li><a href="#" style="font-weight: lighter;">STB-582</a></li>
+                          <li><a href="#" style="font-weight: lighter;">PT-600</a></li>
+                          <li><a href="#" style="font-weight: lighter;">PT-2412</a></li>
+                          <li><a href="#" style="font-weight: lighter;">SP-811</a> </li>
+                          <li><a href="#" style="font-weight: lighter;">Fold-out 2597</a></li>
+                          <li><a href="#" style="font-weight: lighter;">Model 1000 Clear Folder</a></li>
                         </ul>
 
                       </ul>
@@ -228,7 +228,7 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Custom Imprinting</a>
               </li>
               <li class="dropdown mega-dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Custom Type</a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer Type</a>
               </li>
               <li class="dropdown mega-dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>

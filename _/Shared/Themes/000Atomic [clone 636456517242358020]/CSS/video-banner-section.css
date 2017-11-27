@@ -1,0 +1,260 @@
+@font-face
+{
+  font-family: 'AlternateGothic2' ;
+  src: url('ALTGOT2N.TTF');
+}
+
+div > div > .phone-text{
+  color: cornflowerblue;
+  font-size: 14px;
+  font-weight: bold;
+  left: 3%;
+
+}
+
+.footer-text{
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+/*
+.row.mglfooter {
+background-color: #e5e5e5;
+height: 5vw;
+padding: 0 0 12.5vw 0;
+width: 100% !important;
+padding-right: 0px;
+padding-left: 0px;
+}
+*/
+.row.mglfooter {
+  background-color: #e5e5e5;
+  height: 25px;
+  padding: 0.4vw 0 0 0;
+  width: 100% !important;
+  padding-right: 0px;
+  position: absolute;
+  bottom: 0px;
+  margin: 0 auto;
+}
+.store-name > img {
+  max-width: 140%;
+}
+
+
+.gridContainer{
+  display: grid;
+  width:100vw;
+  height:100vh;
+  font-size:100vh 100vw;
+  grid-template-rows: 1fr 2fr 2fr 2fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: ". quick-header"
+    ". quick-folders"
+    ". quick-vinyl";
+  ". quick-custom";
+}
+.quick-header{
+  grid-area: quick-header;
+  width: 100%;
+  height: auto;
+}
+.quick-folders{
+  grid-area: quick-folders;
+  width: 100%;
+  height: auto;
+}
+.quick-vinyl{
+  grid-area: quick-vinyl;
+  width: 100%;
+  height: auto;
+}
+.quick-custom{
+  grid-area: quick-custom;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+.quick-space{
+  display: inline-block;
+  width:25%;
+  background-color:blue;
+}
+
+.quick-content{
+  width:75%;
+}
+
+
+.container-fluid.video-row,
+.container-fluid.video-row .row .col-md-12{
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: -3px;
+  margin-right: -16px;
+
+}
+.video-row .row .col-md-12 .col-sm-8.video-wrap {
+  padding-left: 0;
+  padding-right: 5px;
+  width: 50vw;
+}
+
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25% !important;
+  padding-top: 0px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+.quickfind-sidebar {
+  background-color: #e5e5e5;
+  color: #305d8f;
+  height: 28.2vw;
+  float:left;
+  margin-left: 10px;
+  padding: 0 0 2.5vw 0;
+  width: 49.5% !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#quick-col-fix{
+  margin-top: -17px;
+}
+
+#vidquick-col-fix{
+  padding-right: 0px !important;
+}
+
+.quickfind-sidebar h1 {
+  color:#ea212f;
+  font-family: 'AlternateGothic2';
+  text-align:left;
+}
+
+.quick-title {
+  font-size:33px;
+  margin-bottom: 0;
+
+}
+.link-wrapper {
+  display: block;
+  padding: 3.5vw 0 2.5vw 0;
+  margin: 0 1vw 1vw;
+
+}
+
+.col-sm-8.para h5 {
+  font-size: 16px;
+
+}
+
+.col-sm-8.para {
+  font-size: smaller;
+
+}
+.col-sm-8.para p {
+  line-height: 1.42857143 !important;
+  color: #305d8f !important;
+}
+
+img.img-responsive {
+  padding: 0 !important;
+  margin: 0 auto;
+}
+.image-css {
+  display: block;
+  width: 10vw;
+  height: 95px;
+  position: absolute;
+  top: -10px;
+  right: 23px;
+}
+
+.custom-print-img {
+  background: url('https://nickysfolders.americommerce.com/Shared/images/CustomImprinting.png') no-repeat center left;
+}
+
+.folders-img {
+  background: url('https://nickysfolders.americommerce.com/Shared/images/Folders.png') no-repeat center left;
+}
+
+.vinyl-img {
+  background: url('https://nickysfolders.americommerce.com/Shared/images/Vinyl.png') no-repeat center left;
+}
+
+.r100bot-img {
+  background: url('https://nickysfolders.americommerce.com/Shared/images/r100bot.jpg');
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+
+
+/* scaffold for Fluid Ratio Resize
+.fluid-ratio-resize { 
+max-width: 960px; /* actual img width */
+*height: 150px; /* actual img height - IE7 */
+background-image: url(students.jpg);
+background-size: cover;
+background-position: center;
+}
+.fluid-ratio-resize:after {
+  content: " ";
+  display: block; 
+  width: 100%; 
+  padding-top: 4.918%; /* slope */
+  height: 102.786px; /* start height */
+}
+*/
+
+<div class="fluid-ratio-resize"></div>
+
+
+.img-resp-container { /* basic responsive img */
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* IE8 */
+}
+
+.img-center {
+  display: block;
+  padding: 20px;
+  padding-bottom: 41px;
+  margin: auto;
+  text-align: center;
+}
+
+.para {
+  padding: 0 3.8vw 0 3.8vw;
+
+}
+
+.no-margin {
+  margin: 0 !important;
+}
